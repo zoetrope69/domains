@@ -7,3 +7,26 @@
 			box-sizing: border-box;
 }
 
+main{
+	display: block;
+	width: 95%;
+	margin: 1em auto;
+}
+
+main p{
+	display: inline-block;
+	margin: 0 .25em;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+main p.available{ color: green; }
+main p.unavailable{ color: gray; }
+main p.taken{ color: red; }
+main p.maybe{ color: blue; }
+
+main p a{
+	text-decoration: none;
+	color: inherit;
+}

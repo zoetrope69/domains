@@ -45,8 +45,8 @@ function processWords(domains){
 		words = data.split('\n');
 		var reversedDomains = reverseWords(domains).sort();
 		var reversedWords = reverseWords(words).sort();
-		console.log(reversedDomains);
-		console.log(reversedWords);
+		//console.log(reversedDomains);
+		//console.log(reversedWords);
 		matched = [];
 		for(var i = 0; i < reversedWords.length; i++){
 			for(var j = 0; j < reversedDomains.length; j++){
@@ -55,12 +55,31 @@ function processWords(domains){
 				var restOfWord = reversedWords[i].substring(reversedDomains[j].length + 1);
 				if(reversedDomain == trimmedReversedWord){
 					if(restOfWord != ''){
+						//console.log(reversedDomain +"."+ restOfWord);
 						matched.push(reversedDomain +"."+ restOfWord);
 					}
 				}
 			}
 		}
-		console.log(matched);
-		$('body').html('<p>' + reverseWords(matched).join(' | ') + '</p>');
+		var outputMatched = reverseWords(matched).sort();
+		//console.log("Amount of domains: "+ outputMatched.length);
+		var secondsDelay = 5;
+		for(var i = 0; i < 200; i++){
+			setTimeout(domainrCheck(outputMatched[i]), secondsDelay * 1000);
+		}
 	});
+}
+
+// domainr bit
+function domainrCheck(domain){
+	var url = 'http://domai.nr/api/json/info?callback=getDomainrData&q='+ domain;
+	$.ajax({ url: url, dataType: 'script', async: false });
+}
+
+function getDomainrData(json){
+	//console.log(json);
+	//console.log("Domain: "+ json.domain +" | Available? "+ json.availability); 
+	var link = ['',''];
+	if(json.availability == 'available' || json.availability == 'maybe'){ link[0] = '<a href='+ json.register_url +'>', link[1] = '</a>'; }
+	$('<p class='+ json.availability +'>'+ link[0] + json.domain + link[1] +'</p>').hide().appendTo('main').fadeIn('slow');
 }
