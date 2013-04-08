@@ -63,9 +63,14 @@ function processWords(domains){
 		}
 		var outputMatched = reverseWords(matched).sort();
 		//console.log("Amount of domains: "+ outputMatched.length);
-		var secondsDelay = 5;
-		for(var i = 0; i < 200; i++){
-			setTimeout(domainrCheck(outputMatched[i]), secondsDelay * 1000);
+		$('header h3').fadeOut('fast').text('Here they are!').fadeIn('slow');
+		var delay = 5;
+		var randNo = Math.floor(Math.random() * outputMatched.length);
+		if(randNo > (outputMatched.length - 200)){
+			randNo = outputMatched.length - 200;
+		}
+		for(var i = randNo; i < (randNo + 200); i++){
+			setTimeout(domainrCheck(outputMatched[i]), delay * 10000);
 		}
 	});
 }
@@ -83,3 +88,8 @@ function getDomainrData(json){
 	if(json.availability == 'available' || json.availability == 'maybe'){ link[0] = '<a href='+ json.register_url +'>', link[1] = '</a>'; }
 	$('<p class='+ json.availability +'>'+ link[0] + json.domain + link[1] +'</p>').hide().appendTo('main').fadeIn('slow');
 }
+
+// filters
+$('header a').click(function(){
+	$('p.'+this.id).toggle();
+});
