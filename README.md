@@ -1,3 +1,3 @@
-# kooldomainz
+# dandydomains
 
-a project to find cool domainz
+so dandy m8

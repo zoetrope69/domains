@@ -24,7 +24,7 @@ function processWikiData(json){
 
 // Load Wikipedia JSONP function to get the data
 function loadWikiData(){
-	var wikiTitle = 'List_of_Internet_top-level_domains'; // Title of the Wikipedia page
-	var wikiUrl = 'http://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&format=json&callback=wikiData&titles=' + wikiTitle;
-	$.ajax({ url: wikiUrl, dataType: 'script', async: false })
+	var title = 'List_of_Internet_top-level_domains'; // Title of the Wikipedia page
+	var url = 'http://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&format=json&callback=wikiData&titles=' + title;
+	$.ajax({ url: url, dataType: 'script', async: false });
 }
