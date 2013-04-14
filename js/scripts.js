@@ -46,7 +46,7 @@ function processWords(domains){
 		var reversedDomains = reverseWords(domains).sort();
 		var reversedWords = reverseWords(words).sort();
 		//console.log(reversedDomains);
-		//console.log(reversedWords);
+		console.log(reversedWords.join('\n'));
 		matched = [];
 		for(var i = 0; i < reversedWords.length; i++){
 			for(var j = 0; j < reversedDomains.length; j++){
