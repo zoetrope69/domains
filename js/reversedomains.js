@@ -1,4 +1,4 @@
-// this file gets the wiki data file and reverses them and resorts them into the reversed word file
+// this file gets the domains and reverses them and resorts them into the reversed word file
 
 var fs = require('fs'); // for filesystem
 
