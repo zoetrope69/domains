@@ -25,10 +25,22 @@ function getDomainrData(json){
 	//console.log("Domain: "+ json.domain +" | Available? "+ json.availability); 
 	var link = ['',''];
 	if(json.availability == 'available' || json.availability == 'maybe'){ link[0] = '<a href='+ json.register_url +'>', link[1] = '</a>'; }
-	$('<p class='+ json.availability +'>'+ link[0] + json.domain + link[1] +'</p>').hide().appendTo('main').fadeIn('slow');
+	var domain = json.domain;
+	var word = domain.replace('.','');
+	var suffix = '.' + json.tld.domain;
+	var suffixURL = json.tld.wikipedia_url;
+
+	var line = '<li class='+ json.availability +'>';
+	line += link[0] + domain + link[1];
+	line += ' | ' + word;
+	line += ' | <a href="'+ suffixURL +'">' + suffix + '</a>';
+	line += ' === | ' + link[0] + ' Register! ' + link[0];
+	line += '</li>';
+
+	$(line).hide().appendTo('main ul').fadeIn('slow');
 }
 
 // filters
 $('header a').click(function(){
-	$('p.'+this.id).toggle();
+	$('li.'+this.id).toggle();
 });

@@ -7,11 +7,30 @@
 			box-sizing: border-box;
 }
 
-main, header{
+html, body{
+	height: 100%;
+}
+
+header, .side{
+	padding: 1em;
+	background-color: #aaa;
+	height: 100%;
+	box-shadow: 0 0 5px black;
+}
+
+header{
+	width: 15%;
+	float: right;
+}
+
+main, .side{
+	float: left;
+}
+
+main{
 	display: block;
-	width: 70%;
-	margin: 1em auto;
-	font-family: monospace;
+	width: 75%;
+	height: 100%;
 }
 
 main h3{
@@ -20,30 +39,33 @@ main h3{
 	font-weight: 200;
 }
 
-main p{
-	margin-right: .5em;
-	font-size: 1.25em;
-	font-weight: bold;
-	display: inline-block;
-}
-
-main p::after, main p::before{
-	color: #DDD;
-	display: inline-block;
-}
-
-main p::before{ content: '('; }
-main p::after{ content: ')'; }
-
 .available{ color: green; }
 .unavailable{ color: gray; }
 .taken{ color: red; }
 .maybe{ color: blue; }
 .unknown{ color: pink; }
 
-main p a{
+.side{
+	width: 5%;
+	height: 100%;
+}
+
+.side ul li{
+	list-style: none;
+	text-align: center;
+}
+
+main ul li{
+	list-style: none;
+	text-align: center;
+	font-size: 1.5em;
+	padding: .5em 1em;
+	width: 100%;
+}
+
+main ul li a{
 	text-decoration: none;
 	color: inherit;
 }
 
-main p a:hover{ opacity: 0.9; }
+main ul li a:hover{ opacity: 0.9; }
