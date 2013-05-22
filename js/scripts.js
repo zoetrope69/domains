@@ -8,7 +8,7 @@ function main(){
 		$('header h3').fadeOut('fast').text('Here they are!').fadeIn('slow');
 		
 		console.log('Amount of domains: ' + dandyDomains.length);
-		for(var i = 0; i < 200; i++){
+		for(var i = 0; i < 10; i++){
 			domainrCheck(dandyDomains[i]);
 		}
 	});
@@ -22,22 +22,32 @@ function domainrCheck(domain){
 
 function getDomainrData(json){
 	console.log(json);
-	//console.log("Domain: "+ json.domain +" | Available? "+ json.availability); 
-	var link = ['',''];
-	if(json.availability == 'available' || json.availability == 'maybe'){ link[0] = '<a href='+ json.register_url +'>', link[1] = '</a>'; }
+	//console.log("Domain: "+ json.domain +" | Available? "+ json.availability);
+	var avail = json.availability;
+	var link = ['<span class="status '+ avail +'">','</span>'];
+	if(avail == 'available' || avail == 'maybe'){
+		link[0] = '<a href='+ json.register_url +' class="status '+ avail +'">';
+		link[1] = '</a>';
+	}
 	var domain = json.domain;
-	var word = domain.replace('.','');
 	var suffix = '.' + json.tld.domain;
-	var suffixURL = json.tld.wikipedia_url;
+	var word = domain.replace('.','');
+	var suffixUrl = json.tld.wikipedia_url;
 
-	var line = '<li class='+ json.availability +'>';
-	line += link[0] + domain + link[1];
-	line += ' | ' + word;
-	line += ' | <a href="'+ suffixURL +'">' + suffix + '</a>';
-	line += ' === | ' + link[0] + ' Register! ' + link[0];
-	line += '</li>';
+	$.ajax({ type: 'POST', url: './php/test.php', data: { word: word }, async: false })
+	.done(function(definition){
+		var line = ['<li>',
+					'<div class="top">',
+					'<h1>' + domain.replace('.', '<a href="'+ suffixUrl +'">.') + '</a></h1>',
+					link[0] + avail + link[1],
+					'</div>',
+					'<span class="def">'+ definition +'</span>',
+					'</li>'].join('\n');
 
-	$(line).hide().appendTo('main ul').fadeIn('slow');
+		$(line).hide().appendTo('main ul').fadeIn('slow');
+	});
+
+	
 }
 
 // filters

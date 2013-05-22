@@ -11,6 +11,10 @@ html, body{
 	height: 100%;
 }
 
+body{
+	font-family: Helvetica;
+}
+
 header, .side{
 	padding: 1em;
 	background-color: #aaa;
@@ -37,6 +41,25 @@ main h3{
 	margin: 1em 0;
 	font-size: .85em;
 	font-weight: 200;
+}
+
+.top h1{
+	font-size: 1em;
+	font-family: 'Georgia';
+	font-style: italic;
+	display: inline-block;
+	text-align: right;
+	width: 50%;
+	line-height: 1em;
+}
+
+.status{
+	display: inline-block;
+	border-radius: .25em;
+	padding: .25em .5em;
+	font-size: .5em;
+	border: 1px solid;
+	text-transform: uppercase;
 }
 
 .available{ color: green; }
