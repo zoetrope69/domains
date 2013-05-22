@@ -41,19 +41,18 @@ function getDomainrData(json){
 		var line = ['<li class="'+ avail +'item">',
 					'<div class="top">',
 					'<h1>' + domain.replace('.', '<span class="fullstop '+ avail +'">.</span>') + '</h1>',
-					'<a class="suffix" href="'+ suffixUrl +'"> Find out more about the domain </a>',
 					link[0] + avail + link[1],
+					'<a class="suffix" href="'+ suffixUrl +'">Find out more about this domain</a>',
 					'</div>',
 					'<p class="def">'+ definition +'</p>',
 					'</li>'].join('\n');
 
-		$(line).hide().appendTo('main ul').fadeIn('slow');
+		$(line).hide().appendTo('main ul').slideDown('slow');
 	});
-
 	
 }
 
 // filters
 $('header input').click(function(){
-	$('.'+this.id).toggle();
+	$('.'+this.id).slideToggle('slow');
 });
