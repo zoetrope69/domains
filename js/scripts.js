@@ -12,7 +12,7 @@ function main(){
 			domainrCheck(dandyDomains[i]);
 		}
 	});
-	
+
 	$('header input').prop('checked', true); // check all the header status boxes
 }
 
@@ -40,7 +40,8 @@ function getDomainrData(json){
 	.done(function(definition){
 		var line = ['<li class="'+ avail +'item">',
 					'<div class="top">',
-					'<h1>' + domain.replace('.', '<a href="'+ suffixUrl +'"><span class="fullstop '+ avail +'">.</span>') + '</a></h1>',
+					'<h1>' + domain.replace('.', '<span class="fullstop '+ avail +'">.</span>') + '</h1>',
+					'<a class="suffix" href="'+ suffixUrl +'"> Find out more about the domain </a>',
 					link[0] + avail + link[1],
 					'</div>',
 					'<p class="def">'+ definition +'</p>',
