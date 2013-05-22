@@ -8,10 +8,12 @@ function main(){
 		$('header h3').fadeOut('fast').text('Here they are!').fadeIn('slow');
 		
 		console.log('Amount of domains: ' + dandyDomains.length);
-		for(var i = 0; i < 23; i++){
+		for(var i = 100; i < 123; i++){
 			domainrCheck(dandyDomains[i]);
 		}
 	});
+	
+	$('header input').prop('checked', true); // check all the header status boxes
 }
 
 // domainr bit
@@ -36,7 +38,7 @@ function getDomainrData(json){
 
 	$.ajax({ type: 'POST', url: './php/test.php', data: { word: word }, async: false })
 	.done(function(definition){
-		var line = ['<li>',
+		var line = ['<li class="'+ avail +'item">',
 					'<div class="top">',
 					'<h1>' + domain.replace('.', '<a href="'+ suffixUrl +'"><span class="fullstop '+ avail +'">.</span>') + '</a></h1>',
 					link[0] + avail + link[1],
@@ -51,6 +53,6 @@ function getDomainrData(json){
 }
 
 // filters
-$('header a').click(function(){
-	$('li.'+this.id).toggle();
+$('header input').click(function(){
+	$('.'+this.id).toggle();
 });

@@ -43,22 +43,22 @@ main{
 	margin-bottom: .5em;
 }
 
-.top h1, .status{
+.top h1{
 	float: left;
 	display: inline-block;
+	font-size: 1em;
+	margin: .05em 0 0;
+	width: 80%;
+	text-transform: capitalize;
+	padding-left: .5em;
+	line-height: 0;
+	text-align: left;
 }
 
 .top h1, header h1{
-	text-transform: capitalize;
-	width: 80%;
-	margin: .05em 0 0;
-	padding-left: .5em;
-	font-size: 1em;
 	font-family: 'Georgia';
 	color: #383838;
 	font-style: italic;
-	line-height: 0;
-	text-align: left;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
 }
 
@@ -73,35 +73,46 @@ main{
 .def{
 	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
 	padding: 0 .5em;
-	text-transform: capitalize;
 	text-align: left;
 	font-size: .6em;
 	line-height: 1.5em;
 }
 
-.status{
+.status{	
+	display: inline-block;
+	text-decoration: none;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
 	box-shadow: inset 0 -5px 25px -10px;
-	float: right;
-	margin: 0 1em 0;
 	border-top-left-radius: .25em;
 	border-top-right-radius: .25em;
-	padding: .25em .5em;
-	font-size: .45em;
 	border: 1px solid;
-	border-bottom: none;
 	text-transform: uppercase;
+	font-size: .65rem;
+	padding: .25em .5em;
+}
+
+main .status{
+	float: right;
+	margin: 0 1em 0;
+	border-bottom: none;
+}
+
+header .status{
+	display: block;
+	border-radius: .25em;
+	display: block;
+	margin: .1em 0;
 }
 
 .status:hover{
 	box-shadow: inset 0 5px 25px -10px;
 }
 
-.available{ color: green; }
+.available{ color: #127412; }
 .unavailable{ color: #888; }
 .taken{ color: red; }
 .maybe{ color: blue; }
-.unknown{ color: pink; }
+.unknown{ color: #860C21; }
 
 .side{
 	width: 5%;
