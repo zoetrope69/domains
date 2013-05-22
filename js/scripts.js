@@ -8,7 +8,7 @@ function main(){
 		$('header h3').fadeOut('fast').text('Here they are!').fadeIn('slow');
 		
 		console.log('Amount of domains: ' + dandyDomains.length);
-		for(var i = 0; i < 10; i++){
+		for(var i = 0; i < 23; i++){
 			domainrCheck(dandyDomains[i]);
 		}
 	});
@@ -38,10 +38,10 @@ function getDomainrData(json){
 	.done(function(definition){
 		var line = ['<li>',
 					'<div class="top">',
-					'<h1>' + domain.replace('.', '<a href="'+ suffixUrl +'">.') + '</a></h1>',
+					'<h1>' + domain.replace('.', '<a href="'+ suffixUrl +'"><span class="fullstop '+ avail +'">.</span>') + '</a></h1>',
 					link[0] + avail + link[1],
 					'</div>',
-					'<span class="def">'+ definition +'</span>',
+					'<p class="def">'+ definition +'</p>',
 					'</li>'].join('\n');
 
 		$(line).hide().appendTo('main ul').fadeIn('slow');
