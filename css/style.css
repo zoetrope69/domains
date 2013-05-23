@@ -83,8 +83,10 @@ main{
 }
 
 .def{
+	display: none;
+	border-top: 1px solid rgb(231, 231, 231);
 	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
-	padding: 0 .5em;
+	padding: 1em .5em;
 	text-align: left;
 	font-size: .6em;
 	line-height: 1.5em;

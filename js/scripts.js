@@ -8,7 +8,7 @@ function main(){
 		$('header h3').fadeOut('fast').text('Here they are!').fadeIn('slow');
 		
 		// console.log('Amount of domains: ' + dandyDomains.length);
-		for(var i = 100; i < 123; i++){
+		for(var i = 0; i < 10; i++){
 			domainrCheck(dandyDomains[i]);
 		}
 	});
@@ -49,25 +49,27 @@ function getDomainrData(json){
 					'<p class="def"></p>',
 					'</li>'].join('\n');
 
-		$(line).hide().appendTo('main ul').slideDown('slow');
+	$(line).hide().appendTo('main ul').slideDown('slow');
+	defineWords();
 }
 
 // define the words
-$('main li .status.define').click(function(){
-	var word = 'badger';
-	alert(word);
-	$.ajax({ type: 'POST', url: './php/test.php', data: { word: word }, async: false })
-	.done(function(definition){
-		alert(definition);
+function defineWords(){	
+	$('.status.define').on('click', function(){
+		var word = $(this).parent().find('h1').text().replace('.','');
+		var def = '';
+		$.ajax({ type: 'POST', url: './php/test.php', data: { word: word }, async: false })
+		.done(function(definition){
+			console.log(definition);
+			def = definition;
+		});
+		$(this).parent().parent().find('.def').html(def)
+		$(this).parent().parent().find('.def').slideDown('slow');
 	});
-});
-
-// filters
-$('.define').click(function(){
-	$('.'+this.id).slideToggle('slow');
-});
+}
 
 // filters
 $('header input').click(function(){
 	$('.'+this.id).slideToggle('slow');
+	defineWords();
 });
