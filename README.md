@@ -7,3 +7,5 @@ The generation of the domains is done using node.js as I wanted to have a play w
 + Wikipedia - domain suffix list
 + Domainr - domain availability
 + wordnik - word definitions
+
+will be replacing the php stuff with node.js implementations
