@@ -13,7 +13,8 @@ function main(){
 		}
 	});
 
-	$('header input').prop('checked', true); // check all the header status boxes
+	// filters the results and initates checkboxes
+	domainFilters();
 }
 
 // domainr bit
@@ -27,29 +28,28 @@ function getDomainrData(json){
 	// console.log("Domain: "+ json.domain +" | Available? "+ json.availability); // Bit more specific
 	var avail = json.availability;
 	var link = ['',''];
-	var buy = '';
 	if(avail == 'available' || avail == 'maybe' || avail == 'unknown'){
 		link[0] = '<a href='+ json.register_url +'>';
 		link[1] = '</a>';
-		buy = '<span class="status buy">Buy!</span>';
 	}
 	var domain = json.domain;
 	var suffix = '.' + json.tld.domain;
 	var word = domain.replace('.','');
 	var suffixUrl = json.tld.wikipedia_url;
 
-	var line = ['<li class="'+ avail +'item">',
+	var domainItem = $(['<li class="'+ avail +'-item">',
 					'<div class="top">',
 					'<h1>' + domain.replace('.', '<span class="fullstop '+ avail +'">.</span>') + '</h1>',
-					link[0] + buy + link[1],
 					link[0] + '<span class="status '+ avail +'">' + avail + '</span>' + link[1],
 					'<a class="status define">Define</a>',
 					'<a class="status suffix" href="'+ suffixUrl +'">Find out more about this domain</a>',
 					'</div>',
 					'<p class="def"></p>',
-					'</li>'].join('\n');
+					'</li>'].join('\n'));
 
-	$(line).hide().appendTo('main ul').slideDown('slow');
+	domainItem.appendTo('main ul');
+
+	if(avail == 'unavailable' || avail == 'taken'){ domainItem.addClass('hidden-item'); }
 	defineWords();
 }
 
@@ -68,8 +68,11 @@ function defineWords(){
 	});
 }
 
-// filters
-$('header input').click(function(){
-	$('.'+this.id).slideToggle('slow');
-	defineWords();
-});
+// filters the results
+function domainFilters(){
+	$('header input:not(#unavailable-item, #taken-item)').prop('checked', true); // check all the header status boxes
+
+	$('header input').click(function(){
+		$('.'+this.id).toggleClass('hidden-item');
+	});
+}
