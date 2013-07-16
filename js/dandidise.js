@@ -3,9 +3,10 @@
 var fs = require('fs'); // for filesystem
 
 function main(){
+	console.log('Generating domains...')
 
-	var rWords = fs.readFileSync('./txt/rwords.txt', 'utf8').toString().split('\n');
-	var rDomains = fs.readFileSync('./txt/rdomains.txt', 'utf8').toString().split('\n');
+	var rWords = fs.readFileSync('../txt/rwords.txt', 'utf8').toString().split('\n');
+	var rDomains = fs.readFileSync('../txt/rdomains.txt', 'utf8').toString().split('\n');
 
 	var matched = [];
 
@@ -26,9 +27,10 @@ function main(){
 		}
 	}
 
-	var outputPath = './txt/dandydomains.txt';
+	var outputPath = '../txt/dandydomains.txt';
 	var outputMatched = reverseArrayItems(matched).sort().join('\n');
 	fs.writeFileSync(outputPath, outputMatched, 'utf8');
+	console.log('..Full domains generated!');
 }
 
 // Stick in an array of words and it'll reverse them all.

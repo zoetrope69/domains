@@ -80,7 +80,6 @@ main{
 }
 
 .def{
-	display: none;
 	border-top: 1px solid rgb(231, 231, 231);
 	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
 	padding: 1em .5em;
@@ -88,6 +87,8 @@ main{
 	font-size: .6em;
 	line-height: 1.5em;
 }
+
+.hidden-def{ display: none; }
 
 .status{
 	display: inline-block;
@@ -97,7 +98,6 @@ main{
 	border-top-left-radius: .25em;
 	border-top-right-radius: .25em;
 	border: 1px solid;
-	text-transform: uppercase;
 	font-size: .65rem;
 	padding: .25em .5em;	
 	overflow: hidden;
