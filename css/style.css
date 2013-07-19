@@ -12,141 +12,62 @@ body{
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-header, .side{
-	background-color: rgb(247, 247, 247);
-	height: 100%;
-	box-shadow: 0 0 5px rgb(230, 230, 230);
-}
 header{
-	padding: 1em;
-	width: 20%;
-	float: right;
-	text-align: center;
+	padding: 10px;
+	overflow: hidden;
+	border-bottom: 3px solid rgba(0,0,0,.1);
+}
+
+header h1, header p{ float: left; }
+
+header h1{
+	width: 25%;
+	font-size: 2em;
 }
 
 header p{
-	margin: 1em 0;
+	color: #777;
+	width: 75%;
+	padding: 0 10px;
 }
 
-header h1{
-	font-size: 1.5em;
-}
+main{ display: block; }
 
-header h2{
-	font-weight: 500;
-}
 
-main, .side{
-	float: left;	
-	overflow-y: auto;
-	overflow-x: hidden;
-}
-
-main{
-	display: block;
-	width: 70%;
-	height: 100%;
-}
-
-.top{
-	padding-top: .5em;
-	overflow: hidden;
-}
-
-.top h1{
-	float: left;
-	display: inline-block;
-	font-size: 1em;
-	margin: .05em 0 0;
-	width: 80%;
-	padding-left: .5em;
-	line-height: 0;
-	text-align: left;
-}
-
-.top h1, header h1{
-	font-family: 'Georgia';
+main ul li h1, header h1{
 	color: #383838;
-	font-style: italic;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
 }
 
-.top h1 a{
-	text-transform: none;
+.buttons{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
+
+.buttons a{ width: 33.33%; }
 
 .fullstop{
 	font-size: .85em;
 }
 
-.def{
-	border-top: 1px solid rgb(231, 231, 231);
-	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
-	padding: 1em .5em;
-	text-align: left;
-	font-size: .6em;
-	line-height: 1.5em;
-}
-
-.hidden-def{ display: none; }
+main ul li:hover .status{ display: inline-block; }
 
 .status{
-	display: inline-block;
-	text-decoration: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
-	box-shadow: inset 0 -5px 25px -10px;
-	border-top-left-radius: .25em;
-	border-top-right-radius: .25em;
-	border: 1px solid;
-	font-size: .65rem;
-	padding: .25em .5em;	
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-main li .suffix{
+	text-align: center;
+	height: 64px;
+	background: rgba(255,255,255,.5);
+	float: left;
 	display: none;
+	padding: 16px .5em;
+	text-decoration: none;
+	font-size: .5em;
+	text-shadow: 0 0 10px #FFF;
 }
 
-main li:hover .suffix{
-	display: inline;
-}
-
-
-main .status{
-	float: right;
-	margin: 0 1em 0;
-	border-bottom: none;
-}
-
-.filters{
-	margin: 1em 0;
-	border-radius: .25em;
-}
-
-.filters h2{
-	font-size: .8em;
-	font-weight: 500;
-}
-
-.filters .status{
-	width: 80%;
-	min-width: 110px;
-	display: block;
-	border-radius: .25em;
-	display: block;
-	margin: .5em auto;
-	text-align: left;
-}
-
-.filters input{
-	display: inline-block;
-	margin: 0 .5em 0 0;
-}
-
-.status:hover{
-	box-shadow: inset 0 5px 25px -10px;
-}
+.status:hover{ background: rgba(255,255,255,.75); }
 
 .buy{ color: #C5A600;}
 .define{ color: maroon; cursor: pointer; }
@@ -155,57 +76,31 @@ main .status{
 .unavailable{ color: #888; }
 .taken{ color: red; }
 .maybe{ color: blue; }
-.unknown{ color: #860C21; }
+.unknown{ color: orange; }
 
 .taken:hover, .unavailable:hover{
-	box-shadow: inset 0 -5px 25px -10px;
 	cursor: default;
 }
 
-.side{
-	width: 4%;
-	height: 100%;
-	border-right: 1px solid #DDD;
-	direction: rtl; /* moves scrollbar to left */
-}
-
-.domain-side{
-	width: 6%;
-}
-
-.side ul li{
-	display: block;
-	font-size: .85em;
-	font-weight: 900;
-	color: rgba(0,0,0,0.8);
-	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
-	padding: .25em 0;
-	list-style: none;
-	text-align: center;	
-}
-
-.side ul li:nth-child(even){ background: rgba(0,0,0,0.05); }
-
-.side ul li:hover{
-	opacity: 0.8;
-	cursor: pointer;
-}
-
 main ul li{
-	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.10);
+	height: 64px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	width: 50%;
 	list-style: none;
-	text-align: center;
-	font-size: 1.5em;
-	padding: .5em 1em 0;
-	width: 100%;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: 2.5em;
+	padding: 0 10px;
 }
-
-main ul li.hidden-item{ display: none; }
 
 main ul li a{
 	text-decoration: none;
 	color: inherit;
 }
 
-main ul li a:hover{ opacity: 0.9; }
+main ul li h1{
+	float: left;
+	font-size: 1.25em;
+	width: 70%;
+	text-align: left;
+}
