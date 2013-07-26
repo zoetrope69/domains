@@ -3,55 +3,40 @@
 function main(){
 	// generates a list of domain items
 	domainItemGen();
-
-	// filters the results and initates checkboxes
-	availabilityFilter();
-
-	// filters by alphabetical
-	alphaFilter();
 }
 
-function domainItemGen(order){
+function domainItemGen(){
 	var url = './txt/dandydomains.txt';
 	$.ajax({ url: url, dataType: 'text', async: false })
 	.done(function(data){
 
 		var domains = data.split('\n');
 		var startPos = 0;
-		var itemAmount = 25;
+		var itemAmount = 8000;
 
-		// no order, random
-		if(!order){ order = '?'; }
 
-		if(order == '?'){
-
-			// gen some random numbers
-			var randPos = [];
-			for(var i = 0; i < itemAmount; i++){
-				rand = Math.floor(Math.random() * domains.length);
-				// if we already have this rand no increase count for another go
-				if(randPos.indexOf(rand) != -1){ itemAmount++; }
-				else{ randPos.push(rand); }
-			}
-
-			// generate these
-			for(var i = 0; i < itemAmount; i++){
-				domainrCheck(domains[randPos[i]]);
-			}
-
+		// gen some random numbers
+		var randPos = [];
+		for(var i = 0; i < itemAmount; i++){
+			rand = Math.floor(Math.random() * domains.length);
+			// if we already have this rand no increase count for another go
+			if(randPos.indexOf(rand) != -1){ itemAmount++; }
+			else{ randPos.push(rand); }
 		}
-		else{ // otherwise it should be alpha
 
-			// if there is a order set
-			if(order){ startPos = domainSearch(domains, order); }
-			
-			// console.log('Amount of domains: ' + dandyDomains.length);
-			for(var i = startPos; i < startPos+itemAmount; i++){
-				domainrCheck(domains[i]);
-			}
-
+		// generate these
+		for(var i = 0; i < itemAmount; i++){
+			domainItems(domains[randPos[i]]);
 		}
 	});
+}
+
+function domainItems(domain){
+	var domainItem = $(['<li>',
+						'<h1>' + domain + '</h1>',
+						'</li>'].join('\n'));
+
+	domainItem.appendTo('main ul');
 }
 
 function domainSearch(data, char){
@@ -126,23 +111,6 @@ function defineWords(item){
 			$(this).parents('li').find('.def').html(def);
 			$(this).parents('li').find('.def').removeClass('hidden-def');
 		}
-	});
-}
-
-// filters the results
-function availabilityFilter(){
-	$('header input:not(#unavailable-item, #taken-item)').prop('checked', true); // check all the header status boxes
-
-	$('header input').click(function(){
-		$('.'+this.id).toggleClass('hidden-item');
-	});
-}
-
-function alphaFilter(){
-	$('.alpha-side ul li').click(function(){
-		$('main ul').html(''); // empty the list
-		var letter = $(this).html().toLowerCase();
-		domainItemGen(letter);
 	});
 }
 

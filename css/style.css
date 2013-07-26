@@ -20,125 +20,28 @@ header h1{
 	font-size: 1.5em;
 }
 
-main, .side{
-	height: 100%;
-	float: left;	
-	overflow-y: auto;
-	overflow-x: hidden;
-}
+main{ display: block; }
 
-main{
-	display: block;
-	width: 70%;
-}
-
-.top{
-	padding-top: .5em;
-	overflow: hidden;
-}
-
-.top h1{
-	float: left;
-	display: inline-block;
-	font-size: 1em;
-	margin: .05em 0 0;
-	width: 80%;
-	padding-left: .5em;
-	line-height: 0;
-	text-align: left;
-}
-
-.top h1, header h1{
+main li h1, header h1{
 	font-family: 'Georgia';
 	color: #383838;
 	font-style: italic;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
 }
 
-.top h1 a{
-	text-transform: none;
-}
-
-.fullstop{
-	font-size: .85em;
-}
-
-.def{
-	border-top: 1px solid rgb(231, 231, 231);
-	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
-	padding: 1em .5em;
-	text-align: left;
-	font-size: .6em;
-	line-height: 1.5em;
-}
-
-.hidden-def{ display: none; }
-
-.status{
-	display: inline-block;
-	text-decoration: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
-	box-shadow: inset 0 -5px 25px -10px;
-	border-top-left-radius: .25em;
-	border-top-right-radius: .25em;
-	border: 1px solid;
-	font-size: .65rem;
-	padding: .25em .5em;	
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-main li .suffix{
-	display: none;
-}
-
-main li:hover .suffix{
-	display: inline;
-}
-
-
-main .status{
-	float: right;
-	margin: 0 1em 0;
-	border-bottom: none;
-}
-
-.status:hover{
-	box-shadow: inset 0 5px 25px -10px;
-}
-
-.buy{ color: #C5A600;}
-.define{ color: maroon; cursor: pointer; }
-
-.available{ color: #127412; }
-.unavailable{ color: #888; }
-.taken{ color: red; }
-.maybe{ color: blue; }
-.unknown{ color: #860C21; }
-
-.taken:hover, .unavailable:hover{
-	box-shadow: inset 0 -5px 25px -10px;
-	cursor: default;
-}
-
 .side{
-	width: 4%;
-	height: 100%;
-	border-right: 1px solid #DDD;
-	direction: rtl; /* moves scrollbar to left */
-}
-
-.domain-side{
-	width: 6%;
+	overflow-y: hidden;
+	overflow-x: auto;
+	border: 1px solid rgba(0,0,0,.1);
 }
 
 .side ul li{
-	display: block;
+	float: left;
+	padding: 5px;
 	font-size: .85em;
 	font-weight: 900;
 	color: rgba(0,0,0,0.8);
 	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
-	padding: .25em 0;
 	list-style: none;
 	text-align: center;	
 }
@@ -150,21 +53,14 @@ main .status{
 	cursor: pointer;
 }
 
+.alpha-side ul li{ width: 3.7%; }
+
 main ul li{
-	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.10);
+	float: left;
+	padding: 10px;
+	width: 25%;
 	list-style: none;
-	text-align: center;
-	font-size: 1.5em;
-	padding: .5em 1em 0;
-	width: 100%;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: .5em;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	border-right: 1px solid rgba(0,0,0,.1);
 }
-
-main ul li.hidden-item{ display: none; }
-
-main ul li a{
-	text-decoration: none;
-	color: inherit;
-}
-
-main ul li a:hover{ opacity: 0.9; }
