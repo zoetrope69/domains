@@ -56,8 +56,7 @@ function domainItemGen(){
 
 		var domains = data.split('\n');
 		var startPos = 0;
-		var itemAmount = 80;
-
+		var itemAmount = 150;
 
 		// gen some random numbers
 		var randPos = [];
@@ -93,7 +92,7 @@ function domainSearch(data, char){
 
 // domainr bit
 function domainrCheck(domain){
-	var url = 'http://www.domai.nr/api/json/info?callback=getDomainrData&q=' + domain;
+	var url = 'http://www.domai.nr/api/json/info?callback=getDomainrData&q=' + domain + '&client_id=dandydomains';
 	var timeoutSecs = 5;
 	var domainrAjax = $.ajax({ url: url, dataType: 'script', timeout: timeoutSecs * 1000 });
 	domainrAjax.fail(function(){
