@@ -34,6 +34,8 @@ function modalControl(){
 	$('.more-detail').find('.close').click(function(){
 		$('header').removeClass('header-hidden');
 		$('.more-detail').removeClass('more-detail-shown');
+		$('.current').removeClass('current');
+
 	});
 }
 

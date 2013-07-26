@@ -2,6 +2,8 @@
 
 body{ text-transform: lowercase; font-family: Helvetica, Arial, sans-serif; }
 
+.top{ position: fixed; top: 0; left: 0; right: 0; }
+
 header, .side{ background-color: rgb(247, 247, 247); }
 
 header, .more-detail{
@@ -10,11 +12,11 @@ header, .more-detail{
 }
 
 header{
-	opacity: 1;
-	transition: opacity .5s;
+	color: #383838;
+	transition: color .5s;
 }
 
-.header-hidden{ opacity: 0; }
+.header-hidden{ color: transparent; }
 
 header h1{ font-size: 1.5em; }
 
@@ -24,9 +26,12 @@ header h1, header p,
 	padding: 1em;
 }
 
-main{ display: block; }
+main{
+	display: block;
+	padding-top: 130px;
+}
 
-header h1, main ul li, .more-detail h1{ color: #383838; }
+main ul li, .more-detail h1{ color: #383838; }
 
 .side{
 	overflow-y: hidden;
@@ -37,6 +42,7 @@ header h1, main ul li, .more-detail h1{ color: #383838; }
 .side ul li, main ul li{ transition: .1s; }
 
 .side ul li{
+	height: 30px;
 	float: left;
 	padding: 5px;
 	font-size: .85em;
