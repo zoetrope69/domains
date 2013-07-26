@@ -20,9 +20,7 @@ header{
 
 header h1, header p{ float: left; }
 
-header h1{	
-	color: #383838;
-	text-shadow: 0 1px rgba(0,0,0,.1);
+header h1{
 	width: 25%;
 	font-size: 2em;
 }
@@ -34,3 +32,75 @@ header p{
 }
 
 main{ display: block; }
+
+
+main ul li h1, header h1{
+	color: #383838;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
+}
+
+.buttons{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.buttons a{ width: 33.33%; }
+
+.fullstop{
+	font-size: .85em;
+}
+
+main ul li:hover .status{ display: inline-block; }
+
+.status{
+	text-align: center;
+	height: 64px;
+	background: rgba(255,255,255,.5);
+	float: left;
+	display: none;
+	padding: 16px .5em;
+	text-decoration: none;
+	font-size: .5em;
+	text-shadow: 0 0 10px #FFF;
+}
+
+.status:hover{ background: rgba(255,255,255,.75); }
+
+.buy{ color: #C5A600;}
+.define{ color: maroon; cursor: pointer; }
+
+.available{ color: #127412; }
+.unavailable{ color: #888; }
+.taken{ color: red; }
+.maybe{ color: blue; }
+.unknown{ color: orange; }
+
+.taken:hover, .unavailable:hover{
+	cursor: default;
+}
+
+main ul li{
+	height: 64px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	width: 50%;
+	list-style: none;
+	font-size: 2.5em;
+	padding: 0 10px;
+}
+
+main ul li a{
+	text-decoration: none;
+	color: inherit;
+}
+
+main ul li h1{
+	float: left;
+	font-size: 1.25em;
+	width: 70%;
+	text-align: left;
+}

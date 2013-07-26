@@ -1,6 +1,3 @@
-// generate datatable
-var domainDataTable = $('#domains-table').dataTable();
-
 (function(){ main(); })() // On load
 
 function main(){
@@ -9,14 +6,13 @@ function main(){
 }
 
 function domainItemGen(order){
-
 	var url = './txt/dandydomains.txt';
 	$.ajax({ url: url, dataType: 'text', async: false })
 	.done(function(data){
 
 		var domains = data.split('\n');
 		var startPos = 0;
-		var itemAmount = 10;
+		var itemAmount = 30;
 
 		// gen some random numbers
 		var randPos = [];
@@ -65,13 +61,18 @@ function getDomainrData(json){
 	var word = domain.replace('.','');
 	var suffixUrl = json.tld.wikipedia_url;
 
-	var domainItem = $([ link[0] + domainPretty + link[1],
-						'<a class="status suffix" target="_blank" href="'+ suffixUrl +'">' + suffix + '</a>',
-						link[0] + '<span class="status '+ avail +'">' + availPretty + '</span>' + link[1]
-						]);
+	var domainItem = $(['<li class="'+ avail +'-item">',
+						'<h1>'+ link[0] + domainPretty + link[1] +'</h1>',
+						'<div class="buttons">',
+						link[0] + '<span class="status '+ avail +'">' + availPretty + '</span>' + link[1],
+						'<a class="status define" target="_blank" href="http://dictionary.reference.com/browse/'+word+'">Define</a>',
+						'<a class="status suffix" target="_blank" href="'+ suffixUrl +'">\''+ suffix +'\' ?</a>',
+						'</div>',
+						'</li>'].join('\n'));
 
-	// add item
-	window.domainDataTable.fnAddData(domainItem);
+	if(avail != 'unavailable' && avail != 'taken'){
+		domainItem.hide().appendTo('main ul').fadeIn('1500');
+	}
 
 }
 
