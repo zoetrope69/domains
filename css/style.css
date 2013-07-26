@@ -36,7 +36,7 @@ main ul li, .more-detail h1{ color: #383838; }
 .side{
 	overflow-y: hidden;
 	overflow-x: auto;
-	border: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .side ul li, main ul li{ transition: .1s; }
@@ -70,7 +70,8 @@ main ul li, .more-detail h1{ color: #383838; }
 main ul li{
 	float: left;
 	padding: 10px;
-	width: 25%;
+	width: 12.5%;
+	text-align: center;
 	list-style: none;
 	font-size: .5em;
 	border-bottom: 1px solid rgba(0,0,0,.1);
@@ -112,6 +113,12 @@ main ul li.current{ background: #383838; color: #FFF; }
 	font-size: 1.5em;
 }
 
+.more-detail h1 a{
+	color: inherit;
+	text-decoration: none; 
+}
+
+.more-detail h1 a:hover{ border-bottom: 1px dashed; }
 
 .more-detail p{	display: inline-block; }
 .more-detail .text-hidden{ display: none; }
@@ -123,12 +130,42 @@ main ul li.current{ background: #383838; color: #FFF; }
 	text-decoration: none;
 }
 
-.more-detail p a{ color: #3A3939; }
+.more-detail p a{
+	color: #3A3939;
+}
+
+.more-detail p a span, .more-detail .define{
+	margin: 0 .25em;
+	padding: 5px;
+	border: 1px solid;
+	transition: background .1s;
+}
+
+.more-detail .define{
+	cursor: pointer;
+	float: right;
+	color: #464646;
+}
+
+.more-detail .suffix{ color: #FFF; font-weight: normal; }
+.more-detail .suffix span{ color: #464646; font-weight: 900; }
+
+.more-detail p a span:hover, .more-detail .define:hover{ background: rgba(255,255,255,.1); border-style: dashed; }
 
 .fullstop{ color: #383838; }
 
+.taken, .unavailable{ color: #464646; }
 .available{ color: #96FF88; }
-.unavailable{ color: #DDD;}
-.taken{ color: #FFC5C5; }
 .maybe{ color: #FFDA94; }
 .unknown{ color: #B0B0FF; }
+
+.taken-item, .unavailable-item{ background-color: #464646; color: #F5F5F5; }
+.available-item{ background-color: #96FF88; }
+.maybe-item{ background-color: #FFDA94; }
+.unknown-item{ background-color: #B0B0FF; }
+
+/* resize the domain items */
+@media all and (max-width: 1000px){ main ul li{ width: 25%;    } }
+@media all and (max-width: 600px){  main ul li{ width: 33.33%; } }
+@media all and (max-width: 400px){  main ul li{ width: 50%;    } }
+@media all and (max-width: 250px){  main ul li{ width: 100%;   } }

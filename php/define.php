@@ -9,7 +9,7 @@
 		$source = $definitions[0]->sourceDictionary;
 		$output = '<span title="Source: '.$source.'">' .$definition. '</span>';
 	}else{
-		$output = 'Erm, couldnt find a definition...';
+		$output = 'Erm, couldnt find a definition for "'.$word.'"... Try <a href="http://dictionary.reference.com/browse/'.$word.'">looking it up</a> here?';
 	}
 
 	print $output;

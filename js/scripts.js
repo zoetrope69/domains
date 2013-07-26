@@ -22,6 +22,8 @@ function moreDetailsControl(){
 		$('.more-detail').find('.suffix').hide();
 		$('.more-detail').find('.definition').hide();
 
+		$('.loading').html('Information loading...');
+
 		$('.more-detail').find('h1').html(domainPretty);
 		$('.more-detail').find('.loading').show();
 		$('.more-detail-shown').removeClass('more-detail-shown');
@@ -92,12 +94,20 @@ function domainSearch(data, char){
 // domainr bit
 function domainrCheck(domain){
 	var url = 'http://www.domai.nr/api/json/info?callback=getDomainrData&q=' + domain;
-	var domainrAjax = $.ajax({ url: url, dataType: 'script', async: false });
-	domainrAjax.fail(function(a, b, c){
-		console.log(a);
-		console.log(b);
-		console.log(c);
+	var timeoutSecs = 5;
+	var domainrAjax = $.ajax({ url: url, dataType: 'script', timeout: timeoutSecs * 1000 });
+	domainrAjax.fail(function(){
+		console.log('Fail: ' + domainrAjax.status );
+
+		// error messages
 		$('.loading').html('Ahh shit, it\'s broken.');
+		setTimeout(function(){
+			$('.loading').html('Ahh shit, it\'s broken. <a href="http://domai.nr/">Domainr</a> is failing to return anything on this domain.');
+		}, 2000);
+		setTimeout(function(){
+			$('.loading').html('Ahh shit, it\'s broken. <a href="http://domai.nr/">Domainr</a> is failing to return anything on this domain. Sorry!');
+		}, 5000);		
+
 	});
 }
 
@@ -106,23 +116,23 @@ function getDomainrData(json){
 	// console.log("Domain: "+ json.domain +" | Available? "+ json.availability); // Bit more specific
 	var avail = json.availability;
 	var availPretty = avail;
-	if(avail == 'maybe'){ availPretty += ' available'; }
+	// console.log('Availability: ' + avail)
+	if(avail == 'maybe'){ availPretty = 'maybe available'; }
 
 	var link = ['',''];
 	if(avail == 'available' || avail == 'maybe' || avail == 'unknown'){
 		link[0] = '<a href='+ json.register_url +'>';
 		link[1] = '</a>';
 	}
+
 	var domain = json.domain;
-	var domainPretty = domain.replace('.', '<span class="'+ avail +'">.</span>')
+	var domainPretty = link[0] + domain.replace('.', '<span class="'+ avail +'">.</span>') + link[1];
 	var suffix = '.' + json.tld.domain;
 	var word = domain.replace('.','');
 	var suffixUrl = json.tld.wikipedia_url;
 
-
-
-	var availHtml = 'This domain is ' + link[0] + '<span class="'+ avail +'">' + avail + '</span>' + link[1] +'!';
-	var suffixHtml = 'Read more about the "<a class="status suffix" href="'+ suffixUrl +'">' + suffix + '</a>" suffix.';
+	var availHtml = 'This domain is ' + link[0] + '<span class="'+ avail +'">' + availPretty + '</span>' + link[1] + '.';
+	var suffixHtml = '<a class="suffix" href="'+ suffixUrl +'">Read more about the <span>"' + suffix + '"</span> suffix.</a>';
 
 	$('more-detail').addClass(avail);
 	$('.more-detail').find('.loading').hide();
@@ -134,6 +144,8 @@ function getDomainrData(json){
 	$('.more-detail').find('.availability').html(availHtml).show();
 	$('.more-detail').find('.suffix').html(suffixHtml).show();
 
+	// highlight that shit
+	$('main').find('.current').addClass(avail + '-item');
 }
 
 // define the words
@@ -161,6 +173,7 @@ function defineWords(item){
 
 		$('.suffix').hide();
 		$('.availability').hide();
+		$('.loading').hide();
 
 		// grab word
 		var word = $(this).parent().find('h1').text().replace('.','');
