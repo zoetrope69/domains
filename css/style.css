@@ -12,31 +12,16 @@ body{
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-header, .side{
-	background-color: rgb(247, 247, 247);
-	height: 100%;
-	box-shadow: 0 0 5px rgb(230, 230, 230);
-}
-header{
-	padding: 1em;
-	width: 20%;
-	float: right;
-	text-align: center;
-}
+header, .side{ background-color: rgb(247, 247, 247); }
 
-header p{
-	margin: 1em 0;
-}
+header{ padding: 20px; }
 
 header h1{
 	font-size: 1.5em;
 }
 
-header h2{
-	font-weight: 500;
-}
-
 main, .side{
+	height: 100%;
 	float: left;	
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -45,7 +30,6 @@ main, .side{
 main{
 	display: block;
 	width: 70%;
-	height: 100%;
 }
 
 .top{
@@ -117,31 +101,6 @@ main .status{
 	float: right;
 	margin: 0 1em 0;
 	border-bottom: none;
-}
-
-.filters{
-	margin: 1em 0;
-	border-radius: .25em;
-}
-
-.filters h2{
-	font-size: .8em;
-	font-weight: 500;
-}
-
-.filters .status{
-	width: 80%;
-	min-width: 110px;
-	display: block;
-	border-radius: .25em;
-	display: block;
-	margin: .5em auto;
-	text-align: left;
-}
-
-.filters input{
-	display: inline-block;
-	margin: 0 .5em 0 0;
 }
 
 .status:hover{
