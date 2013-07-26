@@ -26,7 +26,16 @@ header h1, header p,
 	padding: 1em;
 }
 
+header p a{
+	color: #FF0085;
+	font-weight: 900; 
+	text-decoration: none;
+}
+header p a:hover{ border-bottom: 1px dashed; }
+
 main{
+	overflow: hidden;
+	border-left: 1px solid rgba(0,0,0,.1);
 	display: block;
 	padding-top: 130px;
 }
@@ -70,7 +79,7 @@ main ul li, .more-detail h1{ color: #383838; }
 main ul li{
 	float: left;
 	padding: 10px;
-	width: 12.5%;
+	width: 16.66%;
 	text-align: center;
 	list-style: none;
 	font-size: .5em;
@@ -78,7 +87,7 @@ main ul li{
 	border-right: 1px solid rgba(0,0,0,.1);
 }
 
-main ul li.current{ background: #383838; color: #FFF; }
+main ul li.current{ background: #948686; color: #F5F5F5; }
 
 .more-detail{
 	position: fixed;
@@ -94,19 +103,6 @@ main ul li.current{ background: #383838; color: #FFF; }
 }
 
 .more-detail-shown{ width: 100%; opacity: 1; }
-
-.more-detail .button{
-	padding: 5px 10px;
-	font-size: 15px;
-	font-weight: 900;
-	background: #DDD;
-	color: #5C5C5C;
-	float: right;
-	margin-left: 5px;
-	cursor: pointer;
-}
-
-.more-detail .button:hover{	background: #F5F5F5; }
 
 .more-detail h1{
 	color: #FAFAFA;
@@ -141,16 +137,29 @@ main ul li.current{ background: #383838; color: #FFF; }
 	transition: background .1s;
 }
 
-.more-detail .define{
-	cursor: pointer;
+.more-detail .button{
+	margin-top: 25px;
+	padding: 5px 10px;
+	font-size: 15px;
+	font-weight: 900;
+	background: #DDD;
+	color: #5C5C5C;
 	float: right;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.more-detail .button:hover{	background: #F5F5F5; }
+
+.more-detail .define{
+	background: none;
 	color: #464646;
 }
 
 .more-detail .suffix{ color: #FFF; font-weight: normal; }
 .more-detail .suffix span{ color: #464646; font-weight: 900; }
 
-.more-detail p a span:hover, .more-detail .define:hover{ background: rgba(255,255,255,.1); border-style: dashed; }
+.more-detail p a span:hover, .more-detail .suffix:hover span, .more-detail .define:hover{ background: rgba(255,255,255,.1); border-style: dashed; }
 
 .fullstop{ color: #383838; }
 

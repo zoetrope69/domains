@@ -121,7 +121,7 @@ function getDomainrData(json){
 
 	var link = ['',''];
 	if(avail == 'available' || avail == 'maybe' || avail == 'unknown'){
-		link[0] = '<a href='+ json.register_url +'>';
+		link[0] = '<a title="Register this domain!" href='+ json.register_url +'>';
 		link[1] = '</a>';
 	}
 
