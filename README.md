@@ -6,3 +6,6 @@ The generation of the domains is done using nNde.js as I wanted to have a play w
 #### APIs:
 + Wikipedia - domain suffix list
 + Domainr - domain availability
++ Wordnik - word definitions
+
+Will be replacing the php stuff with Node.js implementations...
