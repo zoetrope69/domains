@@ -4,19 +4,36 @@ function main(){
 	// generates a list of domain items
 	domainItemGen();
 
-	// controls when the modal should show
+	// controls when the more-detail should show
 	modalControl();
 }
 
 function modalControl(){
 	$('main').find('li').click(function(){
-		var itemText = $(this).html();
-		$('.modal').find('h1').html(itemText);
-		$('.modal').addClass('modal-shown');
+		// the text from what you're clicking on
+		var domain = $(this).text().trim();
+		var domainPretty = domain.replace('.', '<span class="fullstop">.</span>')
+
+		// resets
+		$('.more-detail').find('.availability').hide();
+		$('.more-detail').find('.suffix').hide();
+		$('.more-detail').find('h1').html(domainPretty);
+		$('.more-detail').find('.loading').show();
+		$('.more-detail-shown').removeClass('more-detail-shown');
+		$('main').find('li').removeClass('current');
+
+		// adding new data
+		domainrCheck(domain);
+
+		// display that shit
+		$(this).addClass('current');
+		$('header').addClass('header-hidden');
+		$('.more-detail').addClass('more-detail-shown');
 	});
 
-	$('.modal').find('.close').click(function(){
-		$('.modal').removeClass('modal-shown');
+	$('.more-detail').find('.close').click(function(){
+		$('header').removeClass('header-hidden');
+		$('.more-detail').removeClass('more-detail-shown');
 	});
 }
 
@@ -72,60 +89,54 @@ function getDomainrData(json){
 	// console.log(json); // RAW DATA
 	// console.log("Domain: "+ json.domain +" | Available? "+ json.availability); // Bit more specific
 	var avail = json.availability;
+	var availPretty = avail;
+	if(avail == 'maybe'){ availPretty += ' available'; }
+
 	var link = ['',''];
 	if(avail == 'available' || avail == 'maybe' || avail == 'unknown'){
 		link[0] = '<a href='+ json.register_url +'>';
 		link[1] = '</a>';
 	}
-	var availPretty = capitaliseString(avail);
 	var domain = json.domain;
-	var domainPretty = domain.replace('.', '<span class="fullstop '+ avail +'">.</span>');
+	var domainPretty = domain.replace('.', '<span class="'+ avail +'">.</span>')
 	var suffix = '.' + json.tld.domain;
 	var word = domain.replace('.','');
 	var suffixUrl = json.tld.wikipedia_url;
 
-	var domainItem = $(['<li class="'+ avail +'-item">',
-						'<div class="top">',
-						'<h1>' + domainPretty + '</h1>',
-						link[0] + '<span class="status '+ avail +'">' + availPretty + '</span>' + link[1],
-						'<a class="status define">Definiton</a>',
-						'<a class="status suffix" href="'+ suffixUrl +'">\''+ suffix +'\' ?</a>',
-						'</div>',
-						'<p class="def hidden-def"></p>',
-						'</li>'].join('\n'));
 
-	domainItem.appendTo('main ul');
 
-	if(avail == 'unavailable' || avail == 'taken'){ domainItem.addClass('hidden-item'); }
-	defineWords(domainItem);
+	var availHtml = 'This domain is ' + link[0] + '<span class="'+ avail +'">' + avail + '</span>' + link[1] +'!';
+	var suffixHtml = 'Read more about the "<a class="status suffix" href="'+ suffixUrl +'">' + suffix + '</a>" suffix.';
+
+	$('more-detail').addClass(avail);
+	$('.more-detail').find('.loading').hide();
+
+	// replace the domain with a 'pretty' version
+	$('.more-detail').find('h1').html(domainPretty);
+
+	// add in the html for availability and the suffix info
+	$('.more-detail').find('.availability').html(availHtml).show();
+	$('.more-detail').find('.suffix').html(suffixHtml).show();
+
 }
 
 // define the words
 function defineWords(item){	
-	$(item).find('.status.define').on('click', function(){
-		// if there is content just toggle show or hide
-		if($(this).parents('li').find('.def').html()){
-			$(this).parents('li').find('.def').toggleClass('hidden-def');
-		}
-		// otherwise gen that text son
-		else{
-			$(this).fadeOut('slow');
+	$('.modal').find('.define').on('click', function(){
+		// grab word
+		var word = $(this).parent().find('h1').text().replace('.','');
+		var def = '';
 
-			var word = $(this).parent().find('h1').text().replace('.','');
-			var def = '';
-			$.ajax({ type: 'POST', url: './php/define.php', data: { word: word }, async: false })
-			.done(function(definition){
-				def = definition;
-			});
+		$.ajax({ type: 'POST', url: './php/define.php', data: { word: word }, async: false })
+		.done(function(definition){
+			def = definition;
+		});
 
-			// treat definition
-			def = capitaliseString(def.trim());
+		// treat definition
+		def = capitaliseString(def.trim());
 
-			$(this).fadeIn('slow').html('Hide/Show Definiton');
-
-			$(this).parents('li').find('.def').html(def);
-			$(this).parents('li').find('.def').removeClass('hidden-def');
-		}
+		$(this).parents('li').find('.def').html(def);
+		$(this).parents('li').find('.def').removeClass('hidden-def');
 	});
 }
 

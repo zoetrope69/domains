@@ -1,21 +1,32 @@
 *{ margin: 0; padding: 0; box-sizing: border-box; }
 
-body{ font-family: Helvetica, Arial, sans-serif; }
+body{ text-transform: lowercase; font-family: Helvetica, Arial, sans-serif; }
 
 header, .side{ background-color: rgb(247, 247, 247); }
 
-header{ padding: 20px; }
+header, .more-detail{
+	height: 100px;
+	padding: 5px 0;
+}
+
+header{
+	opacity: 1;
+	transition: opacity .5s;
+}
+
+.header-hidden{ opacity: 0; }
 
 header h1{ font-size: 1.5em; }
 
+header h1, header p,
+.more-detail h1, .more-detail p{
+	display: inline-block;
+	padding: 1em;
+}
+
 main{ display: block; }
 
-header h1, main ul li, .modal h1{
-	font-family: 'Georgia';
-	color: #383838;
-	font-style: italic;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.10);
-}
+header h1, main ul li, .more-detail h1{ color: #383838; }
 
 .side{
 	overflow-y: hidden;
@@ -36,7 +47,7 @@ header h1, main ul li, .modal h1{
 	text-align: center;
 }
 
-.side ul li:nth-child(even){ background: rgba(0,0,0,0.05); }
+.side ul li:nth-child(even){ background: rgba(0,0,0,.05); }
 
 .side ul li:hover, main ul li:hover{
 	cursor: pointer;
@@ -60,37 +71,52 @@ main ul li{
 	border-right: 1px solid rgba(0,0,0,.1);
 }
 
-.modal{
-	display: none;
+main ul li.current{ background: #383838; color: #FFF; }
+
+.more-detail{
 	position: fixed;
-	background: #FAFAFA;
-	width: 75%;
-	left: 15%;
-	top: 15%;
-	height: 75%;
-	border: 1px solid #A0A0A0;
-	box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.22);
+	top: 0; left: 0; right: 0;
+	background: #FF0085;
+	color: #FFF;
+	white-space: nowrap;
+	width: 0%;
+	opacity: 0;
+	padding: 5px 0;
+	overflow: hidden;
+	transition: width .5s, opacity .25s;
 }
 
-.modal-shown{ display: block; }
+.more-detail-shown{ width: 100%; opacity: 1; }
 
-.modal .close{
-	float: right;
+.more-detail .button{
 	padding: 10px 15px;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 900;
 	background: #DDD;
-	color: #FFF;
-}
-
-.modal .close:hover{
+	color: #5C5C5C;
+	float: right;
+	margin-left: 5px;
 	cursor: pointer;
-	opacity: .8;
 }
 
-.modal h1{
+.more-detail .button:hover{	background: #F5F5F5; }
+
+.more-detail h1{
+	color: #FAFAFA;
 	font-size: 1.5em;
-	padding: .25em 0;
-	text-align: center;
-	color: #FF0085;
 }
+
+.more-detail p a, .unavailable, .taken{
+	font-weight: 900;
+	text-decoration: none;
+}
+
+.more-detail p a{ color: #3A3939; }
+
+.fullstop{ color: #383838; }
+
+.available{ color: #96FF88; }
+.unavailable{ color: #DDD;}
+.taken{ color: #FFC5C5; }
+.maybe{ color: #FFDA94; }
+.unknown{ color: #B0B0FF; }
