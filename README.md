@@ -1,7 +1,6 @@
 # dandydomains
 
-I wanted to make an app using different APIs and data-sources and so this was made!
-The generation of the domains is done using Node.js as I wanted to have a play with that too.
+I wanted to make an app using different APIs and data-sources, also wanted to have a mess with Node.js too
 
 #### APIs:
 + Wikipedia - domain suffix list
