@@ -1,10 +1,10 @@
 *{ margin: 0; padding: 0; box-sizing: border-box; }
 
-body{ font-family: Helvetica, Arial, sans-serif; }
+body{ font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; }
 
 .top{ position: fixed; top: 0; left: 0; right: 0; }
 
-header, .sort{ background-color: rgb(247, 247, 247); }
+header, .sort{ background-color: #F7E5F8; }
 
 header, .more-detail{
 	height: 100px;
@@ -20,6 +20,8 @@ header{
 
 header h1{ font-size: 1.5em; }
 
+header h1, main ul li h1, .more-detail h1{ font-family: 'Fauna One', 'Georgia', serif; font-weight: 500;}
+
 header h1, header p,
 .more-detail h1, .more-detail p{
 	display: inline-block;
@@ -28,14 +30,13 @@ header h1, header p,
 
 header p a{
 	color: #FF0085;
-	font-weight: 900; 
+	font-weight: 600; 
 	text-decoration: none;
 }
 header p a:hover{ border-bottom: 1px dashed; }
 
 main{
 	overflow: hidden;
-	border-left: 1px solid rgba(0,0,0,.1);
 	display: block;
 	padding-top: 100px;
 }
@@ -55,7 +56,7 @@ main ul li, .more-detail h1{ color: #383838; }
 	float: left;
 	padding: 5px;
 	font-size: .85em;
-	font-weight: 900;
+	font-weight: 600;
 	color: rgba(0,0,0,0.8);
 	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
 	list-style: none;
@@ -119,10 +120,13 @@ main ul li.current{ background: #948686; color: #F5F5F5; }
 .more-detail p{	display: inline-block; }
 .more-detail .text-hidden{ display: none; }
 
-.more-detail .definition{ font-style: italic; }
+.more-detail .definition{
+	font-weight: 600;
+	font-style: italic;
+}
 
 .more-detail p a, .unavailable, .taken{
-	font-weight: 900;
+	font-weight: 600;
 	text-decoration: none;
 }
 
@@ -141,8 +145,8 @@ main ul li.current{ background: #948686; color: #F5F5F5; }
 	margin-top: 25px;
 	padding: 5px 10px;
 	font-size: 15px;
-	font-weight: 900;
-	background: #DDD;
+	font-weight: 600;
+	background: #F7E5F8;
 	color: #5C5C5C;
 	float: right;
 	margin-left: 5px;
@@ -153,11 +157,11 @@ main ul li.current{ background: #948686; color: #F5F5F5; }
 
 .more-detail .define{
 	background: none;
-	color: #464646;
+	color: #333232;
 }
 
 .more-detail .suffix{ color: #FFF; font-weight: normal; }
-.more-detail .suffix span{ color: #464646; font-weight: 900; }
+.more-detail .suffix span{ color: #333232; font-weight: 600; }
 
 .more-detail p a span:hover, .more-detail .suffix:hover span, .more-detail .define:hover{ background: rgba(255,255,255,.1); border-style: dashed; }
 
