@@ -3,6 +3,21 @@
 function main(){
 	// generates a list of domain items
 	domainItemGen();
+
+	// controls when the modal should show
+	modalControl();
+}
+
+function modalControl(){
+	$('main').find('li').click(function(){
+		var itemText = $(this).html();
+		$('.modal').find('h1').html(itemText);
+		$('.modal').addClass('modal-shown');
+	});
+
+	$('.modal').find('.close').click(function(){
+		$('.modal').removeClass('modal-shown');
+	});
 }
 
 function domainItemGen(){
@@ -12,7 +27,7 @@ function domainItemGen(){
 
 		var domains = data.split('\n');
 		var startPos = 0;
-		var itemAmount = 8000;
+		var itemAmount = 80;
 
 
 		// gen some random numbers
