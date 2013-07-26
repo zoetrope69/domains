@@ -1,6 +1,6 @@
 *{ margin: 0; padding: 0; box-sizing: border-box; }
 
-body{ text-transform: lowercase; font-family: Helvetica, Arial, sans-serif; }
+body{ font-family: Helvetica, Arial, sans-serif; }
 
 .top{ position: fixed; top: 0; left: 0; right: 0; }
 
@@ -95,7 +95,7 @@ main ul li.current{ background: #383838; color: #FFF; }
 .more-detail-shown{ width: 100%; opacity: 1; }
 
 .more-detail .button{
-	padding: 10px 15px;
+	padding: 5px 10px;
 	font-size: 15px;
 	font-weight: 900;
 	background: #DDD;
@@ -111,6 +111,12 @@ main ul li.current{ background: #383838; color: #FFF; }
 	color: #FAFAFA;
 	font-size: 1.5em;
 }
+
+
+.more-detail p{	display: inline-block; }
+.more-detail .text-hidden{ display: none; }
+
+.more-detail .definition{ font-style: italic; }
 
 .more-detail p a, .unavailable, .taken{
 	font-weight: 900;

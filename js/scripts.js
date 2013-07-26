@@ -5,10 +5,13 @@ function main(){
 	domainItemGen();
 
 	// controls when the more-detail should show
-	modalControl();
+	moreDetailsControl();
+
+	// definitions and shit
+	defineWords();
 }
 
-function modalControl(){
+function moreDetailsControl(){
 	$('main').find('li').click(function(){
 		// the text from what you're clicking on
 		var domain = $(this).text().trim();
@@ -17,10 +20,15 @@ function modalControl(){
 		// resets
 		$('.more-detail').find('.availability').hide();
 		$('.more-detail').find('.suffix').hide();
+		$('.more-detail').find('.definition').hide();
+
 		$('.more-detail').find('h1').html(domainPretty);
 		$('.more-detail').find('.loading').show();
 		$('.more-detail-shown').removeClass('more-detail-shown');
 		$('main').find('li').removeClass('current');
+
+		$('.define').removeClass('define-toggle');
+		$('.define').html('Define');
 
 		// adding new data
 		domainrCheck(domain);
@@ -84,7 +92,13 @@ function domainSearch(data, char){
 // domainr bit
 function domainrCheck(domain){
 	var url = 'http://www.domai.nr/api/json/info?callback=getDomainrData&q=' + domain;
-	$.ajax({ url: url, dataType: 'script', async: false });
+	var domainrAjax = $.ajax({ url: url, dataType: 'script', async: false });
+	domainrAjax.fail(function(a, b, c){
+		console.log(a);
+		console.log(b);
+		console.log(c);
+		$('.loading').html('Ahh shit, it\'s broken.');
+	});
 }
 
 function getDomainrData(json){
@@ -124,7 +138,30 @@ function getDomainrData(json){
 
 // define the words
 function defineWords(item){	
-	$('.modal').find('.define').on('click', function(){
+	$('.more-detail').find('.define').click(function(){
+
+	// if definition has already been generated
+	if($(this).hasClass('define-toggle')){
+
+		// toggle content
+		$('.suffix').toggle();
+		$('.availability').toggle();
+		$('.definition').toggle();
+
+		// change the text of the button
+		var label = 'Hide';
+		if($(this).html() == 'Hide definition'){ label = 'Show'; }
+		$(this).html(label + ' definition');
+
+	// otherwise gen that shit
+	}else{
+
+		$('.more-detail').find('.definition').html('Loading definition...');
+		$('.more-detail').find('.definition').show();
+
+		$('.suffix').hide();
+		$('.availability').hide();
+
 		// grab word
 		var word = $(this).parent().find('h1').text().replace('.','');
 		var def = '';
@@ -137,9 +174,15 @@ function defineWords(item){
 		// treat definition
 		def = capitaliseString(def.trim());
 
-		$(this).parents('li').find('.def').html(def);
-		$(this).parents('li').find('.def').removeClass('hidden-def');
+		$('.more-detail').find('.definition').html(def);
+
+		$(this).addClass('define-toggle');
+		$(this).html('Hide definition');
+
+	}
+
 	});
+	
 }
 
 function capitaliseString(string){
