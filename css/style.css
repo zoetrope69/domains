@@ -104,7 +104,7 @@ header p a:hover{ border-bottom: 1px dashed; }
 	height: 30px;
 	padding: .5em;
 	border: 1px solid #B2D5A7;
-	background: rgba(255,255,255,.1);
+	background: rgba(255,255,255,.25);
 	font-family: 'Fauna One', 'Georgia', serif;
 }
 
@@ -138,6 +138,12 @@ main ul li{
 	font-size: .5em;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	border-right: 1px solid rgba(0,0,0,.1);
+}
+
+main ul li:hover{
+	cursor: pointer;
+	color: #FFF;
+	background: #FF0085;
 }
 
 /* resize the domain items */
