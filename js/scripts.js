@@ -18,14 +18,14 @@ function moreDetailsControl(){
 		var domainPretty = domain.replace('.', '<span class="fullstop">.</span>')
 
 		// resets
-		$('.more-detail').find('.availability').hide();
-		$('.more-detail').find('.suffix').hide();
-		$('.more-detail').find('.definition').hide();
+		$('.availability').hide();
+		$('.suffix').hide();
+		$('.definition').hide();
+		$('.errors').hide();		
+		$('.define').hide();
 
-		$('.loading').html('Information loading...');
-
+		$('.loading').show();
 		$('.more-detail').find('h1').html(domainPretty);
-		$('.more-detail').find('.loading').show();
 		$('.more-detail-shown').removeClass('more-detail-shown');
 		$('main').find('li').removeClass('current');
 
@@ -98,14 +98,20 @@ function domainrCheck(domain){
 	domainrAjax.fail(function(){
 		console.log('Fail: ' + domainrAjax.status );
 
+		// highlight that shit
+		$('main').find('.current').addClass('dead-item');
+
+		$('.loading').hide();
+		$('.errors').show();
+
 		// error messages
-		$('.loading').html('Ahh shit, it\'s broken.');
+		$('.errors').html('Ahh shit, it\'s broken.');
 		setTimeout(function(){
-			$('.loading').html('Ahh shit, it\'s broken. <a href="http://domai.nr/">Domainr</a> is failing to return anything on this domain.');
+			$('.errors').html('Ahh shit, it\'s broken. <a href="http://domai.nr/">Domainr</a> is failing to return anything on this domain.');
 		}, 2000);
 		setTimeout(function(){
-			$('.loading').html('Ahh shit, it\'s broken. <a href="http://domai.nr/">Domainr</a> is failing to return anything on this domain. Sorry!');
-		}, 5000);		
+			$('.errors').html('Ahh shit, it\'s broken. <a href="http://domai.nr/">Domainr</a> is failing to return anything on this domain. Sorry!');
+		}, 5000);	
 
 	});
 }
@@ -116,7 +122,6 @@ function getDomainrData(json){
 	var avail = json.availability;
 	var availPretty = avail;
 	// console.log('Availability: ' + avail)
-	if(avail == 'maybe'){ availPretty = 'maybe available'; }
 
 	var domain = json.domain;
 
@@ -125,7 +130,7 @@ function getDomainrData(json){
 		link[0] = '<a title="Register this domain!" href="http://www.domai.nr/'+ domain +'">';
 		link[1] = '</a>';
 	}
-	
+
 	var domainPretty = link[0] + domain.replace('.', '<span class="'+ avail +'">.</span>') + link[1];
 
 	var suffix = '.' + json.tld.domain;
@@ -136,14 +141,15 @@ function getDomainrData(json){
 	var suffixHtml = '<a class="suffix" href="'+ suffixUrl +'">Read more about the <span>"' + suffix + '"</span> suffix.</a>';
 
 	$('more-detail').addClass(avail);
-	$('.more-detail').find('.loading').hide();
+	$('.loading').hide();
+	$('.define').show();
 
 	// replace the domain with a 'pretty' version
 	$('.more-detail').find('h1').html(domainPretty);
 
 	// add in the html for availability and the suffix info
-	$('.more-detail').find('.availability').html(availHtml).show();
-	$('.more-detail').find('.suffix').html(suffixHtml).show();
+	$('.availability').html(availHtml).show();
+	$('.suffix').html(suffixHtml).show();
 
 	// highlight that shit
 	$('main').find('.current').addClass(avail + '-item');
@@ -169,16 +175,14 @@ function defineWords(item){
 	// otherwise gen that shit
 	}else{
 
-		$('.more-detail').find('.definition').html('Loading definition...');
-		$('.more-detail').find('.definition').show();
-
+		$('.loading').hide();
+		$('.errors').hide();
 		$('.suffix').hide();
 		$('.availability').hide();
-		$('.loading').hide();
 
 		// grab word
 		var word = $(this).parent().find('h1').text().replace('.','');
-		var def = '';
+		var def = 'Erm, missing a definition here...';
 
 		$.ajax({ type: 'POST', url: './php/define.php', data: { word: word }, async: false })
 		.done(function(definition){
@@ -188,7 +192,8 @@ function defineWords(item){
 		// treat definition
 		def = capitaliseString(def.trim());
 
-		$('.more-detail').find('.definition').html(def);
+		$('.definition').html(def);
+		$('.definition').show();
 
 		$(this).addClass('define-toggle');
 		$(this).html('Hide definition');
