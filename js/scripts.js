@@ -118,14 +118,16 @@ function getDomainrData(json){
 	// console.log('Availability: ' + avail)
 	if(avail == 'maybe'){ availPretty = 'maybe available'; }
 
+	var domain = json.domain;
+
 	var link = ['',''];
 	if(avail == 'available' || avail == 'maybe' || avail == 'unknown'){
-		link[0] = '<a title="Register this domain!" href='+ json.register_url +'>';
+		link[0] = '<a title="Register this domain!" href="http://www.domai.nr/'+ domain +'">';
 		link[1] = '</a>';
 	}
-
-	var domain = json.domain;
+	
 	var domainPretty = link[0] + domain.replace('.', '<span class="'+ avail +'">.</span>') + link[1];
+
 	var suffix = '.' + json.tld.domain;
 	var word = domain.replace('.','');
 	var suffixUrl = json.tld.wikipedia_url;
