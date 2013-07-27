@@ -7,4 +7,8 @@ I wanted to make an app using different APIs and data-sources, also wanted to ha
 + Domainr - domain availability
 + Wordnik - word definitions
 
+##### Also using:
++ jQuery
++ TinySort
+
 Will be replacing the php stuff with Node.js implementations...

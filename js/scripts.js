@@ -9,6 +9,63 @@ function main(){
 
 	// definitions and shit
 	defineWords();
+
+	// filters the domains
+	filters();
+}
+
+function filters(){
+	$('.text-filter').on('input', function(){ filterDomains(); });
+	$('.domain-filter').change(function(){ filterDomains(); });
+	$('.sort-filter').change(function(){ sortDomains(); });
+}
+
+function sortDomains(){
+	var type = $('.sort-filter').val();
+	$('main').find('li').tsort({order: type});
+}
+
+function filterDomains(){
+
+	var domainFilter = $('.domain-filter').val();	
+
+	var textFilter = $('.text-filter').val();
+	// trim, strip spaces, lowercase-ify and replace the fullstop
+	textFilter = textFilter.trim().replace(/\s+/g, '').toLowerCase().replace('.', '');
+
+	//reset
+	$('main').find('li').show();
+
+	$('main').find('li').each(function(){
+
+		var domainItem = $(this).find('h1').html();
+
+		// if the domain filter isn't none
+		if(domainFilter != 'none'){
+			// if the domain suffix isn't present in the word
+			var domainPresent = (domainItem.indexOf(domainFilter) == -1);
+			if(domainPresent){ $(this).hide(); }
+		}
+
+		// if the text isn't present in the domain hide it
+		var textPresent = (domainItem.replace('.', '').indexOf(textFilter) == -1);
+		if(textPresent){ $(this).hide(); }
+
+	});
+
+	var shownDomains = 0;
+	$('main').find('li').each(function(){
+		if($(this).is(':visible')){ shownDomains++; }
+	});
+
+	if(shownDomains == 0){
+		$('.amount').html('Try a different filter?');
+		$('.big-error').addClass('big-error-shown');
+	}else{
+		$('.amount').html(shownDomains + ' domains returned!');
+		$('.big-error').removeClass('big-error-shown');
+	}
+
 }
 
 function moreDetailsControl(){
@@ -56,7 +113,9 @@ function domainItemGen(){
 
 		var domains = data.split('\n');
 		var startPos = 0;
-		var itemAmount = 150;
+		var itemAmount = 500;
+
+		$('.amount').html(itemAmount + ' domains returned!');
 
 		// gen some random numbers
 		var randPos = [];
