@@ -1,6 +1,6 @@
 # dandydomains
 
-I wanted to make an app using different APIs and data-sources, also wanted to have a mess with Node.js too
+I wanted to make an app using different APIs and data-sources, also wanted to have a mess with Node.js too.
 
 #### APIs:
 + Wikipedia - domain suffix list
