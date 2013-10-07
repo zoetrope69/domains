@@ -66,9 +66,15 @@ header h1, header p,
 	padding: 1em;
 }
 
-@media all and (max-width: 500px){ header p{ display: none; } }
-
-@media all and (max-width: 700px){ header p.built-by{ display: none; } }
+@media all and (max-width: 700px){
+	header p.built-by{ display: none; }
+	header p{ font-size: .8em; }
+}
+@media all and (max-width: 500px){	
+	header{ height: 75px; }
+	header h1{ padding: .5em 1em; }
+	header p{ display: none; }
+}
 
 header p a{
 	color: #FF0085;
@@ -79,18 +85,21 @@ header p a{
 header p a:hover{ border-bottom: 1px dashed; }
 
 .filters{
-	padding: 10px 25px;
 	height: 50px;
+	overflow: hidden;
+	padding: 10px 25px;
 	background: #E4FFE4;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .filters h2, .filters .filter{
 	float: left;
-	margin-right: 1em;
+	padding-right: 1em;
 }
 
 .filters h2, .filters .amount{
+	float: left;
+	width: 20%;
 	line-height: 30px;
 	font-weight: 300;
 }
@@ -100,7 +109,14 @@ header p a:hover{ border-bottom: 1px dashed; }
 	font-style: italic;
 }
 
+.filters .filter-wrap{
+	float: left;
+	padding-left: 1em;
+	width: 60%;
+}
+
 .filters .filter{
+	margin-right: 5%;
 	height: 30px;
 	padding: .5em;
 	border: 1px solid #B2D5A7;
@@ -108,7 +124,30 @@ header p a:hover{ border-bottom: 1px dashed; }
 	font-family: 'Fauna One', 'Georgia', serif;
 }
 
+.filters .text-filter{ width: 40%; }
+.filters .domain-filter{ width: 25%; }
+.filters .sort-filter{ width: 20%; }
+
 .filters .text-filter:focus{ border-style: dashed; }
+
+@media all and (max-width: 700px){
+	.filters .amount{ display: none; }
+	.filters .filter-wrap{ width: 80%; }
+}
+
+@media all and (max-width: 500px){
+	.filters{
+		padding: 5px 15px;
+		height: 150px;
+	}
+	.filters h2, .filters .filter-wrap{ width: 100%; }
+	.filters .filter-wrap{ padding: 0; }
+	.filters .filter{
+		width: 100%;
+		margin-bottom: .5em;
+	}
+	.filters .amount{ float: right; }
+}
 
 .big-error{
 	display: none;
@@ -126,6 +165,8 @@ main{
 	display: block;
 	padding-top: 150px;
 }
+
+@media all and (max-width: 500px){ main{ padding-top: 225px; } }
 
 main ul li, .more-detail h1{ color: #383838; }
 
