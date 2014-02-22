@@ -33,10 +33,6 @@ header h1, header p,
 	padding: 1em;
 }
 
-@media all and (max-width: 500px){ header p{ display: none; } }
-
-@media all and (max-width: 700px){ header p.built-by{ display: none; } }
-
 header p a{
 	color: #FF0085;
 	font-weight: 600; 
@@ -113,12 +109,6 @@ main ul li:hover{
 	background: #FF0085;
 }
 
-/* resize the domain items */
-@media all and (max-width: 1000px){	main ul li{ width: 25%; } }
-@media all and (max-width: 600px){ main ul li{ width: 33.33%; } }
-@media all and (max-width: 400px){ main ul li{ width: 50%; } }
-@media all and (max-width: 250px){ main ul li{ width: 100%; } }
-
 main ul li.current{ background: #464646; color: #F5F5F5; }
 
 .more-detail{
@@ -136,14 +126,10 @@ main ul li.current{ background: #464646; color: #F5F5F5; }
 
 .more-detail-shown{ width: 100%; opacity: 1; }
 
-@media all and (max-width: 500px){ .more-detail h1, .more-detil p{ padding: 2em .75em; } }
-
 .more-detail h1{
 	color: #FAFAFA;
 	font-size: 1.5em;
 }
-
-@media all and (max-width: 500px){ .more-detail h1{ font-size: 1em; } }
 
 .more-detail h1 a{
 	color: inherit;
@@ -154,8 +140,6 @@ main ul li.current{ background: #464646; color: #F5F5F5; }
 
 .more-detail p{	display: inline-block; }
 .more-detail .text-hidden{ display: none; }
-
-@media all and (max-width: 500px){ .more-detail p{ font-size: .75em; } }
 
 .more-detail .definition{
 	font-weight: 600;
@@ -199,12 +183,8 @@ main ul li.current{ background: #464646; color: #F5F5F5; }
 	color: #333232;
 }
 
-@media all and (max-width: 500px){ .more-detail .define{ display: none; } }
-
 .more-detail .suffix{ color: #FFF; font-weight: normal; }
 .more-detail .suffix span{ color: #333232; font-weight: 600; }
-
-@media all and (max-width: 700px){ .more-detail .suffix{ display: none; } }
 
 .more-detail .loading-ellipsis{
 	display: inline-block;
@@ -232,3 +212,30 @@ main ul li.current{ background: #464646; color: #F5F5F5; }
 .available-item{ background-color: #96FF88; }
 .maybe-item{ background-color: #FFDA94; }
 .unknown-item{ background-color: #B0B0FF; }
+
+@media all and (max-width: 1000px){	main ul li{ width: 25%; } }
+
+@media all and (max-width: 700px){
+	header p.built-by{ display: none; }
+	.more-detail .suffix{ display: none; }
+}
+
+@media all and (max-width: 600px){
+	header{ font-size: .8em; height: 50px; }
+	header h1{ padding: .25em 0; width: 100%; text-align: center; } 
+	main{ padding-top: 50px; }
+	.filters{ display: none; }
+
+	main ul li{ width: 33.33%; }
+}
+
+@media all and (max-width: 500px){
+	header p{ display: none; }
+	.more-detail .define{ display: none; }
+	.more-detail h1, .more-detil p{ padding: 2em .75em; }
+	.more-detail h1{ font-size: 1em; }
+	.more-detail p{ font-size: .75em; }
+}
+
+@media all and (max-width: 400px){ main ul li{ width: 50%; } }
+@media all and (max-width: 250px){ main ul li{ width: 100%; } }
