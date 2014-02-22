@@ -1,0 +1,267 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: italic;
+	font-weight: 300;
+	src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightIt'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/fpTVHK8qsXbIeTHTrnQH6GGomRtBD2u8FwSY4jjlmeA.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGJ6-ys_j0H4QL65VLqzI3wI.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Fauna One';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Fauna One'), local('FaunaOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/faunaone/v1/cSd7NBXNFQWK4oX1706dYz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+body{ font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; }
+
+.top{ position: fixed; top: 0; left: 0; right: 0; }
+
+header{ background-color: #FFE4FA; }
+
+header, .more-detail{
+	height: 100px;
+	padding: 5px 0;
+}
+
+header{
+	color: #383838;
+	transition: color .5s;
+}
+
+.header-hidden{ color: transparent; }
+
+header h1{ font-size: 1.5em; }
+
+header h1, main ul li h1, .more-detail h1{
+	font-family: 'Fauna One', 'Georgia', serif;
+	font-weight: 500;
+}
+
+header h1, header p,
+.more-detail h1, .more-detail p{
+	display: inline-block;
+	padding: 1em;
+}
+
+@media all and (max-width: 500px){ header p{ display: none; } }
+
+@media all and (max-width: 700px){ header p.built-by{ display: none; } }
+
+header p a{
+	color: #FF0085;
+	font-weight: 600; 
+	text-decoration: none;
+}
+
+header p a:hover{ border-bottom: 1px dashed; }
+
+.filters{
+	padding: 10px 25px;
+	height: 50px;
+	background: #E4FFE4;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.filters h2, .filters .filter{
+	float: left;
+	margin-right: 1em;
+}
+
+.filters h2, .filters .amount{
+	line-height: 30px;
+	font-weight: 300;
+}
+
+.filters h2{
+	font-size: 1.25em;
+	font-style: italic;
+}
+
+.filters .filter{
+	height: 30px;
+	padding: .5em;
+	border: 1px solid #B2D5A7;
+	background: rgba(255,255,255,.25);
+	font-family: 'Fauna One', 'Georgia', serif;
+}
+
+.filters .text-filter:focus{ border-style: dashed; }
+
+.big-error{
+	display: none;
+	padding-top: 1em;
+	text-align: center;
+	color: #DADADA;
+	font-family: 'Fauna One', 'Georgia', serif;
+	font-size: 5em;
+}
+
+.big-error-shown{ display: block; }
+
+main{
+	overflow: hidden;
+	display: block;
+	padding-top: 150px;
+}
+
+main ul li, .more-detail h1{ color: #383838; }
+
+main ul li{
+	float: left;
+	padding: 10px;
+	width: 16.66%;
+	text-align: center;
+	list-style: none;
+	font-size: .5em;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	border-right: 1px solid rgba(0,0,0,.1);
+}
+
+main ul li:hover{
+	cursor: pointer;
+	color: #FFF;
+	background: #FF0085;
+}
+
+/* resize the domain items */
+@media all and (max-width: 1000px){	main ul li{ width: 25%; } }
+@media all and (max-width: 600px){ main ul li{ width: 33.33%; } }
+@media all and (max-width: 400px){ main ul li{ width: 50%; } }
+@media all and (max-width: 250px){ main ul li{ width: 100%; } }
+
+main ul li.current{ background: #464646; color: #F5F5F5; }
+
+.more-detail{
+	position: fixed;
+	top: 0; left: 0; right: 0;
+	background: #FF0085;
+	color: #FFF;
+	white-space: nowrap;
+	width: 0%;
+	opacity: 0;
+	padding: 5px 0;
+	overflow: hidden;
+	transition: width .5s, opacity .25s;
+}
+
+.more-detail-shown{ width: 100%; opacity: 1; }
+
+@media all and (max-width: 500px){ .more-detail h1, .more-detil p{ padding: 2em .75em; } }
+
+.more-detail h1{
+	color: #FAFAFA;
+	font-size: 1.5em;
+}
+
+@media all and (max-width: 500px){ .more-detail h1{ font-size: 1em; } }
+
+.more-detail h1 a{
+	color: inherit;
+	text-decoration: none; 
+}
+
+.more-detail h1 a:hover{ border-bottom: 1px dashed; }
+
+.more-detail p{	display: inline-block; }
+.more-detail .text-hidden{ display: none; }
+
+@media all and (max-width: 500px){ .more-detail p{ font-size: .75em; } }
+
+.more-detail .definition{
+	font-weight: 600;
+	font-style: italic;
+}
+
+.more-detail p a, .unavailable, .taken{
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.more-detail p a{
+	color: #3A3939;
+}
+
+.more-detail p a span, .more-detail .define{
+	margin: 0 .25em;
+	padding: 5px;
+	border: 1px solid;
+	transition: background .1s;
+}
+
+.more-detail .button{
+	margin-top: 25px;
+	padding: 5px 10px;
+	font-size: 15px;
+	font-weight: 600;
+	background: #F7E5F8;
+	color: #5C5C5C;
+	float: right;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.more-detail .button:hover{	background: #F5F5F5; }
+
+.more-detail .close{ font-family: 'Fauna One', 'Georgia', serif; font-weight: 500; }
+
+.more-detail .define{
+	background: none;
+	color: #333232;
+}
+
+@media all and (max-width: 500px){ .more-detail .define{ display: none; } }
+
+.more-detail .suffix{ color: #FFF; font-weight: normal; }
+.more-detail .suffix span{ color: #333232; font-weight: 600; }
+
+@media all and (max-width: 700px){ .more-detail .suffix{ display: none; } }
+
+.more-detail .loading-ellipsis{
+	display: inline-block;
+	overflow: hidden;
+	width: 3px;
+	animation: ellipsis 2s infinite;
+}
+
+@keyframes ellipsis{
+	    0%{ width: 6px; }
+	33.33%{ width: 9px; }
+	66.66%{ width: 0; }
+}
+
+.more-detail p a span:hover, .more-detail .suffix:hover span, .more-detail .define:hover{ background: rgba(255,255,255,.1); border-style: dashed; }
+
+.fullstop{ color: #383838; }
+
+.taken, .unavailable{ color: #464646; }
+.available{ color: #96FF88; }
+.maybe{ color: #FFDA94; }
+.unknown{ color: #B0B0FF; }
+
+.taken-item, .unavailable-item, .dead-item{ background-color: #948686; color: #F5F5F5; }
+.available-item{ background-color: #96FF88; }
+.maybe-item{ background-color: #FFDA94; }
+.unknown-item{ background-color: #B0B0FF; }
