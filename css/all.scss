@@ -223,6 +223,7 @@ main ul li.current{ background: #464646; color: #F5F5F5; }
 @media all and (max-width: 600px){
 	header{ font-size: .8em; height: 50px; }
 	header h1{ padding: .25em 0; width: 100%; text-align: center; } 
+	header p{ display: none; }
 	main{ padding-top: 50px; }
 	.filters{ display: none; }
 
@@ -230,9 +231,8 @@ main ul li.current{ background: #464646; color: #F5F5F5; }
 }
 
 @media all and (max-width: 500px){
-	header p{ display: none; }
 	.more-detail .define{ display: none; }
-	.more-detail h1, .more-detil p{ padding: 2em .75em; }
+	.more-detail h1, .more-detail p{ padding: 2em .75em; }
 	.more-detail h1{ font-size: 1em; }
 	.more-detail p{ font-size: .75em; }
 }
