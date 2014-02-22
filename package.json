@@ -1,15 +1,12 @@
 {
-  "name": "dandydomains",
-  "version": "0.1.0",
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-sass": "~0.6.0",
-    "grunt-autoprefixer": "~0.6.5",
-    "grunt-csso": "~0.5.3",
-    "grunt-html": "~0.3.4",
-    "grunt-contrib-jshint": "~0.8.0"
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "jade": "*"
   }
 }
