@@ -1,13 +1,26 @@
-(function(){ main(); })() // On load
+$(document).ready(function(){
 
-function main(){
 	// controls when the more-detail should show
 	moreDetailsControl();
 
 	// filters the domains
 	filters();
-}
 
+	// reseizes on load and whenever the page is resized
+	headerResize();
+
+	$(window).resize(function(){
+		headerResize();
+	});
+
+	domainCounter();
+
+});
+
+function headerResize(){
+	$('main').css('paddingTop', $('.top').height() );
+	$('.more-detail').css('height', $('header').height() );
+}
 
 function filters(){
 	$('.text-filter').on('input', function(){ filterDomains(); });
@@ -48,6 +61,11 @@ function filterDomains(){
 
 	});
 
+	domainCounter();
+}
+
+function domainCounter(){
+
 	var shownDomains = 0;
 	$('main').find('li').each(function(){
 		if($(this).is(':visible')){ shownDomains++; }
@@ -60,7 +78,6 @@ function filterDomains(){
 		$('.amount').html(shownDomains + ' domains returned!');
 		$('.big-error').removeClass('big-error-shown');
 	}
-
 }
 
 function moreDetailsControl(){
@@ -77,7 +94,7 @@ function moreDetailsControl(){
 
 		$('.loading').show();
 		$('.more-detail').find('h1').html(domainPretty);
-		$('.more-detail-shown').removeClass('more-detail-shown');
+		$('.more-detail').addClass('more-detail-hidden');
 		$('main').find('li').removeClass('current');
 
 		// adding new data
@@ -86,12 +103,12 @@ function moreDetailsControl(){
 		// display that shit
 		$(this).addClass('current');
 		$('header').addClass('header-hidden');
-		$('.more-detail').addClass('more-detail-shown');
+		$('.more-detail').removeClass('more-detail-hidden');
 	});
 
 	$('.more-detail').find('.close').click(function(){
 		$('header').removeClass('header-hidden');
-		$('.more-detail').removeClass('more-detail-shown');
+		$('.more-detail').addClass('more-detail-hidden');
 		$('.current').removeClass('current');
 
 	});
@@ -145,7 +162,7 @@ function getDomainrData(json){
 	var suffixUrl = json.tld.wikipedia_url;
 
 	var availHtml = 'This domain is ' + link[0] + '<span class="'+ avail +'">' + availPretty + '</span>' + link[1] + '.';
-	var suffixHtml = '<a class="suffix" href="'+ suffixUrl +'">Read more about the <span>"' + suffix + '"</span> suffix.</a>';
+	var suffixHtml = 'Read more about the <a href="'+ suffixUrl +'"><span>"' + suffix + '"</span></a>  suffix.';
 
 	$('more-detail').addClass(avail);
 	$('.loading').hide();

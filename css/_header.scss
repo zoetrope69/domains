@@ -1,0 +1,49 @@
+/* _header.scss */
+
+.top{ position: fixed; top: 0; left: 0; right: 0; }
+
+header{
+	position: relative;
+	overflow: hidden;
+	
+	background-color: #FFE4FA;
+	color: #383838;
+	
+	transition: color .5s;
+}
+
+.header-hidden{
+	color: transparent;
+}
+
+header h1, .more-detail h1{
+	margin: 0;
+	font-size: 1.5em;
+}
+
+header h1, main ul li h1, .more-detail h1{
+	font-weight: 500;
+}
+
+header h1, header .built-by{
+	float: left;
+	width: 50%;
+}
+
+header h1, header .built-by, .more-detail h1, .more-detail p{
+	padding: 1rem;
+}
+
+header .built-by{
+	padding: 1.75em 1.5em;
+	text-align: right;
+}
+
+header p a{
+	color: #FF0085;
+	font-weight: 600; 
+	
+	text-decoration: none;
+}
+
+header p a:hover{ border-bottom: 1px dashed; }
