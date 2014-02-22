@@ -64,6 +64,13 @@ module.exports = function(grunt) {
                 livereload: true
             },
 
+            express: {
+                files: ['views/*.jade', 'routes/*.js'],
+                options: {
+                    spawn: false
+                }
+            },
+
             scripts: {
                 files: ['js/*.js'],
                 tasks: ['concat', 'uglify'],
@@ -81,7 +88,7 @@ module.exports = function(grunt) {
             },
 
             html: {
-                files: ['*.html', '**/*.jade'],
+                files: ['*.html'],
                 options: {
                     spawn: false
                 }
