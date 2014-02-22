@@ -3,19 +3,16 @@
 var http = require('http'),	
   	fs = require('fs');
 
-http.get("http://data.iana.org/TLD/tlds-alpha-by-domain.txt", function(res) {
-	console.log("Got response: " + res.statusCode + "\n");
-	
-	var data = new Buffer("");
+//http.get("http://data.iana.org/TLD/tlds-alpha-by-domain.txt", function(res) {
+fs.readFile('words.json', function(e, chunk) {
 
-	res.on('data', function(chunk){
-		data = Buffer.concat([data, chunk]);
-	});
+		var data = new Buffer("");
+		console.log(data);
+		var test;
+		data = Buffer.concat([test, chunk]);
+		console.log(data);
 
-	res.on('end', function (){
-		var domains = data.toString('utf8').split("\n");
-
-		var tempDomains = [];
+		/*var tempDomains = [];
 		for(var d =  0; d < domains.length; d++){
 			var domain = domains[d];
 
@@ -35,9 +32,5 @@ http.get("http://data.iana.org/TLD/tlds-alpha-by-domain.txt", function(res) {
 			}else{
 				console.log("All golden. File saved.");
 			}
-		});
-	});
-
-}).on('error', function(e) {
-  console.log("Got error: " + e.message);
+		});*/
 });
