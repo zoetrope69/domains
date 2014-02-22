@@ -13,9 +13,9 @@ module.exports = function(grunt) {
         uglify: {
             build: {
                 src:  'js/build/scripts.js',
-                dest: 'js/build/scripts.min.js',
+                dest: 'public/js/scripts.min.js',
                 options: {
-                    sourceMap: 'js/build/scripts.map.js',
+                    sourceMap: 'public/js/scripts.map.js',
                     sourceMapPrefix: 2,
                     sourceMappingURL: 'scripts.map.js',
                     banner: '/*! <%= pkg.name %> ~ <%= grunt.template.today("yyyy-mm-dd") %> */'
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         csso: {
             dist: {
                 files: {
-                    'css/build/style.min.css': 'css/build/style.css'
+                    'public/css/style.min.css': 'css/build/style.css'
                 }
             }
         },
