@@ -17,7 +17,7 @@ function filters(){
 
 function sortDomains(){
 	var type = $('.sort-filter').val();
-	$('main').find('li').tsort({order: type});
+	$('main').find('li').tsort({ order: type });
 }
 
 function filterDomains(){
