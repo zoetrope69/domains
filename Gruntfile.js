@@ -6,13 +6,13 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: ['js/*.js'],
-                dest: 'js/build/scripts.js'
+                dest: 'public/js/scripts.js'
             }
         },
 
         uglify: {
             build: {
-                src:  'js/build/scripts.js',
+                src:  'public/js/scripts.js',
                 dest: 'public/js/scripts.min.js',
                 options: {
                     sourceMap: 'public/js/scripts.map.js',
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'css/build/style.css': 'css/all.scss'
+                    'public/css/style.css': 'css/all.scss'
                 }
             } 
         },
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
         autoprefixer: {
             dist: {
                 files: {
-                    'css/build/style.css': 'css/build/style.css'
+                    'public/css/style.css': 'public/css/style.css'
                 }
             }
         },
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         csso: {
             dist: {
                 files: {
-                    'public/css/style.min.css': 'css/build/style.css'
+                    'public/css/style.min.css': 'public/css/style.css'
                 }
             }
         },
