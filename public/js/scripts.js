@@ -1,7 +1,7 @@
 
 // domainr bit
 function domainrCheck(domain){
-	var url = 'http://www.domai.nr/api/json/info?callback=getDomainrData&q=' + domain + '&client_id=dandydomains';
+	var url = 'https://domainr.com/api/json/info?callback=getDomainrData&q=' + domain + '&client_id=dandydomains';
 	var timeoutSecs = 5;
 	var domainrAjax = $.ajax({ url: url, dataType: 'script', timeout: timeoutSecs * 1000 });
 	domainrAjax.fail(function(){
@@ -16,10 +16,10 @@ function domainrCheck(domain){
 		// error messages
 		$('.errors').html('Ahh shit, it\'s broken.');
 		setTimeout(function(){
-			$('.errors').html('Ahh shit, it\'s broken. <a href="http://domai.nr/">Domainr</a> is failing to return anything on this domain.');
+			$('.errors').html('Ahh shit, it\'s broken. <a href="https://domainr.com/">Domainr</a> is failing to return anything on this domain.');
 		}, 2000);
 		setTimeout(function(){
-			$('.errors').html('Ahh shit, it\'s broken. <a href="http://domai.nr/">Domainr</a> is failing to return anything on this domain. Sorry!');
+			$('.errors').html('Ahh shit, it\'s broken. <a href="https://domainr.com/">Domainr</a> is failing to return anything on this domain. Sorry!');
 		}, 5000);	
 
 	});
@@ -36,7 +36,7 @@ function getDomainrData(json){
 
 	var link = ['',''];
 	if(avail == 'available' || avail == 'maybe' || avail == 'unknown'){
-		link[0] = '<a title="Register this domain!" href="http://www.domai.nr/'+ domain +'">';
+		link[0] = '<a title="Register this domain!" href="https://domainr.com/'+ domain +'">';
 		link[1] = '</a>';
 	}
 
