@@ -18,8 +18,8 @@ $(document).ready(function(){
 });
 
 function headerResize(){
-	$('main').css('paddingTop', $('.top').height() );
-	$('.more-detail').css('height', $('header').height() );
+	$('main').css('paddingTop', $('.top').outerHeight() );
+	$('.more-detail').css('height', $('header').outerHeight() );
 }
 
 function domainCounter(){
@@ -47,7 +47,7 @@ function moreDetailsControl(){
 		// resets
 		$('.availability').hide();
 		$('.suffix').hide();
-		$('.errors').hide();		
+		$('.errors').hide();
 
 
 		$('.loading').show();

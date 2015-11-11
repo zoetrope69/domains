@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Fauna+One);
-
 @import 'normalize';
 
 *{
@@ -8,7 +6,13 @@
 	box-sizing: border-box;
 }
 
-body{ font-family: 'Fauna One', Helvetica, Arial, sans-serif; }
+body{
+	font-family: 'Fauna One', Helvetica, Arial, sans-serif;
+}
+
+a{
+	font-weight: 500;
+}
 
 @import 'header';
 
@@ -17,11 +21,11 @@ body{ font-family: 'Fauna One', Helvetica, Arial, sans-serif; }
 .big-error{
 	display: none;
 	padding-top: 1em;
-	
+
 	text-align: center;
-	
+
 	font-size: 5em;
-	
+
 	color: #DADADA;
 }
 
@@ -41,11 +45,11 @@ main ul li{
 	white-space: nowrap;
 	padding: .25em 1.25em;
 	width: (100%/6);
-	
+
 	list-style: none;
-	
+
 	font-size: .5em;
-	
+
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	border-right: 1px solid rgba(0,0,0,.1);
 }
@@ -53,7 +57,7 @@ main ul li{
 main ul li:hover{
 	background: #FF0085;
 	color: #FFF;
-	
+
 	cursor: pointer;
 }
 
@@ -66,7 +70,7 @@ main ul li.current{
 	position: fixed;
 	top: 0; left: 0; right: 0;
 	overflow: hidden;
-	
+
 	white-space: nowrap;
 	background: #FF0085;
 	color: #FFF;
@@ -89,7 +93,7 @@ main ul li.current{
 
 .more-detail h1 a{
 	color: inherit;
-	text-decoration: none; 
+	text-decoration: none;
 }
 
 .more-detail h1 a:hover{ border-bottom: 1px dashed; }
@@ -109,30 +113,30 @@ main ul li.current{
 .more-detail p a span{
 	margin: 0 .25em;
 	padding: 5px;
-	
+
 	border: 1px solid;
-	
+
 	transition: background .1s;
 }
 
 .more-detail .loading, .more-detail .errors,
 .more-detail .availability, .more-detail .suffix{
-	padding: 1.25em .75em;
+	padding: 2em .75em;
 	width: 40%;
 	float: left;
-} 
+}
 
 .more-detail .button{
 	position: absolute;
-	top: .5em; right: .5em;
+	top: 1em; right: 0;
 	padding: .5em;
-	
+
 	font-size: 1.15em;
 	font-weight: 600;
-	
+
 	background: #F7E5F8;
 	color: #5C5C5C;
-	
+
 	cursor: pointer;
 }
 
@@ -158,7 +162,7 @@ main ul li.current{
 	line-height: 1em;
 	margin-left: 1px;
 	overflow: hidden;
-	
+
 	animation: ellipsis .5s infinite alternate;
 }
 
@@ -193,6 +197,22 @@ main ul li.current{
 }
 
 @media all and (max-width: 800px){
+
+	header h1{
+		padding: 1em .5em;
+		width: 100%;
+	}
+
+	header .description{
+		text-align: left;
+	}
+
+	header .description,
+	header .built-by{
+		padding: 1em;
+		width: 50%;
+		margin-bottom: .5em;
+	}
 
 	header{ font-size: .75em; }
 
@@ -236,14 +256,22 @@ main ul li.current{
 }
 
 @media all and (max-width: 350px){
-	main ul li{ width: 100%; }
+	main ul li{
+		width: 100%;
+	}
 
 	header h1{
 		width: 100%;
 	}
 
-	header .built-by{ display: none; }
+	header .built-by{
+		display: none;
+	}
 }
 
 
-@media all and (max-width: 350px){ main ul li{ width: 100%; } }
+@media all and (max-width: 350px){
+	main ul li{
+		width: 100%;
+	}
+}
