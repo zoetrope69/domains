@@ -1,7 +1,7 @@
 
 // domainr bit
 function domainrCheck(domain){
-	var url = 'https://domainr.com/api/json/info?callback=getDomainrData&q=' + domain + '&client_id=dandydomains';
+	var url = 'https://api.domainr.com/v1/info?callback=getDomainrData&q=' + domain + '&client_id=dandydomains';
 	var timeoutSecs = 5;
 	var domainrAjax = $.ajax({ url: url, dataType: 'script', timeout: timeoutSecs * 1000 });
 	domainrAjax.fail(function(){
