@@ -14,7 +14,9 @@
     "grunt-contrib-jshint": "~0.8.0"
   },
   "dependencies": {
+    "dotenv": "^1.2.0",
     "express": "3.4.8",
-    "jade": "*"
+    "jade": "*",
+    "unirest": "^0.4.2"
   }
 }
