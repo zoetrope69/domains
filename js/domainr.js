@@ -1,36 +1,47 @@
 
 // domainr bit
 function domainrCheck(domain){
-	var url = 'https://api.domainr.com/v1/info?callback=getDomainrData&q=' + domain + '&client_id=dandydomains';
+
+	var url = '/domainr?domain=' + domain;
+
 	var timeoutSecs = 5;
-	var domainrAjax = $.ajax({ url: url, dataType: 'script', timeout: timeoutSecs * 1000 });
-	domainrAjax.fail(function(){
-		console.log('Fail: ' + domainrAjax.status );
 
-		// highlight that shit
-		$('main').find('.current').addClass('dead-item');
+	$.ajax({
+			url: url,
+			timeout: timeoutSecs * 1000
+		})
+		.success(function(json){
+			console.log(json);
+			getDomainrData(json);
+		})
+		.fail(function(res){
+			console.log('Fail: ' + res.status);
 
-		$('.loading').hide();
-		$('.errors').show();
+			// highlight that shit
+			$('main').find('.current').addClass('dead-item');
 
-		// error messages
-		$('.errors').html('Ahh shit, it\'s broken.');
-		setTimeout(function(){
-			$('.errors').html('Ahh shit, it\'s broken. <a href="https://domainr.com/">Domainr</a> is failing to return anything on this domain.');
-		}, 2000);
-		setTimeout(function(){
-			$('.errors').html('Ahh shit, it\'s broken. <a href="https://domainr.com/">Domainr</a> is failing to return anything on this domain. Sorry!');
-		}, 5000);	
+			$('.loading').hide();
+			$('.errors').show();
+
+			// error messages
+			$('.errors').html('Ahh shit, it\'s broken.');
+			setTimeout(function(){
+				$('.errors').html('Ahh shit, it\'s broken. <a href="https://domainr.com/">Domainr</a> is failing to return anything on this domain.');
+			}, 2000);
+			setTimeout(function(){
+				$('.errors').html('Ahh shit, it\'s broken. <a href="https://domainr.com/">Domainr</a> is failing to return anything on this domain. Sorry!');
+			}, 5000);
 
 	});
 }
 
 function getDomainrData(json){
-	// console.log(json); // RAW DATA
+	console.log(json); // RAW DATA
 	// console.log("Domain: "+ json.domain +" | Available? "+ json.availability); // Bit more specific
 	var avail = json.availability;
 	var availPretty = avail;
 	// console.log('Availability: ' + avail)
+
 
 	var domain = json.domain;
 
