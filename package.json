@@ -2,6 +2,10 @@
   "name": "dandydomains",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "postinstall": "grunt",
+    "start": "node server.js"
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-concat": "~0.3.0",
