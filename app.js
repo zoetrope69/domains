@@ -48,24 +48,19 @@ app.get('/domainr', function(req, res){
     });
   }
 
-  unirest.get('https://domainr.p.mashape.com/v1/info?mashape-key=' + process.env.MASHAPE_KEY + '&q=' + domain)
+  unirest.get('https://domainr.p.mashape.com/v2/status?mashape-key=' + process.env.MASHAPE_KEY + '&domain=' + domain)
     .header("X-Mashape-Key", process.env.MASHAPE_KEY)
     .header("Accept", "application/json")
     .end(function (result) {
-
-      console.log(result);
-
       if (!result.body) {
-        res.send({
+        return res.send({
           query: domain,
           error_message: 'Something went wrong.'
         });
       }
 
       res.send(result.body);
-
     });
-
 });
 
 http.createServer(app).listen(app.get('port'), function(){

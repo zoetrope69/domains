@@ -1,18 +1,18 @@
 
 // domainr bit
-function domainrCheck(domain){
-
-	var url = '/domainr?domain=' + domain;
-
+function domainrCheck(domain) {
 	var timeoutSecs = 5;
 
 	$.ajax({
-			url: url,
+			url: '/domainr?domain=' + domain,
 			timeout: timeoutSecs * 1000
 		})
-		.success(function(json){
-			console.log(json);
-			getDomainrData(json);
+		.success(function(data){
+      if (!data.status || data.status.length <= 0) {
+        return console.log('Fail: Couldnt find anything from Domainr');
+      }
+      console.log(data.status[0]);
+      getDomainrData(data.status[0]);
 		})
 		.fail(function(res){
 			console.log('Fail: ' + res.status);
@@ -35,43 +35,48 @@ function domainrCheck(domain){
 	});
 }
 
-function getDomainrData(json){
-	console.log(json); // RAW DATA
-	// console.log("Domain: "+ json.domain +" | Available? "+ json.availability); // Bit more specific
-	var avail = json.availability;
-	var availPretty = avail;
-	// console.log('Availability: ' + avail)
+function getDomainrData(data) {
+  var states = {
+    'unregistrable': 'unavailable',
+    'dpml': 'unavailable',
+    'transferable': 'available',
+    'inactive': 'available',
+    'active': 'taken',
+    'undelegated': 'maybe',
+    'pending': 'maybe'
+  };
 
+	var state = states[data.summary] || 'unknown';
+  console.log('state', state, data);
 
-	var domain = json.domain;
+	var domain = data.domain;
 
 	var link = ['',''];
-	if(avail == 'available' || avail == 'maybe' || avail == 'unknown'){
+	if(state === 'available' || state === 'maybe' || state === 'unknown'){
 		link[0] = '<a title="Register this domain!" href="https://domainr.com/'+ domain +'">';
 		link[1] = '</a>';
 	}
 
-	var domainPretty = link[0] + domain.replace('.', '<span class="'+ avail +'">.</span>') + link[1];
+	var domainPretty = link[0] + domain.replace('.', '<span class="'+ state +'">.</span>') + link[1];
 
-	var suffix = '.' + json.tld.domain;
-	var word = domain.replace('.','');
-	var suffixUrl = json.tld.wikipedia_url;
+	var suffix = '.' + data.zone;
+	var suffixUrl = '#';
 
-	var availHtml = 'This domain is ' + link[0] + '<span class="'+ avail +'">' + availPretty + '</span>' + link[1] + '.';
+	var stateHtml = 'This domain is ' + link[0] + '<span class="'+ state +'">' + state + '</span>' + link[1] + '.';
 	var suffixHtml = 'Read more about the <a href="'+ suffixUrl +'"><span>"' + suffix + '"</span></a>  suffix.';
 
-	$('more-detail').addClass(avail);
+	$('more-detail').addClass(state);
 	$('.loading').hide();
 
 	// replace the domain with a 'pretty' version
 	$('.more-detail').find('h1').html(domainPretty);
 
 	// add in the html for availability and the suffix info
-	$('.availability').html(availHtml).show();
+	$('.availability').html(stateHtml).show();
 	$('.suffix').html(suffixHtml).show();
 
 	// highlight that shit
-	$('main').find('.current').addClass(avail + '-item');
+	$('main').find('.current').addClass(state + '-item');
 }
 
 // filters
