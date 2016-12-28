@@ -31,6 +31,10 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+if (!process.env.MASHAPE_KEY) {
+  return console.log('Need to add the Mashape API key (MASHAPE_KEY) to `.env`. See README.');
+}
+
 app.get('/', routes.index);
 
 app.get('/domainr', function(req, res){
