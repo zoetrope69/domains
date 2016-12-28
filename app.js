@@ -4,7 +4,10 @@
  */
 
 // use .env file
-require('dotenv').load();
+
+if (!process.env.NOW) {
+  require('dotenv').load();
+}
 
 var express = require('express');
 var routes = require('./routes');
@@ -27,18 +30,18 @@ app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
-if ('development' == app.get('env')) {
+if (app.get('env') === 'development') {
   app.use(express.errorHandler());
 }
 
 if (!process.env.MASHAPE_KEY) {
-  return console.log('Need to add the Mashape API key (MASHAPE_KEY) to `.env`. See README.');
+  console.log('Need to add the Mashape API key (MASHAPE_KEY) to `.env`. See README.');
+  process.exit(1);
 }
 
 app.get('/', routes.index);
 
-app.get('/domainr', function(req, res){
-
+app.get('/domainr', function (req, res) {
   var domain = req.query.domain;
 
   if (!domain || domain.length < 0) {
@@ -49,8 +52,8 @@ app.get('/domainr', function(req, res){
   }
 
   unirest.get('https://domainr.p.mashape.com/v2/status?mashape-key=' + process.env.MASHAPE_KEY + '&domain=' + domain)
-    .header("X-Mashape-Key", process.env.MASHAPE_KEY)
-    .header("Accept", "application/json")
+    .header('X-Mashape-Key', process.env.MASHAPE_KEY)
+    .header('Accept', 'application/json')
     .end(function (result) {
       if (!result.body) {
         return res.send({
@@ -63,6 +66,6 @@ app.get('/domainr', function(req, res){
     });
 });
 
-http.createServer(app).listen(app.get('port'), function(){
+http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });
