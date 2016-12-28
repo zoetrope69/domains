@@ -55,7 +55,7 @@ main ul li{
 }
 
 main ul li:hover{
-	background: #FF0085;
+	background: #5d3d4d;
 	color: #FFF;
 
 	cursor: pointer;
@@ -72,7 +72,7 @@ main ul li.current{
 	overflow: hidden;
 
 	white-space: nowrap;
-	background: #FF0085;
+	background: #5d3d4d;
 	color: #FFF;
 
 	transition: transform .35s, opacity .45s;
@@ -91,7 +91,7 @@ main ul li.current{
 	font-size: 1.5em;
 }
 
-.more-detail h1 a{
+.more-detail a{
 	color: inherit;
 	text-decoration: none;
 }
@@ -107,7 +107,6 @@ main ul li.current{
 
 .more-detail p a{
 	padding: 0;
-	color: #3A3939;
 }
 
 .more-detail p a span{
@@ -153,13 +152,12 @@ main ul li.current{
 
 .more-detail .suffix span{
 	font-weight: 600;
-	color: #333232;
 }
 
 .more-detail .loading-ellipsis{
 	display: inline-block;
 	width: 0;
-	line-height: 1em;
+	line-height: 0.5em;
 	margin-left: 1px;
 	overflow: hidden;
 
@@ -175,19 +173,36 @@ main ul li.current{
 	border-style: dashed;
 }
 
-.fullstop{ color: #383838; }
+.fullstop {
+	color: #383838;
+}
 
-.taken, .unavailable{	color: #464646; }
-.available{ 			color: #96FF88; }
-.maybe{					color: #FFDA94; }
-.unknown{ 				color: #B0B0FF; }
+.taken, .unavailable, .dead {
+	color: #ffe4e4;
+}
 
-.available-item{	background-color: #96FF88; }
-.maybe-item{		background-color: #FFDA94; }
-.unknown-item{		background-color: #B0B0FF; }
-.taken-item, .unavailable-item, .dead-item{
-	background-color: #948686;
-	color: #F5F5F5;
+.taken-item, .unavailable-item, .dead-item {
+	background-color: #ffe4e4;
+}
+.available {
+	color: #b8f9b8;
+}
+.available-item {
+	background-color: #b8f9b8;
+}
+
+.maybe {
+	color: #FFDA94;
+}
+.maybe-item {
+	background-color: #FFDA94;
+}
+
+.unknown{
+	color: #B0B0FF;
+}
+.unknown-item {
+	background-color: #B0B0FF;
 }
 
 @media all and (max-width: 1000px){	main ul li{ width: (100%/5); } }
