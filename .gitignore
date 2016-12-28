@@ -1,5 +1,7 @@
-.sass-cache
 .env
 
+.sass-cache
 node_modules/
 npm-debug.log
+
+public/
