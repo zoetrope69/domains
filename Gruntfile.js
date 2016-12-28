@@ -85,7 +85,7 @@ module.exports = function (grunt) {
 
   // css stuff
   grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-csso');
 
   // watch for changes in files
