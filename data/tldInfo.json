@@ -1,0 +1,4947 @@
+[
+  {
+    "name": ".com",
+    "entity": "commercial",
+    "administrator": "Verisign",
+    "notes": "This is an open TLD; any person or entity is permitted to register. Though originally intended for use by for-profit business entities, for a number of reasons it became the \"main\" TLD for domain names and is currently used by all types of entities including nonprofits, schools, and private individuals. Domain name registrations may be successfully challenged if the holder cannot prove an outside relation justifying reservation of the name, to prevent \"squatting\". It was originally administered by the United States Department of Defense.",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".org",
+    "entity": "organization",
+    "administrator": "Public Interest Registry",
+    "notes": "This is an open TLD; any person or entity is permitted to register. Originally intended for use by non-profit organizations, and still primarily used by some (including Wikipedia).",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".net",
+    "entity": "network",
+    "administrator": "Verisign",
+    "notes": "This is an open TLD; any person or entity is permitted to register. Originally intended for use by domains pointing to a distributed network of computers, or \"umbrella\" sites that act as the portal to a set of smaller websites.",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".int",
+    "entity": "international organizations",
+    "administrator": "Internet Assigned Numbers Authority",
+    "notes": "The .int TLD is strictly limited to organizations, offices, and programs endorsed by a treaty between two or more nations. However, a few grandfathered domains do not meet these criteria.",
+    "IDN": true,
+    "DNSSEC": false
+  },
+  {
+    "name": ".edu",
+    "entity": "education",
+    "administrator": "Educause (via Verisign)",
+    "notes": "The .edu TLD is limited to specific higher educational institutions such as, but not limited to, trade schools and universities. In the U.S., its use was restricted in 2001 to post-secondary institutions accredited by an agency on the list of nationally recognized accrediting agencies. This domain is therefore almost exclusively used by American colleges and universities. Some institutions, such as the Exploratorium, that do not meet the current registration criteria have grandfathered domain names.",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".gov",
+    "entity": "U.S. national and state government agencies",
+    "administrator": "General Services Administration (via Verisign)",
+    "notes": "The .gov TLD is limited to United States governmental entities and agencies as well as qualifying state, county and local municipal government agencies.",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".mil",
+    "entity": "U.S. military",
+    "administrator": "United States Department of Defense",
+    "notes": "The .mil TLD is limited to use by the United States military.",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "Infrastructure": ".arpa",
+    "entity": "\"Address and Routing Parameter Area\"",
+    "notes": "Originally assigned to the Advanced Research Projects Agency in the early days on the Internet, .arpa is now exclusively used as an Internet infrastructure TLD.",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".ac",
+    "entity": "Ascension Island",
+    "notes": "Commonly used for academic websites, such as universities. However, .ac is not to be confused with the official British academic domain .ac.uk or the official Indian academic domain .ac.in. Also used in the accounting, consulting, and air-conditioning industries.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".ad",
+    "entity": "Andorra",
+    "notes": "Local trademark, trade name or citizenship required",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ae",
+    "entity": "United Arab Emirates",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".af",
+    "entity": "Afghanistan",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ag",
+    "entity": "Antigua and Barbuda",
+    "notes": "Also unofficially used by German businesses (where AG is an abbreviation of Aktiengesellschaft)",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ai",
+    "entity": "Anguilla",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".al",
+    "entity": "Albania",
+    "notes": "Citizenship no longer required",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".am",
+    "entity": "Armenia",
+    "notes": "Also unofficially used by AM radio stations, podcasts or related business",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".an",
+    "entity": "Netherlands Antilles",
+    "notes": "Local presence required; Netherlands Antilles were dissolved on 10 October 2010.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ao",
+    "entity": "Angola",
+    "DNSSEC": false,
+    "SLD": "Unknown"
+  },
+  {
+    "name": ".aq",
+    "entity": "Antarctica",
+    "explanation": "Antarctique",
+    "notes": "Defined by the Antarctic Treaty as everything south of latitude 60°S. AQ domain names are available to government organizations who are signatories to the Antarctic Treaty and to other registrants who have a physical presence in Antarctica.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ar",
+    "entity": "Argentina",
+    "IDN": "Spanish",
+    "DNSSEC": true,
+    "SLD": false,
+    "IPv6": true
+  },
+  {
+    "name": ".as",
+    "entity": "American Samoa",
+    "notes": "Also unofficially used by the Principality of Asturias, Spain",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".at",
+    "entity": "Austria",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".au",
+    "entity": "Australia",
+    "notes": "Restrictions apply. In general, registrants must be Australian, and must have a minimum 2 year registration period. Includes Ashmore and Cartier Islands and Coral Sea Islands.",
+    "DNSSEC": true,
+    "SLD": false
+  },
+  {
+    "name": ".aw",
+    "entity": "Aruba",
+    "explanation": "Aruba, West Indies",
+    "notes": "Restricted to registered Aruban companies, organisations and citizens",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ax",
+    "entity": "Åland",
+    "notes": "Restricted to registered Åland companies, organisations and citizens",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".az",
+    "entity": "Azerbaijan",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ba",
+    "entity": "Bosnia and Herzegovina",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".bb",
+    "entity": "Barbados",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".bd",
+    "entity": "Bangladesh",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".be",
+    "entity": "Belgium",
+    "notes": "Also unofficially used in the canton of Bern, Switzerland",
+    "IDN": "Latin",
+    "DNSSEC": true,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".bf",
+    "entity": "Burkina Faso",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".bg",
+    "entity": "Bulgaria",
+    "IDN": "Russian and Bulgarian",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".bh",
+    "entity": "Bahrain",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".bi",
+    "entity": "Burundi",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".bj",
+    "entity": "Benin",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".bl",
+    "entity": "Saint Barthélemy",
+    "notes": "Not in use"
+  },
+  {
+    "name": ".bm",
+    "entity": "Bermuda",
+    "notes": "Local corporate registration required",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".bn",
+    "entity": "Brunei",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".bo",
+    "entity": "Bolivia",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".bq",
+    "entity": "Bonaire",
+    "notes": "Not yet assigned as of 1 December 2015"
+  },
+  {
+    "name": ".br",
+    "entity": "Brazil",
+    "notes": "Restricted. Registration is done under several categories (i.e.: .edu.br for higher education institutions, .gov.br for government agencies, etc.)",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": false
+  },
+  {
+    "name": ".bs",
+    "entity": "Bahamas",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".bt",
+    "entity": "Bhutan",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".bv",
+    "entity": "Bouvet Island",
+    "notes": "Not in use (Norwegian dependency; see .no).",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".bw",
+    "entity": "Botswana",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".by",
+    "entity": "Belarus",
+    "notes": "also unofficially used to denote Bayern (Bavaria), Germany",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".bz",
+    "entity": "Belize",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ca",
+    "entity": "Canada",
+    "notes": "Subject to Canadian Presence Requirements.",
+    "IDN": "French",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".cc",
+    "entity": "Cocos (Keeling) Islands",
+    "notes": "Australian territory: not to be confused with Cocos islands in Guam. Currently marketed as global domain, registration allowed worldwide, local presence not required; the domain is currently operated by eNIC, a VeriSign company.",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".cd",
+    "entity": "Democratic Republic of the Congo",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".cf",
+    "entity": "Central African Republic",
+    "notes": "Also used as a free domain service to the public.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".cg",
+    "entity": "Republic of the Congo",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ch",
+    "entity": "Switzerland",
+    "explanation": "Confoederatio Helvetica",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ci",
+    "entity": "Côte d'Ivoire",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ck",
+    "entity": "Cook Islands",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".cl",
+    "entity": "Chile",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".cm",
+    "entity": "Cameroon",
+    "notes": "A local entity/company in Cameroon is required to register a domain name.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".cn",
+    "entity": "People's Republic of China",
+    "notes": "A local company in China is required to register a domain name, or for personal registrations a valid Resident Identity Card. See ICP license for more information regarding registrations. Hong Kong, Macau and Taiwan also maintain TLDs.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".co",
+    "entity": "Colombia",
+    "notes": "Marketed as a global domain – recognized as a gccTLD by Google. Anyone can register.",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".cr",
+    "entity": "Costa Rica",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".cu",
+    "entity": "Cuba",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".cv",
+    "entity": "Cape Verde",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".cw",
+    "entity": "Curaçao",
+    "explanation": "Curaçao, West Indies",
+    "DNSSEC": false,
+    "SLD": "Unknown"
+  },
+  {
+    "name": ".cx",
+    "entity": "Christmas Island",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".cy",
+    "entity": "Cyprus",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".cz",
+    "entity": "Czech Republic",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".de",
+    "entity": "Germany",
+    "explanation": "Deutschland",
+    "notes": "German postal address for administrative contact (admin-c) required. Proxy registrations are allowed.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".dj",
+    "entity": "Djibouti",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".dk",
+    "entity": "Denmark",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".dm",
+    "entity": "Dominica",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".do",
+    "entity": "Dominican Republic",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".dz",
+    "entity": "Algeria",
+    "explanation": "Dzayer (from Al-Jazair)",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ec",
+    "entity": "Ecuador",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ee",
+    "entity": "Estonia",
+    "explanation": "Eesti",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".eg",
+    "entity": "Egypt",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".eh",
+    "entity": "Western Sahara",
+    "explanation": "Saguia el-Hamra",
+    "notes": ".eh is reserved for Western Sahara, but does not exist in the root."
+  },
+  {
+    "name": ".er",
+    "entity": "Eritrea",
+    "notes": "Inactive – The domain registrar Eritrea Telecommunication Services Corporation offers no services to register domains.",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".es",
+    "entity": "Spain",
+    "explanation": "España",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".et",
+    "entity": "Ethiopia",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".eu",
+    "entity": "European Union",
+    "notes": "Restricted to legal and natural persons in European Union member states. Previously unofficially used for sites in the Basque language, but now .eus is in official use.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".fi",
+    "entity": "Finland",
+    "notes": "Registration allowed worldwide, local presence not required.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".fj",
+    "entity": "Fiji",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".fk",
+    "entity": "Falkland Islands",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".fm",
+    "entity": "Federated States of Micronesia",
+    "notes": "Also unofficially used by FM radio stations, podcasts or related business",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".fo",
+    "entity": "Faroe Islands",
+    "explanation": "Føroyar",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".fr",
+    "entity": "France",
+    "notes": "Restricted to individuals and companies in European Union, Switzerland, Norway, Iceland and Liechtenstein.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ga",
+    "entity": "Gabon",
+    "notes": "Also used as a free domain service to the public.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".gb",
+    "entity": "United Kingdom",
+    "explanation": "Great Britain",
+    "notes": "Deprecated. The primary ccTLD used for the United Kingdom is .uk.",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".gd",
+    "entity": "Grenada",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ge",
+    "entity": "Georgia",
+    "notes": "Available for registration for residents of Georgia (unlimited) or for foreign companies via representation of any local legal person (one domain name per registrant)",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".gf",
+    "entity": "French Guiana",
+    "explanation": "Guyane française",
+    "DNSSEC": false
+  },
+  {
+    "name": ".gg",
+    "entity": "Guernsey",
+    "notes": "Commonly used in reference to the gamer slang for good game.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".gh",
+    "entity": "Ghana",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".gi",
+    "entity": "Gibraltar",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".gl",
+    "entity": "Greenland",
+    "notes": "Previously also unofficially used in Galicia, Spain, but now .gal has been approved for such use and was implemented in mid-2014",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".gm",
+    "entity": "The Gambia",
+    "notes": "Domain name should match the domain owners name or trademarks. Common nouns are blocked.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".gn",
+    "entity": "Guinea",
+    "notes": "A local contact is required",
+    "DNSSEC": true,
+    "SLD": false
+  },
+  {
+    "name": ".gp",
+    "entity": "Guadeloupe",
+    "notes": "Still used for Saint-Barthélemy and Saint-Martin",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".gq",
+    "entity": "Equatorial Guinea",
+    "explanation": "Guinée équatoriale",
+    "notes": "Also used as a free domain service to the public.",
+    "DNSSEC": false
+  },
+  {
+    "name": ".gr",
+    "entity": "Greece",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".gs",
+    "entity": "South Georgia and the South Sandwich Islands",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".gt",
+    "entity": "Guatemala",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".gu",
+    "entity": "Guam",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".gw",
+    "entity": "Guinea-Bissau",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".gy",
+    "entity": "Guyana",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".hk",
+    "entity": "Hong Kong",
+    "notes": "Special administrative region of the People's Republic of China.",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".hm",
+    "entity": "Heard Island and McDonald Islands",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".hn",
+    "entity": "Honduras",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".hr",
+    "entity": "Croatia",
+    "explanation": "Hrvatska",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ht",
+    "entity": "Haiti",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".hu",
+    "entity": "Hungary",
+    "notes": "citizens of EU or entity established by virtue of law in the territory of EU",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".id",
+    "entity": "Indonesia",
+    "notes": "Restricted to Indonesian companies (co.id), organisations (or.id), academic (ac.id & sch.id) and citizens (biz.id, my.id & web.id). Second-level domains are becoming available now and opened to general registration on 17 August 2014.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ie",
+    "entity": "Ireland",
+    "notes": "In 2002, registration was expanded to include persons or businesses with a \"real and substantive\" connection with the island of Ireland (including Northern Ireland).",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".il",
+    "entity": "Israel",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".im",
+    "entity": "Isle of Man",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".in",
+    "entity": "India",
+    "notes": "Under INRegistry since April 2005 (except: gov.in, nic.in, mil.in, ac.in, edu.in, res.in).",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".io",
+    "entity": "British Indian Ocean Territory",
+    "notes": "Used unofficially by technology companies, startups, and web applications because IO can be an acronym for input/output that is useful for domain hacks.",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".iq",
+    "entity": "Iraq",
+    "DNSSEC": "Partial",
+    "SLD": true
+  },
+  {
+    "name": ".ir",
+    "entity": "Iran",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".is",
+    "entity": "Iceland",
+    "explanation": "Ísland",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".it",
+    "entity": "Italy",
+    "notes": "Restricted to companies and individuals in the European Union.",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".je",
+    "entity": "Jersey",
+    "notes": "-je is used in Dutch to form a diminutive: boek = a book, boekje = a little book",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".jm",
+    "entity": "Jamaica",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".jo",
+    "entity": "Jordan",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".jp",
+    "entity": "Japan",
+    "notes": "Restricted to individuals or companies with a physical address in Japan.",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ke",
+    "entity": "Kenya",
+    "DNSSEC": true,
+    "SLD": false
+  },
+  {
+    "name": ".kg",
+    "entity": "Kyrgyzstan",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".kh",
+    "entity": "Cambodia",
+    "explanation": "Khmer",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".ki",
+    "entity": "Kiribati",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".km",
+    "entity": "Comoros",
+    "explanation": "Komori",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".kn",
+    "entity": "Saint Kitts and Nevis",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".kp",
+    "entity": "Democratic People's Republic of Korea",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".kr",
+    "entity": "Republic of Korea",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".kw",
+    "entity": "Kuwait",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".ky",
+    "entity": "Cayman Islands",
+    "notes": "Restricted to qualified Cayman entities",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".kz",
+    "entity": "Kazakhstan",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".la",
+    "entity": "Laos",
+    "notes": "Currently being marketed as the unofficial domain for Los Angeles",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".lb",
+    "entity": "Lebanon",
+    "notes": "Restricted to registration with a company in Lebanon",
+    "DNSSEC": true,
+    "SLD": false
+  },
+  {
+    "name": ".lc",
+    "entity": "Saint Lucia",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".li",
+    "entity": "Liechtenstein",
+    "notes": "Also used by Long Island",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".lk",
+    "entity": "Sri Lanka",
+    "explanation": "Lanka",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".lr",
+    "entity": "Liberia",
+    "DNSSEC": "Partial",
+    "SLD": false
+  },
+  {
+    "name": ".ls",
+    "entity": "Lesotho",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".lt",
+    "entity": "Lithuania",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".lu",
+    "entity": "Luxembourg",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".lv",
+    "entity": "Latvia",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ly",
+    "entity": "Libya",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ma",
+    "entity": "Morocco",
+    "explanation": "Maroc",
+    "notes": "Also used as a free domain service to the public as cu.ma",
+    "DNSSEC": "Partial",
+    "SLD": true
+  },
+  {
+    "name": ".mc",
+    "entity": "Monaco",
+    "notes": "Only for companies with a trademark registered in Monaco",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".md",
+    "entity": "Moldova",
+    "notes": "Restricted to individuals or companies with a physical address in Moldova.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".me",
+    "entity": "Montenegro",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".mf",
+    "entity": "Collectivity of Saint Martin",
+    "notes": "Not in use"
+  },
+  {
+    "name": ".mg",
+    "entity": "Madagascar",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".mh",
+    "entity": "Marshall Islands",
+    "DNSSEC": false
+  },
+  {
+    "name": ".mk",
+    "entity": "Macedonia",
+    "explanation": "Makedonija",
+    "notes": "Restricted to registration with a company in Macedonia",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ml",
+    "entity": "Mali",
+    "notes": "Also used as a free domain service to the public.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".mm",
+    "entity": "Myanmar",
+    "DNSSEC": true,
+    "SLD": false
+  },
+  {
+    "name": ".mn",
+    "entity": "Mongolia",
+    "notes": "The second-level domains '.gov.mn', '.org.mn', and '.edu.mn' are reserved for special use. See .mn for more information.",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".mo",
+    "entity": "Macau",
+    "explanation": "Macao",
+    "notes": "Special administrative region of the People's Republic of China. Registrants must have a registered business in Macau, with the same name as the domain they wish to register.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".mp",
+    "entity": "Northern Mariana Islands",
+    "explanation": "Marianas Pacific",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".mq",
+    "entity": "Martinique",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".mr",
+    "entity": "Mauritania",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ms",
+    "entity": "Montserrat",
+    "notes": "Unofficially used for Microsoft-related domains.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".mt",
+    "entity": "Malta",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".mu",
+    "entity": "Mauritius",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".mv",
+    "entity": "Maldives",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".mw",
+    "entity": "Malawi",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".mx",
+    "entity": "Mexico",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".my",
+    "entity": "Malaysia",
+    "notes": "Restricted to registration by an individual or company in Malaysia",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".mz",
+    "entity": "Mozambique",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".na",
+    "entity": "Namibia",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".nc",
+    "entity": "New Caledonia",
+    "notes": "Restricted to companies that have a New Caledonian Business Registration Certificate or individuals living in New Caledonia for at least 6 months.",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ne",
+    "entity": "Niger",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".nf",
+    "entity": "Norfolk Island",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ng",
+    "entity": "Nigeria",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ni",
+    "entity": "Nicaragua",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".nl",
+    "entity": "Netherlands",
+    "notes": "First official country code TLD.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".no",
+    "entity": "Norway",
+    "notes": "Businesses and professionals must be registered as an approved type of organization in the Brønnøysund Register Centre. Individual applicants must be of age (18 years) and be registered in the Folkeregisteret. All applicants must have a Norwegian postal address.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".np",
+    "entity": "Nepal",
+    "notes": "All .np domains are free to register for individuals and registered businesses.",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".nr",
+    "entity": "Nauru",
+    "notes": "Also used as a free domain service to the public as co.nr.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".nu",
+    "entity": "Niue",
+    "notes": "Commonly used by Danish, Dutch and Swedish websites, because in those languages \"nu\" means \"now\".",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".nz",
+    "entity": "New Zealand",
+    "IDN": "Māori",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".om",
+    "entity": "Oman",
+    "notes": "Registrant must have company or trademark registered in Oman as well as a local administrative contact.",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".pa",
+    "entity": "Panama",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".pe",
+    "entity": "Peru",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".pf",
+    "entity": "French Polynesia",
+    "explanation": "Polynésie française",
+    "notes": "With Clipperton Island",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".pg",
+    "entity": "Papua New Guinea",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".ph",
+    "entity": "Philippines",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".pk",
+    "entity": "Pakistan",
+    "notes": "Operated by PKNIC since 1992",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".pl",
+    "entity": "Poland",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".pm",
+    "entity": "Saint-Pierre and Miquelon",
+    "notes": "Restricted to individuals and companies in European Union, Switzerland, Norway, Iceland and Liechtenstein.",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".pn",
+    "entity": "Pitcairn Islands",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".pr",
+    "entity": "Puerto Rico",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ps",
+    "entity": "Palestine",
+    "notes": "West Bank and Gaza Strip.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".pt",
+    "entity": "Portugal",
+    "IDN": "Portuguese",
+    "DNSSEC": true,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".pw",
+    "entity": "Palau",
+    "explanation": "Pelew",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".py",
+    "entity": "Paraguay",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".qa",
+    "entity": "Qatar",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".re",
+    "entity": "Réunion",
+    "notes": "Restricted to individuals and companies in European Union, Switzerland, Norway, Iceland and Liechtenstein.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ro",
+    "entity": "Romania",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".rs",
+    "entity": "Serbia",
+    "explanation": "Republika Srbija",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ru",
+    "entity": "Russia",
+    "notes": "See also .su, still in use, and .рф, for IDN.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".rw",
+    "entity": "Rwanda",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".sa",
+    "entity": "Saudi Arabia",
+    "notes": "Registrant must have a registered trademark in Saudi Arabia matching the domain name to register or provide company incorporation documents of a company in Saudi Arabia or for personal registrations a copy of valid ID. A letter on the official letterhead of your organization addressed to SaudiNIC requesting the domain name registration is also required. Local administrative contact required. 2LD registrations rolled out in 2011.",
+    "IDN": "Arabic",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".sb",
+    "entity": "Solomon Islands",
+    "explanation": "Solomon Islands, British",
+    "DNSSEC": true,
+    "SLD": false
+  },
+  {
+    "name": ".sc",
+    "entity": "Seychelles",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".sd",
+    "entity": "Sudan",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".se",
+    "entity": "Sweden",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".sg",
+    "entity": "Singapore",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".sh",
+    "entity": "Saint Helena",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".si",
+    "entity": "Slovenia",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".sj",
+    "entity": "Svalbard and Jan Mayen Islands",
+    "notes": "Not in use (Norwegian dependencies; see .no).",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": false
+  },
+  {
+    "name": ".sk",
+    "entity": "Slovakia",
+    "notes": "Restricted to Slovak companies, organisations and citizens",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".sl",
+    "entity": "Sierra Leone",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".sm",
+    "entity": "San Marino",
+    "notes": "Domain name must be same as company name or trademark",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".sn",
+    "entity": "Senegal",
+    "notes": "Registration allowed for companies only. Individuals are not allowed to register.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".so",
+    "entity": "Somalia",
+    "notes": "Relaunched on 1 November 2010",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".sr",
+    "entity": "Suriname",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".ss",
+    "entity": "South Sudan",
+    "notes": "Removed from the root DNS zone in April 2013"
+  },
+  {
+    "name": ".st",
+    "entity": "São Tomé and Príncipe",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".su",
+    "entity": "Soviet Union",
+    "notes": "Still in use.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".sv",
+    "entity": "El Salvador",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".sx",
+    "entity": "Sint Maarten",
+    "DNSSEC": true,
+    "SLD": false
+  },
+  {
+    "name": ".sy",
+    "entity": "Syria",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".sz",
+    "entity": "Swaziland",
+    "notes": "Registration is restricted to Swaziland organizations with Swaziland Trading Licenses.",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".tc",
+    "entity": "Turks and Caicos Islands",
+    "notes": ".TC domains are also marketed in Turkey. The official abbreviation of 'Türkiye Cumhuriyeti' (Republic of Turkey) is TC.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".td",
+    "entity": "Chad",
+    "explanation": "Tchad",
+    "notes": "Chadian (.td) domains are available for registration to entities connected with Chad only.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".tf",
+    "entity": "French Southern and Antarctic Lands",
+    "explanation": "Terres australes et antarctiques françaises",
+    "notes": "Seldom used. Restricted to individuals and companies in European Union, Switzerland, Norway, Iceland and Liechtenstein. It has also been adopted by the community of the game Team Fortress 2.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".tg",
+    "entity": "Togo",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".th",
+    "entity": "Thailand",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": false
+  },
+  {
+    "name": ".tj",
+    "entity": "Tajikistan",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".tk",
+    "entity": "Tokelau",
+    "notes": "Also used as a free domain service to the public. Used in the Netherlands because tk ('te koop') means 'for sale' in Dutch.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".tl",
+    "entity": "East Timor",
+    "explanation": "Timor-Leste",
+    "notes": "Old code .tp is deactivated since 2015.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".tm",
+    "entity": "Turkmenistan",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".tn",
+    "entity": "Tunisia",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".to",
+    "entity": "Tonga",
+    "notes": "Often used unofficially for Torrent, Turin, Toronto, Tokyo, or Tocantins",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".tp",
+    "entity": "East Timor",
+    "explanation": "Timor Português",
+    "notes": "ISO code has changed to TL; .tl is now assigned and .tp is deactivated since 2015.",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".tr",
+    "entity": "Turkey",
+    "notes": ".nc.tr used by Northern Cyprus",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": true,
+    "IPv6": true
+  },
+  {
+    "name": ".tt",
+    "entity": "Trinidad and Tobago",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".tv",
+    "entity": "Tuvalu",
+    "notes": "Used as an abbreviation of television, the domain is currently operated by dotTV, a VeriSign company; the Tuvalu government owns twenty percent of the company.",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".tw",
+    "entity": "Taiwan",
+    "notes": "Registration allowed worldwide, local presence not required. In line with ISO 3166-1, IANA's official position is that “TW” is \"designated for use to represent \"Taiwan.\"",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".tz",
+    "entity": "Tanzania",
+    "notes": "Must have a presence in Tanzania",
+    "DNSSEC": true,
+    "SLD": false
+  },
+  {
+    "name": ".ua",
+    "entity": "Ukraine",
+    "explanation": "Ukraina",
+    "notes": "Ukrainian trademark required",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ug",
+    "entity": "Uganda",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".uk",
+    "entity": "United Kingdom",
+    "notes": "The ISO 3166-1 code for the United Kingdom is GB. UK is a specially reserved ISO 3166-1 code. However, the creation of the .uk TLD predates the ISO 3166-1 list of ccTLD and is the primary TLD for the United Kingdom.",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".um",
+    "entity": "United States Minor Outlying Islands",
+    "notes": "Not in use"
+  },
+  {
+    "name": ".us",
+    "entity": "United States of America",
+    "notes": "Registrants must be United States citizens, residents, or organizations, or a foreign entity with a presence in the United States. Formerly commonly used by U.S. State and local governments, see also .gov TLD",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".uy",
+    "entity": "Uruguay",
+    "notes": "2LD rollout began on 10 July 2012.",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".uz",
+    "entity": "Uzbekistan",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".va",
+    "entity": "Vatican City",
+    "explanation": "Vaticano",
+    "notes": "Limited to the official sites of the Holy See (including those of the Vatican City State)",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".vc",
+    "entity": "Saint Vincent and the Grenadines",
+    "DNSSEC": "Partial",
+    "SLD": true
+  },
+  {
+    "name": ".ve",
+    "entity": "Venezuela",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".vg",
+    "entity": "British Virgin Islands",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".vi",
+    "entity": "United States Virgin Islands",
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".vn",
+    "entity": "Vietnam",
+    "explanation": "Việt nam",
+    "IDN": true,
+    "DNSSEC": false,
+    "SLD": true
+  },
+  {
+    "name": ".vu",
+    "entity": "Vanuatu",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".wf",
+    "entity": "Wallis and Futuna",
+    "notes": "Restricted to individuals and companies in European Union, Switzerland, Norway, Iceland and Liechtenstein.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ws",
+    "entity": "Samoa",
+    "explanation": "Western Samoa",
+    "notes": "Marketed for use in general WebSites",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".ye",
+    "entity": "Yemen",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".yt",
+    "entity": "Mayotte",
+    "notes": "Restricted to individuals and companies in European Union, Switzerland, Norway, Iceland, Great Britain and Liechtenstein.",
+    "IDN": true,
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".za",
+    "entity": "South Africa",
+    "explanation": "Zuid-Afrika",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".zm",
+    "entity": "Zambia",
+    "DNSSEC": true,
+    "SLD": true
+  },
+  {
+    "name": ".zw",
+    "entity": "Zimbabwe",
+    "DNSSEC": false,
+    "SLD": false
+  },
+  {
+    "name": ".academy",
+    "usage": "academic institutes",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".accountant",
+    "usage": "accountants and accounting firms",
+    "operator": "Famous Four Media",
+    "DNSSEC": true
+  },
+  {
+    "name": ".accountants",
+    "usage": "accountants and accounting firms",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".active",
+    "usage": "general",
+    "operator": "The Active Network",
+    "DNSSEC": true
+  },
+  {
+    "name": ".actor",
+    "usage": "actors",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".ads",
+    "operator": "Charleston Road Registry Inc."
+  },
+  {
+    "name": ".adult",
+    "usage": "adult entertainment (pornography)",
+    "restrictions": "For sites providing sexually explicit content, such as pornography.",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".aero",
+    "usage": "air-transport industry",
+    "restrictions": "Must verify eligibility for registration; only those in various categories of air-travel-related entities may register.",
+    "operator": "SITA",
+    "IDN": true,
+    "DNSSEC": false
+  },
+  {
+    "name": ".agency",
+    "usage": "business associations",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".airforce",
+    "usage": "defense contractors",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".apartments",
+    "usage": "apartments",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".app",
+    "usage": "Phone apps",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".archi",
+    "usage": "architects and architect firms",
+    "restrictions": "Restricted to individuals and organizations that can verify participation in architecture industry.",
+    "operator": "STARTING DOT LIMITED",
+    "DNSSEC": true
+  },
+  {
+    "name": ".army",
+    "usage": "defense contractors",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".associates",
+    "usage": "business associations",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".attorney",
+    "usage": "attorneys and legal organizations",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".auction",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".audible",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".audio",
+    "usage": "stereo/sound systems, music",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".author",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".auto",
+    "operator": "Cars Registry Limited"
+  },
+  {
+    "name": ".autos",
+    "operator": "DERAutos",
+    "DNSSEC": true
+  },
+  {
+    "name": ".baby",
+    "operator": "Johnson & Johnson Services, Inc."
+  },
+  {
+    "name": ".band",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".barefoot",
+    "operator": "Gallo Vineyards, Inc."
+  },
+  {
+    "name": ".bargains",
+    "usage": "coupons and online sellers",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".baseball",
+    "operator": "MLB Advanced Media DH, LLC"
+  },
+  {
+    "name": ".beauty",
+    "operator": "L'Oréal"
+  },
+  {
+    "name": ".beer",
+    "usage": "breweries and beer aficionados",
+    "operator": "Minds + Machines",
+    "DNSSEC": true
+  },
+  {
+    "name": ".best",
+    "operator": "BestTLD Pty Ltd",
+    "DNSSEC": true
+  },
+  {
+    "name": ".bestbuy",
+    "operator": "BBY Solutions, Inc."
+  },
+  {
+    "name": ".bet",
+    "operator": "Afilias plc"
+  },
+  {
+    "name": ".bid",
+    "usage": "auctions",
+    "operator": "dot Bid Limited",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".bike",
+    "usage": "bicycles",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".bingo",
+    "usage": "bingo",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".bio",
+    "usage": "biodiversity, biographies",
+    "restrictions": "May require compliance with organic agriculture principles.",
+    "operator": "STARTING DOT LIMITED",
+    "DNSSEC": true
+  },
+  {
+    "name": ".biz",
+    "usage": "business",
+    "restrictions": "Open TLD; any person or entity is permitted to register; however, registrations may be challenged later if they are not held by commercial entities in accordance with the domain's charter. This TLD was created to provide relief for the .com TLD, where many names have already been taken.",
+    "operator": "NeuStar",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".black",
+    "usage": "those who like the color black",
+    "operator": "Afilias",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".blackfriday",
+    "usage": "Black Friday, retail",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".blockbuster",
+    "operator": "Dish DBS Corporation"
+  },
+  {
+    "name": ".blog",
+    "usage": "Blogs",
+    "operator": "Automattic",
+    "DNSSEC": true
+  },
+  {
+    "name": ".blue",
+    "usage": "those who like the color blue",
+    "operator": "Afilias",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".boo",
+    "usage": "ghosts and spooky business",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".book",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".bot",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".boutique",
+    "usage": "specialized businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".box",
+    "usage": "individuals and businesses, in order to promote personal cloud storage",
+    "operator": "NS1 Limited",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".broker",
+    "operator": "DOTBROKER REGISTRY LTD"
+  },
+  {
+    "name": ".build",
+    "usage": "construction industry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".builders",
+    "usage": "construction workers",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".business",
+    "usage": "businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".buy",
+    "operator": "Amazon Registry Services, INC"
+  },
+  {
+    "name": ".buzz",
+    "usage": "marketing and social networking",
+    "operator": "DOTSTRATEGY",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".cab",
+    "usage": "cabs and taxi companies",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".cafe",
+    "usage": "coffee industry",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".call",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".cam",
+    "usage": "entertainment",
+    "operator": "Acwebconnecting",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".camera",
+    "usage": "camera-related businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".camp",
+    "usage": "camps and camping",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".cancerresearch",
+    "usage": "Organizations, research institutes and individuals interested in ending cancer through research",
+    "operator": "Australian Cancer Research Foundation",
+    "DNSSEC": true
+  },
+  {
+    "name": ".capital",
+    "usage": "financial firms",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".cards",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".care",
+    "usage": "healthcare industry",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".career",
+    "operator": "dotCareer LLC",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".careers",
+    "usage": "Employment",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".cars",
+    "usage": "Automotive",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".case",
+    "operator": "CNH Industrial N.V."
+  },
+  {
+    "name": ".cash",
+    "usage": "financial",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".casino",
+    "usage": "casinos",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".catering",
+    "usage": "Food service",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".catholic",
+    "operator": "Pontificium Consilium de Comunicationibus Socialibus (PCCS) (Pontifical Council for Social Communications)"
+  },
+  {
+    "name": ".center",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".ceo",
+    "usage": "CEOs",
+    "operator": "CEOTLD Pty Ltd",
+    "DNSSEC": true
+  },
+  {
+    "name": ".cfd",
+    "operator": "DOTCFD REGISTRY LTD"
+  },
+  {
+    "name": ".channel",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".chat",
+    "usage": "online chat",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".cheap",
+    "usage": "Resellers",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".christmas",
+    "usage": "Christmas",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".church",
+    "usage": "churches",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".circle",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".city",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".claims",
+    "usage": "retail, auctions",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".cleaning",
+    "usage": "Cleaning services",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".click",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".clinic",
+    "usage": "healthcare clinics",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".clothing",
+    "usage": "Apparel",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".cloud",
+    "restrictions": "Aruba S.p.A."
+  },
+  {
+    "name": ".club",
+    "usage": "groups, organizations, assemblies, communities, general",
+    "operator": ".CLUB DOMAINS",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".coach",
+    "usage": "travel (flights and motor coaches)",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".codes",
+    "usage": "computer and/or encryption code enthusiasts",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".coffee",
+    "usage": "cafés and coffee aficionados",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".college",
+    "usage": "Educational",
+    "operator": "XYZ.com",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".community",
+    "usage": "social groups, neighborhoods",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".company",
+    "usage": "business associations",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".computer",
+    "usage": "Technology",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".condos",
+    "usage": "Real estate",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".construction",
+    "usage": "Construction industry",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".consulting",
+    "usage": "hired advisors",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".contact",
+    "operator": "Top Level Spectrum, Inc."
+  },
+  {
+    "name": ".contractors",
+    "usage": "Remodeling and independent businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".cooking",
+    "usage": "sharing recipes",
+    "operator": "Minds + Machines",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".cool",
+    "usage": "General interests",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".coop",
+    "usage": "cooperatives",
+    "restrictions": "The .coop TLD is limited to cooperatives as defined by the Rochdale Principles.",
+    "operator": "DotCooperation",
+    "IDN": true,
+    "DNSSEC": false
+  },
+  {
+    "name": ".country",
+    "usage": "general",
+    "operator": "Minds + Machines",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".coupon",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".coupons",
+    "usage": "coupons",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".courses",
+    "operator": "OPEN UNIVERSITIES AUSTRALIA PTY LTD"
+  },
+  {
+    "name": ".credit",
+    "usage": "Financial institutions",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".creditcard",
+    "usage": "Financial institutions",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".cricket",
+    "usage": "cricket",
+    "operator": "Famous Four Media",
+    "DNSSEC": true
+  },
+  {
+    "name": ".cruises",
+    "usage": "cruise businesses and travel",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".dad",
+    "usage": "families",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".dance",
+    "usage": "Dance studios and companies",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".date",
+    "usage": "online dating",
+    "DNSSEC": true
+  },
+  {
+    "name": ".dating",
+    "usage": "online dating",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".day",
+    "usage": "general",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".deal",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".deals",
+    "usage": "online shopping and couponing",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".degree",
+    "usage": "general",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".delivery",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".democrat",
+    "usage": "Democratic Party politics",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".dental",
+    "usage": "dentists",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".dentist",
+    "usage": "dentists",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".design",
+    "usage": "graphic art and fashion",
+    "operator": "Top Level Design",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".dev",
+    "usage": "development",
+    "operator": "Google",
+    "DNSSEC": "Unknown"
+  },
+  {
+    "name": ".diamonds",
+    "usage": "diamond and jewelry industry",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".diet",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".digital",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".direct",
+    "usage": "general",
+    "operator": "Donuts",
+    "DNSSEC": true
+  },
+  {
+    "name": ".directory",
+    "usage": "general directory",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".discount",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".diy",
+    "operator": "Lifestyle Domain Holdings, Inc."
+  },
+  {
+    "name": ".doctor",
+    "operator": "Brice Trail, LLC"
+  },
+  {
+    "name": ".dog",
+    "usage": "dog stores and owners",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".domains",
+    "usage": "domain registries",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".download",
+    "usage": "technology",
+    "operator": "Famous Four Media",
+    "DNSSEC": true
+  },
+  {
+    "name": ".duck",
+    "operator": "Johnson Shareholdings, Inc."
+  },
+  {
+    "name": ".earth",
+    "operator": "Interlink Co., Ltd."
+  },
+  {
+    "name": ".eat",
+    "usage": "restaurants and foodies",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".eco",
+    "operator": "Big Room Inc."
+  },
+  {
+    "name": ".education",
+    "usage": "educational institutes",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".email",
+    "usage": "email",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".energy",
+    "usage": "energy industry and marketing",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".engineer",
+    "usage": "engineers and engineering firms",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".engineering",
+    "usage": "engineering firms",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".equipment",
+    "usage": "equipment-related businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".esq",
+    "usage": "lawyers, law firms, legal professionals",
+    "restrictions": "To be restricted to verified lawyers and attorneys",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".estate",
+    "usage": "real estate businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".events",
+    "usage": "happenings",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".exchange",
+    "usage": "generic trade",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".expert",
+    "usage": "generic expertise",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".exposed",
+    "usage": "general interest",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".express",
+    "usage": "shipping",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".fail",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".faith",
+    "usage": "religion and churches",
+    "DNSSEC": true
+  },
+  {
+    "name": ".family",
+    "usage": "families",
+    "DNSSEC": true
+  },
+  {
+    "name": ".fan",
+    "operator": "Asiamix Digital Ltd"
+  },
+  {
+    "name": ".fans",
+    "usage": "general",
+    "DNSSEC": true
+  },
+  {
+    "name": ".farm",
+    "usage": "farms and agriculture",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".fashion",
+    "usage": "clothing industry",
+    "operator": "Minds + Machines",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".fast",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".feedback",
+    "operator": "Top Level Spectrum",
+    "DNSSEC": true
+  },
+  {
+    "name": ".film",
+    "operator": "Motion Picture Domain Registry Pty Ltd"
+  },
+  {
+    "name": ".final",
+    "operator": "Núcleo de Informação e Coordenação do Ponto BR - NIC.br"
+  },
+  {
+    "name": ".finance",
+    "usage": "financial",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".financial",
+    "usage": "financial",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".fire",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".fish",
+    "usage": "fishing businesses, sports, and interests",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".fishing",
+    "usage": "fishing businesses, sports, and interests",
+    "operator": "Minds + Machines",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".fit",
+    "usage": "Fitness and exercise",
+    "operator": "Minds + Machines",
+    "DNSSEC": true
+  },
+  {
+    "name": ".fitness",
+    "usage": "Fitness and exercise",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".flights",
+    "usage": "airline businesses and travel",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".florist",
+    "usage": "florists",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".flowers",
+    "usage": "florists and gardens",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".fly",
+    "usage": "travel",
+    "restrictions": "To be restricted to verified airlines, travel agencies and travel resellers",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".foo",
+    "usage": "web development",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".food",
+    "operator": "Lifestyle Domain Holdings, Inc."
+  },
+  {
+    "name": ".foodnetwork",
+    "operator": "Lifestyle Domain Holdings, Inc."
+  },
+  {
+    "name": ".football",
+    "usage": "soccer and American football",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".forsale",
+    "usage": "online retail",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".forum",
+    "operator": "Fegistry, LLC"
+  },
+  {
+    "name": ".foundation",
+    "usage": "charitable organizations",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".free",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".frontdoor",
+    "operator": "Lifestyle Domain Holdings, Inc."
+  },
+  {
+    "name": ".fund",
+    "usage": "financial",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".furniture",
+    "usage": "furniture businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".fyi",
+    "usage": "\"for your information\"",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".gallery",
+    "usage": "photo and art galleries",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".game",
+    "operator": "Uniregistry, Corp."
+  },
+  {
+    "name": ".games",
+    "operator": "United TLD Holdco Ltd."
+  },
+  {
+    "name": ".garden",
+    "usage": "gardening",
+    "operator": "Minds + Machines",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".gift",
+    "usage": "gift-giving",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".gifts",
+    "usage": "gift-giving",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".gives",
+    "usage": "charities and gift-giving",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".glass",
+    "usage": "window sales and repairs",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".global",
+    "usage": "general",
+    "operator": "Dot GLOBAL",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".gold",
+    "usage": "gold and luxury",
+    "operator": "Donuts",
+    "DNSSEC": true
+  },
+  {
+    "name": ".golf",
+    "usage": "golf",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".gop",
+    "usage": "Republican Party politics",
+    "operator": "Republican State Leadership Committee",
+    "IDN": "Spanish",
+    "DNSSEC": true
+  },
+  {
+    "name": ".graphics",
+    "usage": "graphics",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".green",
+    "usage": "the environmentally-focused",
+    "restrictions": "\"As a Registrant you may not ... use a .green name or its content in a way that negatively affects the mission, purpose of the .green TLD, or its brand.\"",
+    "operator": "Afilias",
+    "DNSSEC": true
+  },
+  {
+    "name": ".gripe",
+    "usage": "opinion sites",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".group",
+    "operator": "Romeo Town, LLC"
+  },
+  {
+    "name": ".guide",
+    "usage": "help sites",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".guitars",
+    "usage": "Guitars",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".guru",
+    "usage": "generic expertise",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".hair",
+    "operator": "L'Oreal"
+  },
+  {
+    "name": ".hangout",
+    "operator": "Charleston Road Registry Inc."
+  },
+  {
+    "name": ".health",
+    "operator": "DotHealth, LLC"
+  },
+  {
+    "name": ".healthcare",
+    "usage": "healthcare industry",
+    "operator": "Donuts",
+    "DNSSEC": true
+  },
+  {
+    "name": ".help",
+    "usage": "help sites",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".here",
+    "usage": "generic geographic",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".hiphop",
+    "usage": "Hip hop culture",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".hiv",
+    "usage": "AIDS and HIV",
+    "operator": "dotHIV",
+    "DNSSEC": true
+  },
+  {
+    "name": ".hockey",
+    "usage": "hockey",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".holdings",
+    "usage": "real estate or financial business",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".holiday",
+    "usage": "holiday gift industry",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".homegoods",
+    "operator": "The TJX Companies, Inc."
+  },
+  {
+    "name": ".homes",
+    "usage": "individuals interested in real estate and home improvement",
+    "operator": "Dominion Enterprises",
+    "DNSSEC": true
+  },
+  {
+    "name": ".homesense",
+    "operator": "The TJX Companies, Inc."
+  },
+  {
+    "name": ".horse",
+    "usage": "horse-related businesses and interest",
+    "operator": "Minds + Machines",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".host",
+    "usage": "network companies",
+    "operator": "Radix Registry",
+    "DNSSEC": true
+  },
+  {
+    "name": ".hosting",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".hot",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".house",
+    "usage": "real estate and construction businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".how",
+    "usage": "how-to guides",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".ice",
+    "operator": "IntercontinentalExchange, Inc."
+  },
+  {
+    "name": ".info",
+    "usage": "information",
+    "operator": "Afilias",
+    "IDN": "German",
+    "DNSSEC": true
+  },
+  {
+    "name": ".ing",
+    "usage": "Verbal suffix: e.g., \"jump.ing\".",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".ink",
+    "usage": "creative printing or tattooing",
+    "operator": "Top Level Design",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".institute",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".insurance",
+    "operator": "fTLD Registry Services LLC"
+  },
+  {
+    "name": ".insure",
+    "usage": "Insurance companies",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".international",
+    "usage": "international entities",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".investments",
+    "usage": "financial",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".jewelry",
+    "usage": "jewelry stores",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".jobs",
+    "usage": "Employment",
+    "restrictions": "For websites with job opportunities and job listings.",
+    "operator": "Employ Media",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".joy",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".kim",
+    "usage": "people named Kim\n Also means \"who\" in Turkish",
+    "operator": "Afilias",
+    "DNSSEC": true
+  },
+  {
+    "name": ".kitchen",
+    "usage": "food industry and remodeling",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".land",
+    "usage": "real estate",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".latino",
+    "operator": "Dish DBS Corporation"
+  },
+  {
+    "name": ".law",
+    "operator": "Minds + Machines Group Limited"
+  },
+  {
+    "name": ".lawyer",
+    "usage": "lawyers and legal organizations",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".lease",
+    "usage": "financing",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".legal",
+    "usage": "lawyers and legal organizations",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".lgbt",
+    "usage": "the lesbian, gay, bisexual and transgender community",
+    "restrictions": "\"Registrants are prohibited from using the .LGBT domain in a manner that is harmful, threatening, abusive, harassing, defamatory, or hateful with respect to the LGBT community.\"",
+    "operator": "Afilias",
+    "DNSSEC": true
+  },
+  {
+    "name": ".life",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".lifeinsurance",
+    "operator": "American Council of Life Insurers"
+  },
+  {
+    "name": ".lighting",
+    "usage": "lighting",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".like",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".limited",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".limo",
+    "usage": "limousine businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".link",
+    "usage": "connecting to information",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".live",
+    "operator": "United TLD Holdco Ltd."
+  },
+  {
+    "name": ".living",
+    "operator": "Lifestyle Domain Holdings, Inc."
+  },
+  {
+    "name": ".loan",
+    "usage": "banks and lenders",
+    "operator": "Famous Four Media",
+    "DNSSEC": true
+  },
+  {
+    "name": ".loans",
+    "usage": "banks and lenders",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".locker",
+    "operator": "Dish DBS Corporation"
+  },
+  {
+    "name": ".lol",
+    "usage": "LOL: laughing out loud",
+    "operator": "Uniregistry",
+    "DNSSEC": true
+  },
+  {
+    "name": ".lotto",
+    "operator": "Afilias",
+    "DNSSEC": true
+  },
+  {
+    "name": ".love",
+    "usage": "dating sites",
+    "DNSSEC": true
+  },
+  {
+    "name": ".luxe",
+    "operator": "Minds + Machines",
+    "DNSSEC": true
+  },
+  {
+    "name": ".luxury",
+    "usage": "businesses catering to the wealthy",
+    "operator": "Luxury Partners",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".makeup",
+    "operator": "L'Oréal"
+  },
+  {
+    "name": ".management",
+    "usage": "business management",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".market",
+    "usage": "marketing services and retailers",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".marketing",
+    "usage": "marketing services",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".markets",
+    "usage": "financial and stock markets",
+    "operator": "IG Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".mba",
+    "usage": "Masters in Business Administration",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".media",
+    "usage": "general media interests",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".meet",
+    "usage": "social gatherings, meeting new people",
+    "operator": "Afilias",
+    "DNSSEC": true
+  },
+  {
+    "name": ".meme",
+    "usage": "Internet memes",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".memorial",
+    "usage": "memorial sites",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".men",
+    "usage": "men",
+    "operator": "Famous Four Media",
+    "DNSSEC": true
+  },
+  {
+    "name": ".menu",
+    "usage": "restaurants",
+    "operator": "Wedding TLD2",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".mint",
+    "operator": "Intuit Administrative Services, Inc."
+  },
+  {
+    "name": ".mobi",
+    "usage": "mobile devices",
+    "restrictions": "Must be used for mobile-compatible sites in accordance with standards.",
+    "operator": "Afilias",
+    "IDN": true,
+    "DNSSEC": false
+  },
+  {
+    "name": ".mobily",
+    "operator": "GreenTech Consultancy Company W.L.L."
+  },
+  {
+    "name": ".moe",
+    "usage": "Japanese otaku culture\n The word \"moe\" (Japanese: 萌え?, pronounced as \"moh-ay\") is a slang word rooted deep in the Japanese Otaku culture. It has often been used to mean a particular type of \"adorable\" or \"cute\" towards fictional characters, people, animals, etc.",
+    "operator": "Interlink",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".money",
+    "usage": "financial",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".mortgage",
+    "usage": "mortgage lenders",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".motorcycles",
+    "usage": "motorcycles",
+    "operator": "DERMotorcycles",
+    "DNSSEC": true
+  },
+  {
+    "name": ".mov",
+    "usage": "Digital video",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".movie",
+    "usage": "movies and cinemas",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".museum",
+    "usage": "museums",
+    "restrictions": "Must be verified as a legitimate museum.",
+    "operator": "Museum Domain Management Association",
+    "IDN": "Latin script",
+    "DNSSEC": true
+  },
+  {
+    "name": ".name",
+    "usage": "individuals, by name",
+    "restrictions": "Open TLD; any person or entity is permitted to register; however, registrations may be challenged later if they are not by individuals (or the owners of fictional characters) in accordance with the domain's charter.",
+    "operator": "Verisign",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".navy",
+    "usage": "defense contractors",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".network",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".new",
+    "usage": "general",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".news",
+    "usage": "news sites",
+    "DNSSEC": true
+  },
+  {
+    "name": ".ngo",
+    "usage": "Non-governmental organizations.\n Sold packaged with .ong.",
+    "restrictions": "Restricted to validated NGOs, as determined by PIR. See the eligibility requirements.",
+    "operator": "Public Interest Registry",
+    "DNSSEC": true
+  },
+  {
+    "name": ".ninja",
+    "usage": "general expertise",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".now",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".off",
+    "operator": "Johnson Shareholdings, Inc."
+  },
+  {
+    "name": ".one",
+    "usage": "general",
+    "operator": ".one (top-level domain)",
+    "DNSSEC": true
+  },
+  {
+    "name": ".ong",
+    "usage": "Non-governmental organizations.\n Sold packaged with .ngo.",
+    "restrictions": "Restricted to validated NGOs, as determined by PIR. See the eligibility requirements.",
+    "operator": "Public Interest Registry",
+    "DNSSEC": true
+  },
+  {
+    "name": ".onl",
+    "usage": "short for \"online\"",
+    "operator": "I-REGISTRY",
+    "DNSSEC": true
+  },
+  {
+    "name": ".online",
+    "usage": "generic",
+    "DNSSEC": true
+  },
+  {
+    "name": ".ooo",
+    "usage": "general",
+    "operator": "Infibeam",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".open",
+    "operator": "American Express Travel Related Services Company, Inc."
+  },
+  {
+    "name": ".organic",
+    "usage": "organic gardeners, farmers, foods, etc.",
+    "restrictions": "Registrants must be verified as a member of the organic community.",
+    "operator": "Afilias",
+    "DNSSEC": true
+  },
+  {
+    "name": ".origins",
+    "operator": "The Estée Lauder Companies Inc."
+  },
+  {
+    "name": ".page",
+    "operator": "Charleston Road Registry Inc."
+  },
+  {
+    "name": ".partners",
+    "usage": "businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".parts",
+    "usage": "manufacturing and consumer auto",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".party",
+    "usage": "nightclubs and social gatherings",
+    "operator": "Famous Four Media",
+    "DNSSEC": true
+  },
+  {
+    "name": ".pay",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".pet",
+    "operator": "Afilias plc"
+  },
+  {
+    "name": ".pharmacy",
+    "usage": "pharmacies",
+    "restrictions": "\"All registrants within the .pharmacy gTLD are vetted prior to registration to confirm that they meet all applicable regulatory standards, including pharmacy licensure and valid prescription requirements, in the jurisdictions where they are based and where they serve patients.\"",
+    "operator": "National Association of Boards of Pharmacy",
+    "DNSSEC": true
+  },
+  {
+    "name": ".photo",
+    "usage": "photography and photo-sharing",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".photography",
+    "usage": "photography and photo-sharing",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".photos",
+    "usage": "photography and photo-sharing",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".physio",
+    "usage": "physical therapists",
+    "restrictions": "Must be eligible for membership within an association that is a member of the World Confederation for Physical Therapy, have proper training as a physical therapist outside WCPT's reach, or otherwise supports physical therapy.",
+    "operator": "PhysBiz",
+    "DNSSEC": true
+  },
+  {
+    "name": ".pics",
+    "usage": "photography and photo-sharing",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".pictures",
+    "usage": "photography and photo-sharing",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".pid",
+    "operator": "Top Level Spectrum",
+    "DNSSEC": true
+  },
+  {
+    "name": ".pin",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".pink",
+    "usage": "those who like the color pink",
+    "operator": "Afilias",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".pizza",
+    "usage": "pizza parlors",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".place",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".plumbing",
+    "usage": "plumbing businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".plus",
+    "usage": "generic",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".poker",
+    "usage": "Poker players and sites",
+    "operator": "Afilias",
+    "DNSSEC": true
+  },
+  {
+    "name": ".porn",
+    "usage": "adult entertainment (pornography)",
+    "restrictions": "For sites providing sexually explicit content, such as pornography.",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".post",
+    "usage": "postal services",
+    "restrictions": "The .post TLD is restricted to Postal Administrations as defined in the Universal Postal Union constitution, and their large customers who wish to provide \"Trusted Postal Services\".",
+    "operator": "Universal Postal Union",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".press",
+    "usage": "publishing and journalism",
+    "operator": "Radix Registry",
+    "DNSSEC": true
+  },
+  {
+    "name": ".prime",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".pro",
+    "usage": "professions/professionals",
+    "operator": "Registry Services Corporation",
+    "IDN": true,
+    "DNSSEC": false
+  },
+  {
+    "name": ".productions",
+    "usage": "studio/art businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".prof",
+    "usage": "Professors, teachers and learning",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".promo",
+    "operator": "Afilias plc"
+  },
+  {
+    "name": ".properties",
+    "usage": "real estate",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".property",
+    "usage": "real estate",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".protection",
+    "operator": "XYZ.COM LLC"
+  },
+  {
+    "name": ".qpon",
+    "usage": "coupons",
+    "operator": "dotCOOL",
+    "DNSSEC": true
+  },
+  {
+    "name": ".racing",
+    "usage": "racing",
+    "operator": "Famous Four Media",
+    "DNSSEC": true
+  },
+  {
+    "name": ".radio",
+    "operator": "European Broadcasting Union (EBU)"
+  },
+  {
+    "name": ".read",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".realestate",
+    "operator": "dotRealEstate LLC"
+  },
+  {
+    "name": ".realty",
+    "operator": "Fegistry, LLC"
+  },
+  {
+    "name": ".recipes",
+    "usage": "recipes and cooking",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".red",
+    "usage": "those who like the color red\n Also Spanish variant of .net\n Also likely to be attractive for domain hacks for words that end with '-red'.",
+    "operator": "Afilias",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".rehab",
+    "usage": "Rehab centers and support sites",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".ren",
+    "usage": "Renren users (ren means \"people/person\" in Mandarin Chinese pinyin",
+    "restrictions": "Restricted TLD",
+    "operator": "Beijing Qianxiang Wangjing Technology Development Co.",
+    "DNSSEC": true
+  },
+  {
+    "name": ".rent",
+    "usage": "Real estate professionals and small businesses",
+    "operator": "xyz.xyz",
+    "DNSSEC": true
+  },
+  {
+    "name": ".rentals",
+    "usage": "short-term ownership",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".repair",
+    "usage": "general repair/maintenance businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".report",
+    "usage": "business services",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".republican",
+    "usage": "Republican Party politics",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".rest",
+    "usage": "Restaurants and related industry",
+    "operator": "Punto 2012",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".review",
+    "usage": "public reviews",
+    "DNSSEC": true
+  },
+  {
+    "name": ".reviews",
+    "usage": "public reviews",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".rich",
+    "usage": "businesses catering to the wealthy",
+    "operator": "I-REGISTRY",
+    "DNSSEC": true
+  },
+  {
+    "name": ".rip",
+    "usage": "memorial sites",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".rocks",
+    "usage": "general",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".rodeo",
+    "usage": "Rodeo interest",
+    "operator": "Minds + Machines",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".room",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".rsvp",
+    "usage": "Invitations and replies",
+    "operator": "Google",
+    "DNSSEC": true
+  },
+  {
+    "name": ".run",
+    "usage": "running and jogging",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".safe",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".sale",
+    "usage": "retail",
+    "DNSSEC": true
+  },
+  {
+    "name": ".save",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".school",
+    "usage": "schools",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".science",
+    "usage": "science-related sites",
+    "operator": "dot Science",
+    "DNSSEC": true
+  },
+  {
+    "name": ".secure",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".security",
+    "operator": "XYZ.COM LLC"
+  },
+  {
+    "name": ".select",
+    "operator": "iSelect Ltd"
+  },
+  {
+    "name": ".services",
+    "usage": "business services",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".sex",
+    "usage": "adult entertainment (pornography)",
+    "restrictions": "For sites providing sexually explicit content, such as pornography.",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".sexy",
+    "usage": "adult entertainment",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".shoes",
+    "usage": "shoes",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".shop",
+    "operator": "GMO Registry, Inc."
+  },
+  {
+    "name": ".shopping",
+    "operator": "Over Keep, LLC"
+  },
+  {
+    "name": ".show",
+    "usage": "entertainment and vlogs",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".showtime",
+    "operator": "CBS Domains Inc."
+  },
+  {
+    "name": ".silk",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".singles",
+    "usage": "online dating",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".site",
+    "usage": "general",
+    "DNSSEC": true
+  },
+  {
+    "name": ".ski",
+    "operator": "STARTING DOT LIMITED"
+  },
+  {
+    "name": ".skin",
+    "operator": "L'Oréal"
+  },
+  {
+    "name": ".sky",
+    "operator": "Sky International AG"
+  },
+  {
+    "name": ".smile",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".soccer",
+    "usage": "soccer",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".social",
+    "usage": "general interest",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".software",
+    "usage": "computer software",
+    "operator": "Rightside Group",
+    "DNSSEC": true
+  },
+  {
+    "name": ".solar",
+    "usage": "solar-power",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".solutions",
+    "usage": "business services",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".song",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".space",
+    "usage": "as a creative space",
+    "operator": "Radix Registry",
+    "DNSSEC": true
+  },
+  {
+    "name": ".spot",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".spreadbetting",
+    "operator": "DOTSPREADBETTING REGISTRY LTD"
+  },
+  {
+    "name": ".store",
+    "usage": "stores",
+    "operator": "Radix Registry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".stream",
+    "operator": "dot Stream Limited"
+  },
+  {
+    "name": ".studio",
+    "usage": "art, fitness, & entertainment",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".study",
+    "operator": "OPEN UNIVERSITIES AUSTRALIA PTY LTD"
+  },
+  {
+    "name": ".style",
+    "usage": "fashion",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".sucks",
+    "usage": "gripe sites",
+    "operator": "Vox Populi",
+    "DNSSEC": true
+  },
+  {
+    "name": ".supplies",
+    "usage": "manufacturing industries",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".supply",
+    "usage": "manufacturing industries",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".support",
+    "usage": "help pages",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".surf",
+    "usage": "surfing",
+    "operator": "Minds + Machines",
+    "DNSSEC": true
+  },
+  {
+    "name": ".surgery",
+    "usage": "healthcare industry",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".systems",
+    "usage": "technology",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".talk",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".tattoo",
+    "usage": "tattoo aficionados",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".tax",
+    "usage": "financial",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".taxi",
+    "usage": "taxi services",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".team",
+    "usage": "team sports",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".tech",
+    "usage": "technology",
+    "operator": "Dot Tech LLC",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".technology",
+    "usage": "technology",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".tel",
+    "usage": "Internet communication services",
+    "restrictions": "A contact directory housing all types of contact information directly in the Domain Name System.",
+    "IDN": true,
+    "DNSSEC": false
+  },
+  {
+    "name": ".tennis",
+    "usage": "tennis",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".theater",
+    "usage": "theaters and cinemas",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".theatre",
+    "operator": "XYZ.COM LLC"
+  },
+  {
+    "name": ".tickets",
+    "operator": "Accent Media Limited"
+  },
+  {
+    "name": ".tips",
+    "usage": "general help topics",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".tires",
+    "usage": "tire manufacturers",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".today",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".tools",
+    "usage": "manufacturing industries",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".top",
+    "usage": "general",
+    "operator": "Jiangsu Bangning",
+    "DNSSEC": true
+  },
+  {
+    "name": ".tours",
+    "usage": "tourism",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".town",
+    "usage": "generic geographic",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".toys",
+    "usage": "toy businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".trade",
+    "usage": "businesses",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".trading",
+    "operator": "DOTTRADING REGISTRY LTD"
+  },
+  {
+    "name": ".training",
+    "usage": "training and how-tos",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".travel",
+    "usage": "travel and tourism industry related sites",
+    "restrictions": "Must be verified as a legitimate travel-related entity.",
+    "IDN": true,
+    "DNSSEC": false
+  },
+  {
+    "name": ".travelersinsurance",
+    "operator": "Travelers TLD, LLC"
+  },
+  {
+    "name": ".trust",
+    "operator": "Artemis Internet Inc"
+  },
+  {
+    "name": ".tube",
+    "operator": "Latin American Telecom LLC"
+  },
+  {
+    "name": ".tunes",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".university",
+    "usage": "young adults, university life",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".vacations",
+    "usage": "travel",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".vet",
+    "usage": "veterans and veterinarians",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".video",
+    "usage": "video sharing",
+    "DNSSEC": true
+  },
+  {
+    "name": ".villas",
+    "usage": "real estate and/or travel businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".vip",
+    "operator": "Minds + Machines Group Limited"
+  },
+  {
+    "name": ".vision",
+    "usage": "eye-care businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".vodka",
+    "usage": "Vodka-related businesses and interest",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".vote",
+    "usage": "democratic elections and campaign websites",
+    "restrictions": "Must use the domain in connection with a \"clearly identified political/democratic process.\"",
+    "operator": "Afilias",
+    "DNSSEC": true
+  },
+  {
+    "name": ".voting",
+    "usage": "polling sites",
+    "IDN": "Latin and Cyrillic scripts",
+    "DNSSEC": true
+  },
+  {
+    "name": ".voyage",
+    "usage": "travel",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".wang",
+    "usage": "general\n Wǎng is a Chinese Mandarin pinyin rendering of 网 (\"web\" or \"portal\").\n Wang is also a common surname in mainland China.",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".watch",
+    "usage": "Watches",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".watches",
+    "operator": "Richemont DNS Inc."
+  },
+  {
+    "name": ".weather",
+    "operator": "International Business Machines Corporation"
+  },
+  {
+    "name": ".webcam",
+    "usage": "Web cam shows and video sharing",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".website",
+    "usage": "general",
+    "operator": "Radix Registry",
+    "DNSSEC": true
+  },
+  {
+    "name": ".wed",
+    "usage": "engaged couples and wedding-oriented businesses",
+    "restrictions": "This TLD is intended primarily for engaged couples on a short-term basis (two years with prohibitive third-year renewal fees for second-level domains).\n And although the registry is advertising for multiple world languages, all domains appear to need to be in Latin script.",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".wedding",
+    "usage": "wedding-oriented businesses",
+    "operator": "Minds + Machines",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".whoswho",
+    "usage": "general",
+    "restrictions": "An open TLD, any person or entity is permitted to register. Conceived for those cited in one of the Who's Who reference titles published around the world, the registry was opened for use by private individuals, and for-profit and nonprofit entities, including those with social media aspirations. Registry policies allow for rapid takedown of non-compliant domains, for violations including imposturous registration of another's names, and proscribed uses, including pornography or adult services/applications.",
+    "operator": "Who's Who Registry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".wiki",
+    "usage": "wikis",
+    "restrictions": "\"An open TLD for anyone interested in community resource creation\"",
+    "operator": "Top Level Design",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".win",
+    "usage": "games, Microsoft Windows",
+    "operator": "Famous Four Media",
+    "DNSSEC": true
+  },
+  {
+    "name": ".wine",
+    "usage": "Wine",
+    "operator": "—",
+    "DNSSEC": "Unknown"
+  },
+  {
+    "name": ".winners",
+    "operator": "The TJX Companies, Inc."
+  },
+  {
+    "name": ".work",
+    "usage": "general",
+    "operator": "Minds + Machines",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".works",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".world",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".wow",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".wtf",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".xxx",
+    "usage": "adult entertainment (pornography)",
+    "restrictions": "For sites providing sexually explicit content, such as pornography.",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".xyz",
+    "usage": "general",
+    "operator": "XYZ.com",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".yoga",
+    "usage": "yoga",
+    "operator": "Minds + Machines",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".you",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".zero",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".zone",
+    "usage": "general",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".shouji",
+    "translation": "phone",
+    "operator": "QIHOO 360 TECHNOLOGY CO. LTD."
+  },
+  {
+    "name": ".tushu",
+    "translation": "books",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".wanggou",
+    "translation": "online shopping",
+    "operator": "Amazon Registry Services, Inc."
+  },
+  {
+    "name": ".weibo",
+    "translation": "microblogging",
+    "operator": "Sina Corporation"
+  },
+  {
+    "name": ".xihuan",
+    "translation": "like",
+    "operator": "QIHOO 360 TECHNOLOGY CO. LTD."
+  },
+  {
+    "name": ".maison",
+    "translation": "\"house\"",
+    "operator": "Donuts",
+    "IDN": "Chinese, French, German, Spanish",
+    "DNSSEC": true
+  },
+  {
+    "name": ".epost",
+    "translation": "e-mail",
+    "operator": "Deutsche Post AG"
+  },
+  {
+    "name": ".gmbh",
+    "translation": "GmbH",
+    "operator": "Extra Dynamite, LLC"
+  },
+  {
+    "name": ".haus",
+    "translation": "\"house\"",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".immobilien",
+    "translation": "\"real estate\"",
+    "operator": "Rightside Group",
+    "IDN": "German",
+    "DNSSEC": true
+  },
+  {
+    "name": ".jetzt",
+    "translation": "\"now\"",
+    "operator": "New TLD Company",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".kaufen",
+    "translation": "\"buy\"",
+    "operator": "Rightside Group",
+    "IDN": "German",
+    "DNSSEC": true
+  },
+  {
+    "name": ".kinder",
+    "translation": "children",
+    "operator": "Ferrero Trading Lux S.A."
+  },
+  {
+    "name": ".reise",
+    "translation": "\"travel\"",
+    "restrictions": "Must be an eligible member of the travel business community; also, domain must be used for travel-related purposes.",
+    "operator": "dotreise",
+    "IDN": "Latin script",
+    "DNSSEC": true
+  },
+  {
+    "name": ".reisen",
+    "translation": "\"traveling\"",
+    "operator": "Donuts",
+    "IDN": "German",
+    "DNSSEC": true
+  },
+  {
+    "name": ".schule",
+    "translation": "\"school\"",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".versicherung",
+    "translation": "\"insurance\"",
+    "IDN": "Latin script",
+    "DNSSEC": true
+  },
+  {
+    "name": ".desi",
+    "translation": "Hindi for the peoples and cultures of South Asia\n See also Desi",
+    "operator": "Desi Networks",
+    "DNSSEC": true
+  },
+  {
+    "name": ".shiksha",
+    "translation": "Hindi for \"education\".",
+    "operator": "Afilias",
+    "DNSSEC": true
+  },
+  {
+    "name": ".casa",
+    "translation": "\"house\"",
+    "operator": "Minds + Machines",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".immo",
+    "translation": "French, German, Dutch, and Italian abbreviation for \"real estate\"",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".moda",
+    "translation": "\"fashion\"",
+    "operator": "Rightside Group",
+    "IDN": "Spanish",
+    "DNSSEC": true
+  },
+  {
+    "name": ".voto",
+    "translation": "\"vote\", for election and campaign websites",
+    "restrictions": "Must use the domain in connection with a \"clearly identified political/democratic process.\" Initially only available to registrations in the United States.",
+    "operator": "Afilias",
+    "DNSSEC": true
+  },
+  {
+    "name": ".bom",
+    "translation": "good",
+    "operator": "Núcleo de Informação e Coordenação do Ponto BR - NIC.br"
+  },
+  {
+    "name": ".passagens",
+    "translation": "ticket",
+    "operator": "Travel Reservations SRL"
+  },
+  {
+    "name": ".abogado",
+    "translation": "\"lawyer\"",
+    "restrictions": "To be restricted to licensed lawyers or law firms.",
+    "operator": "Minds + Machines",
+    "DNSSEC": true
+  },
+  {
+    "name": ".gratis",
+    "translation": "\"free\"",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".futbol",
+    "translation": "soccer",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".hoteles",
+    "translation": "hotels",
+    "operator": "Travel Reservations SRL"
+  },
+  {
+    "name": ".juegos",
+    "translation": "\"games\"",
+    "operator": "Uniregistry",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".soy",
+    "translation": "\"I am\"\n Also refers to the soybean and its food derivatives",
+    "operator": "Google",
+    "IDN": "Latin script, Japanese",
+    "DNSSEC": true
+  },
+  {
+    "name": ".tienda",
+    "translation": "\"shop\", \"store\"",
+    "operator": "Donuts",
+    "IDN": "Spanish",
+    "DNSSEC": true
+  },
+  {
+    "name": ".uno",
+    "translation": "\"one\", for websites targeting Spanish speaking consumers",
+    "IDN": "Spanish",
+    "DNSSEC": true
+  },
+  {
+    "name": ".viajes",
+    "translation": "\"travel\"",
+    "operator": "Donuts",
+    "IDN": "Spanish",
+    "DNSSEC": true
+  },
+  {
+    "name": ".vuelos",
+    "translation": "flights",
+    "operator": "Travel Reservations SRL"
+  },
+  {
+    "name": ".bar",
+    "entity": "bars and pubs",
+    "operator": "Punto 2012",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".bank",
+    "entity": "banks",
+    "restrictions": "Restricted to banks and savings associations",
+    "DNSSEC": true
+  },
+  {
+    "name": ".coop",
+    "entity": "cooperatives",
+    "restrictions": "The .coop TLD is limited to cooperatives as defined by the Rochdale Principles.",
+    "operator": "DotCooperation",
+    "IDN": true,
+    "DNSSEC": false
+  },
+  {
+    "name": ".enterprises",
+    "entity": "business associations",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".industries",
+    "entity": "industrial businesses",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".institute",
+    "entity": "established business associations",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".ltda",
+    "entity": "companies in South America",
+    "restrictions": "Domains are limited to registered LTDAs (like LLCs) in Brazil, Colombia, Chile, and Ecuador.",
+    "operator": "InterNetX",
+    "DNSSEC": true
+  },
+  {
+    "name": ".pharmacy",
+    "entity": "pharmacies",
+    "operator": "National Association of Boards of Pharmacy"
+  },
+  {
+    "name": ".pub",
+    "entity": "bars and pubs",
+    "operator": "Rightside Group",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".realtor",
+    "entity": "realtors",
+    "restrictions": "To be restricted to members of the National Association of Realtors and the Canadian Real Estate Association, and related associations.",
+    "operator": "Real Estate Domains",
+    "DNSSEC": true
+  },
+  {
+    "name": ".reit",
+    "entity": "real estate investment trusts",
+    "restrictions": "Restricted to REITs, as determined by national law.",
+    "operator": "National Association of Real Estate Investment Trusts",
+    "DNSSEC": true
+  },
+  {
+    "name": ".rest",
+    "entity": "restaurants",
+    "operator": "Punto 2012",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".restaurant",
+    "entity": "restaurants",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".sarl",
+    "entity": "Société à responsabilité limitée, Francophone Limited liability company",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  },
+  {
+    "name": ".ventures",
+    "entity": "funding for start-ups",
+    "operator": "Donuts",
+    "IDN": true,
+    "DNSSEC": true
+  }
+]

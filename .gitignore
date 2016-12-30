@@ -1,7 +1,9 @@
+/node_modules
+/npm-debug.log
+/build
+.DS_Store
+/coverage
+
 .env
 
 .sass-cache
-node_modules/
-npm-debug.log
-
-public/
