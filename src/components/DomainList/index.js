@@ -35,7 +35,8 @@ export default class DomainList extends Component {
       listStyle: 'none',
       fontSize: `${this.rowHeight / 3}px`,
       borderBottom: '2px solid black',
-      borderRight: '2px solid black'
+      borderRight: '2px solid black',
+      cursor: 'pointer'
     };
 
     if (current.domain === domain) {
