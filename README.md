@@ -1,4 +1,4 @@
-# dandydomains
+# domains
 
 ## install
 

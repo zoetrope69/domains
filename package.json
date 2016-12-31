@@ -1,7 +1,7 @@
 {
-  "name": "dandydomains",
+  "name": "domains",
   "version": "0.0.3",
-  "description": "finding domain hacks",
+  "description": "finding domain hacks using words",
   "private": true,
   "scripts": {
     "data": "node data/genTlds.js && node data/genDomains.js",
