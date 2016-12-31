@@ -55,7 +55,7 @@ export default class App extends Component {
   }
 
   lookupWord (word) {
-    fetch(`/dictionary?word=${word}`)
+    fetch(`http://localhost:3000/dictionary?word=${word}`)
       .then(response => response.json())
       .then(definitions => {
         if (definitions.length <= 0 || definitions.error_message || !definitions[0].description) {
@@ -69,7 +69,7 @@ export default class App extends Component {
   }
 
   getDomains () {
-    fetch('/domains')
+    fetch('http://localhost:3000/domains')
       .then(response => response.json())
       .then(domains => {
         this.setState({ domains });
@@ -79,7 +79,7 @@ export default class App extends Component {
   }
 
   lookupDomain (domain) {
-    fetch(`/domainr?domain=${domain}`)
+    fetch(`http://localhost:3000/domainr?domain=${domain}`)
       .then(response => response.json())
       .then(response => {
         if (!response) {
@@ -170,6 +170,7 @@ export default class App extends Component {
           <div style={filterStyles}>
             Search:
             <input style={filterInputStyles} onInput={this.handleSearch} value={search} />
+            {filteredDomains.length} domains found
           </div>
           <DomainList
             domains={filteredDomains}
