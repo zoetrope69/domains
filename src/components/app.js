@@ -24,25 +24,40 @@ export default class App extends Component {
     };
   }
 
-  componentDidMount () {
+  componentWillMount () {
     this.getDomains();
   }
 
-  setCurrent (domain) {
-    this.setState({ current: {
-      domain: '',
-      start: '',
-      end: '',
-      status: '',
-      definitions: []
-    } });
+  domainInUrl () {
+    let hash = location.hash;
 
-		if (!domain) {
+    if (hash.length > 0) {
+      hash = hash.substring(1);
+    }
+
+    if (this.state.domains.find(domain => domain === hash)) {
+      this.setCurrent(hash);
+    }
+  }
+
+  setCurrent (domain) {
+    this.setState({
+      current: {
+        domain: '',
+        start: '',
+        end: '',
+        status: '',
+        definitions: []
+      }
+    });
+
+    if (!domain) {
       return false;
     }
 
     const newCurrent = this.state.current;
     const domainParts = domain.split('.');
+    location.hash = domain;
     newCurrent.domain = domain;
     newCurrent.start = domainParts[0];
     newCurrent.end = domainParts[1];
@@ -72,6 +87,7 @@ export default class App extends Component {
       .then(domains => {
         this.setState({ domains });
 
+        this.domainInUrl();
         this.filterDomains();
       });
   }
@@ -137,29 +153,28 @@ export default class App extends Component {
 
     return (
       <div class="sans-serif">
-				<div class="fr w-100 w-50-ns pa2 pa3-ns">
-					<Header
-						current={current}
-						setCurrent={this.setCurrent}
-						/>
-				</div>
-				<div class="fl w-100 w-50-ns pa2 pa3-ns">
-					<div class="pa2" style={{ height: '15vh' }}>
-						<div class="cf">
-							<label for="search" class="f4 fl b">Search</label>
-							<small id="domains-amount" class="f4 fr black-60 i">
-								{filteredDomains.length} domains found
-						</small>
-						</div>
-						<input class="input-reset ba b--black-20 pa3 f3 db w-100 mv2" id="search" onInput={this.handleSearch} value={search} aria-describedby="domains-amount" />
-
-					</div>
-					<DomainList
-						domains={filteredDomains}
-						current={current}
-						setCurrent={this.setCurrent}
-							/>
-				</div>
+        <div class="fr w-100 w-50-ns pa2 pa3-ns">
+          <Header
+            current={current}
+            setCurrent={this.setCurrent}
+            />
+        </div>
+        <div class="fl w-100 w-50-ns pa2 pa3-ns">
+          <div class="pa2" style={{ height: '15vh' }}>
+            <div class="cf">
+              <label for="search" class="f4 fl b">Search</label>
+              <small id="domains-amount" class="f4 fr black-60 i">
+                {filteredDomains.length} domains found
+              </small>
+            </div>
+            <input class="input-reset ba b--black-20 pa3 f3 db w-100 mv2" id="search" onInput={this.handleSearch} value={search} aria-describedby="domains-amount" />
+          </div>
+          <DomainList
+            domains={filteredDomains}
+            current={current}
+            setCurrent={this.setCurrent}
+            />
+        </div>
       </div>
     );
   }
