@@ -137,7 +137,13 @@ export default class App extends Component {
 
     return (
       <div class="sans-serif">
-				<div class="fl w-50 pa2 pa3-ns">
+				<div class="fr w-100 w-50-ns pa2 pa3-ns">
+					<Header
+						current={current}
+						setCurrent={this.setCurrent}
+						/>
+				</div>
+				<div class="fl w-100 w-50-ns pa2 pa3-ns">
 					<div class="pa2" style={{ height: '15vh' }}>
 						<div class="cf">
 							<label for="search" class="f4 fl b">Search</label>
@@ -153,12 +159,6 @@ export default class App extends Component {
 						current={current}
 						setCurrent={this.setCurrent}
 							/>
-				</div>
-				<div class="fl w-50 pa2 pa3-ns">
-	        <Header
-	          current={current}
-	          setCurrent={this.setCurrent}
-	          />
 				</div>
       </div>
     );
