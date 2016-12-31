@@ -1,6 +1,6 @@
 import { h, Component } from 'preact';
 
-export default class Header extends Component {
+export default class Domain extends Component {
 
   render () {
     const { current } = this.props;

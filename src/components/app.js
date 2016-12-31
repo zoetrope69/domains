@@ -1,6 +1,6 @@
 import { h, Component } from 'preact';
 
-import Header from './Header';
+import Domain from './Domain';
 import DomainList from './DomainList';
 
 export default class App extends Component {
@@ -154,7 +154,7 @@ export default class App extends Component {
     return (
       <div class="sans-serif">
         <div class="fr w-100 w-50-ns pa2 pa3-ns">
-          <Header
+          <Domain
             current={current}
             setCurrent={this.setCurrent}
             />
