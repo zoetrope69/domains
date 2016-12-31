@@ -53,7 +53,7 @@ export default class App extends Component {
   }
 
   lookupWord (word) {
-    fetch(`http://localhost:3000/dictionary?word=${word}`)
+    fetch(`/dictionary?word=${word}`)
       .then(response => response.json())
       .then(definitions => {
         if (definitions.length <= 0 || definitions.error_message || !definitions[0].description) {
@@ -67,7 +67,7 @@ export default class App extends Component {
   }
 
   getDomains () {
-    fetch('http://localhost:3000/domains')
+    fetch('/domains')
       .then(response => response.json())
       .then(domains => {
         this.setState({ domains });
@@ -77,7 +77,7 @@ export default class App extends Component {
   }
 
   lookupDomain (domain) {
-    fetch(`http://localhost:3000/domainr?domain=${domain}`)
+    fetch(`/domainr?domain=${domain}`)
       .then(response => response.json())
       .then(response => {
         if (!response) {
