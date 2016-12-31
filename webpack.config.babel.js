@@ -1,6 +1,5 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
 import ReplacePlugin from 'replace-bundle-webpack-plugin';
 import OfflinePlugin from 'offline-plugin';
 import path from 'path';
@@ -75,11 +74,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './index.html',
 			minify: { collapseWhitespace: true }
-		}),
-		new CopyWebpackPlugin([
-			{ from: './manifest.json', to: './' },
-			{ from: './favicon.ico', to: './' }
-		])
+		})
 	]).concat(ENV==='production' ? [
 		// strip out babel-helper invariant checks
 		new ReplacePlugin([{
