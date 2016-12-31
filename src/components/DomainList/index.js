@@ -15,7 +15,7 @@ export default class DomainList extends Component {
   handleRowClick (e) {
     e.preventDefault();
 
-    this.props.setCurrent(e.target.id);
+    this.props.setCurrent(e.target.innerHTML);
   }
 
   renderRow (domain, index) {
@@ -31,7 +31,7 @@ export default class DomainList extends Component {
     };
 
     return (
-			<li class="fl mr2" style={style}><a id={domain} onClick={this.handleRowClick} href="#" class={`b db pa2 link mid-gray ${current.domain === domain ? ' dark-pink' : 'dim'}`}>{domain}</a></li>
+			<li class="fl mr2" style={style}><a onClick={this.handleRowClick} href={`#${domain}`} class={`b db pa2 link mid-gray ${current.domain === domain ? ' dark-pink' : 'dim'}`}>{domain}</a></li>
 	 	);
   }
 
