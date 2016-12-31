@@ -12,7 +12,8 @@
 
 ## dev
 
-`npm run dev`
++ `npm run dev`
++ `nodemon app.js`
 
 ### using
 

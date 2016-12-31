@@ -28,7 +28,7 @@ const dictionary = new Dictionary({
   key: process.env.MW_DICTIONARY_KEY
 });
 
-const domains = shuffle(require('./data/domains'));
+const domains = require('./data/domains');
 const tldsInfo = require('./data/tldInfo');
 
 const app = express();
@@ -75,7 +75,7 @@ if (app.get('env') === 'development') {
 app.use('/', express.static('build'));
 
 app.get('/domains', function (req, res, next) {
-  res.json(domains);
+  res.json(shuffle(domains));
 });
 
 app.get('/dictionary', function (req, res) {
