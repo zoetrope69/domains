@@ -17,55 +17,72 @@ export default class Header extends Component {
   render () {
     const { current } = this.props;
 
-    const styles = {
-      float: 'left',
-      width: '40%',
-      height: '100vh',
-      padding: '15px'
-    };
-
-    const titleStyles = {
-      fontSize: '4em'
+    const style = {
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
     };
 
     return (
-      <header style={styles}>
+      <header>
         {current && current.domain && (
         <div>
-          <h1 style={titleStyles}><a href={`https://domainr.com/${current.domain}`}>{current.domain}</a></h1>
+          <h1 style={style} class="f3 f1-m dark-pink f-headline-l">{current.domain}</h1>
 
-          {current.status && (
-          <p>
-            <strong>domain avaibility</strong><br />
-            {current.status}
-          </p>
-          )}
+					<div class="cf">
+	          {current.status && (
+					    <dl class="db w-auto-l lh-title">
+					      <dd class="f6 fw4 ml0">Availability</dd>
+								<dd class="f4 f-subheadline-l fw6 ml0">
+									<a href={`https://domainr.com/${current.domain}`}>{current.status}</a>
+								</dd>
+	          	</dl>
+	          )}
 
-          {current.info && (
-          <p>
-            <strong>domain info</strong><br />
-            {current.info.name}<br />
-            {current.info.entity}<br />
-            {current.info.explanation}<br />
-            {current.info.notes}<br />
-          </p>
-          )}
+	          {current.info && current.info.name && (
+					    <dl class="db dib-l w-auto-l lh-title">
+					      <dd class="f6 fw4 ml0">TLD</dd>
+								<dd class="f4 f-subheadline-l fw6 ml0">{current.info.name}</dd>
+	          	</dl>
+						)}
 
-          {current.definitions.length > 0 && (
-          <p>
-            <strong>definitions</strong><br />
-            <ul>
-              {current.definitions.map(definition =>
-                <li>
-                  <strong>{definition.type} - </strong>
-                  {definition.description}
-                </li>
-              )}
-            </ul>
-          </p>
-          )}
+						{current.info && current.info.entity && (
+							<dl class="db w-auto-l lh-title">
+					      <dd class="f6 fw4 ml0">Entity</dd>
+								<dd class="f4 f-subheadline-l fw6 ml0">{current.info.entity}</dd>
+	          	</dl>
+						)}
 
-          <button onClick={this.handleCloseButtonClick}>Close</button>
+						{current.info && current.info.explanation && (
+							<dl class="db w-auto-l lh-title">
+					      <dd class="f6 fw4 ml0">Explanation</dd>
+								<dd class="f3 fw6 ml0">{current.info.explanation}</dd>
+	          	</dl>
+						)}
+
+						{current.info && current.info.notes && (
+							<dl class="db w-auto-l lh-title">
+					      <dd class="f6 fw4 ml0">Notes</dd>
+								<dd class="f4 fw6 ml0">{current.info.notes}</dd>
+	          	</dl>
+						)}
+
+					  {current.definitions.length > 0 && (
+							<dl class="db w-auto-l lh-title">
+					      <dd class="f6 fw4 ml0">Definitions</dd>
+								<dd class="f4 fw6 ml0">
+									<ul class="list">
+										{current.definitions.map(definition =>
+											<li>
+												<strong>{definition.type} - </strong>
+												{definition.description}
+											</li>
+										)}
+									</ul>
+								</dd>
+	          	</dl>
+						)}
+				  </div>
         </div>
         )}
       </header>

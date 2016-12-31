@@ -22,48 +22,35 @@ export default class DomainList extends Component {
     const { current } = this.props;
 
     const style = {
-      position: 'relative',
-      float: 'left',
       height: `${this.rowHeight}px`,
       lineHeight: `${this.rowHeight}px`,
-      width: `${100 / 6}%`,
       overflow: 'hidden',
-      color: '#383838',
       textOverflow: 'ellipsis',
       whiteSpace: 'nowrap',
-      padding: `0 ${this.rowHeight / 4}px`,
-      listStyle: 'none',
-      fontSize: `${this.rowHeight / 3}px`,
-      borderBottom: '2px solid black',
-      borderRight: '2px solid black',
-      cursor: 'pointer'
-    };
-
-    if (current.domain === domain) {
-      style.background = 'black';
-      style.color = 'white';
-    }
-
-    return <div id={domain} onClick={this.handleRowClick} style={style}>{domain}</div>;
-  }
-
-  render () {
-    const { domains } = this.props;
-
-    const style = {
-      height: '92.5vh',
-      borderTop: '2px solid black',
-      background: '#FFF',
-      overflow: 'auto'
+      fontSize: `${this.rowHeight / 2}px`
     };
 
     return (
+			<li class="fl mr2" style={style}><a id={domain} onClick={this.handleRowClick} href="#" class={`b db pa2 link mid-gray ${current.domain === domain ? ' dark-pink' : 'dim'}`}>{domain}</a></li>
+	 	);
+  }
+
+  render () {
+    const { domains, } = this.props;
+
+		const style = {
+			height: '85vh',
+			overflow: 'auto'
+		};
+
+    return (
       <VirtualList
-        style={style}
+				class="list"
+				style={style}
         data={domains}
         renderRow={this.renderRow}
         rowHeight={this.rowHeight / 6}
-        overscanCount={60}
+        overscanCount={120}
         />
     );
   }
