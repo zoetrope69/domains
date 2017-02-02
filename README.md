@@ -1,5 +1,7 @@
 # domains
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zaccolley/domains.svg)](https://greenkeeper.io/)
+
 ## install
 
 1. `npm install`
