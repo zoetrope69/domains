@@ -9,7 +9,8 @@
     "prestart": "npm run build",
     "build": "cross-env NODE_ENV=production webpack -p --progress",
     "prebuild": "mkdirp build",
-    "start": "node app.js"
+    "start": "node app.js",
+    "postinstall": "modclean --run"
   },
   "author": "Zac Colley",
   "devDependencies": {
@@ -42,6 +43,7 @@
   },
   "dependencies": {
     "express": "3.4.8",
+    "modclean": "^2.1.2",
     "mw-dictionary": "^0.0.5",
     "preact": "^6.0.0",
     "preact-compat": "^3.0.0",
