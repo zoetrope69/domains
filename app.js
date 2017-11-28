@@ -5,9 +5,7 @@
 
 // use .env file
 
-if (!process.env.NOW) {
-  require('dotenv').load();
-}
+require('dotenv').load();
 
 if (!process.env.MASHAPE_KEY) {
   console.log('Need to add the Mashape API key (MASHAPE_KEY) to `.env`. See README.');
